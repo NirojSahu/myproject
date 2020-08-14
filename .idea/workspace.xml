@@ -5,11 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/JsonUtilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadAccounts3/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadAccounts3/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadAccounts3/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadAccounts3/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadAccounts3/OBReadAccounts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBalance1/Amount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBalance1/Balance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBalance1/CreditLine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBalance1/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBalance1/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBalance1/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBalance1/OBReadBalance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBeneficiaries3/Beneficiary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBeneficiaries3/CreditorAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBeneficiaries3/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBeneficiaries3/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBeneficiaries3/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadBeneficiaries3/OBReadBeneficiaries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadConsentResponse1/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadConsentResponse1/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadConsentResponse1/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadConsentResponse1/OBReadConsentResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadConsentResponse1/Risk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/DirectDebit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/OBReadDirectDebits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/PreviousPaymentAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadProducts2/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadProducts2/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadProducts2/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadProducts2/OBReadProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadProducts2/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadSheduledPayments2/CreditorAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadSheduledPayments2/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadSheduledPayments2/InstructedAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadSheduledPayments2/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadSheduledPayments2/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadSheduledPayments2/OBReadSheduledPayments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadSheduledPayments2/ScheduledPayment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/CreditorAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/FinalPaymentAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/FirstPaymentAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/NextPaymentAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/OBReadStandingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStandingOrder4/StandingOrder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStatement1/Amount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStatement1/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStatement1/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStatement1/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStatement1/OBReadStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStatement1/Statement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadStatement1/StatementAmount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Amount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Balance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/BankTransactionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Meta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/OBReadTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/ProprietaryBankTransactionCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/CertJKSUtility.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/Pojos/AccountAccessConsents/AccountAccessConsent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/Pojos/AccountAccessConsents/Data.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/api/Pojos/AccountAccessConsents/Risk.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/AccountAccessConsentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/CustomHooks/GlobalHooks.groovy" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/LoadProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/TestRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/App_genericFunction.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybackupproject.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" afterDir="false" />
     </list>
@@ -25,6 +97,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -40,18 +113,17 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
-  </component>
   <component name="ProjectId" id="1fiXEdRe0UFdKMPRfE0GFtnPQ4w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Program Files/Git/bin/git.exe" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -64,7 +136,7 @@
       <recent name="C:\my DATA\workspace\mybackupproject\src\test" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,17 +155,49 @@
       <option name="project" value="LOCAL" />
       <updated>1596632683952</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Starting new project">
+      <created>1596717787014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596717787014</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Starting new project" />
     <option name="LAST_COMMIT_MESSAGE" value="Starting new project" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser" timestamp="1597138918741">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="78" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597138918741" />
+    <state x="334" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1597308826979">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="334" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1597308826979" />
+    <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1597310931915">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="372" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1597310931915" />
+    <state x="310" y="0" key="CommitChangelistDialog2" timestamp="1596717784766">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="310" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1596717784766" />
     <state x="163" y="0" key="SettingsEditor" timestamp="1596702562670">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596702562670" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1596718123065">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1596718123065" />
+    <state x="500" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597313012340">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="500" y="276" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1597313012340" />
   </component>
 </project>
