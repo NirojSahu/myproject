@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.exceptions;
+package Utilities.WebKit.exceptions;
 
 public class UnexpectedPageException extends RuntimeException {
     public UnexpectedPageException(String message) {
