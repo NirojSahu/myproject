@@ -2,13 +2,13 @@
 package Responses.OBReadBeneficiaries3;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.annotation.Generated;
+import com.google.gson.annotations.SerializedName;
 
 
 
 public class Links {
 
+    @SerializedName("Self")
     @JsonProperty("Self")
     private String mSelf;
 
@@ -20,7 +20,7 @@ public class Links {
 
         private String mSelf;
 
-        public Links.Builder withSelf(String self) {
+        public Builder withSelf(String self) {
             mSelf = self;
             return this;
         }
