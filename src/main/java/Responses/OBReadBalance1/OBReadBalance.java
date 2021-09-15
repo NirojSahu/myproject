@@ -1,62 +1,32 @@
-
 package Responses.OBReadBalance1;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.annotation.Generated;
-
-
-
 public class OBReadBalance {
-
-    @JsonProperty("Data")
-    private Data mData;
-    @JsonProperty("Links")
-    private Links mLinks;
     @JsonProperty("Meta")
-    private Meta mMeta;
+    private Meta meta;
+    @JsonProperty("Links")
+    private Links links;
+    @JsonProperty("Data")
+    private Data data;
 
-    public Data getData() {
-        return mData;
+    public Meta getMeta ()
+    {
+        return meta;
+    }
+    public Links getLinks ()
+    {
+        return links;
     }
 
-    public Links getLinks() {
-        return mLinks;
+    public Data getData ()
+    {
+        return data;
     }
 
-    public Meta getMeta() {
-        return mMeta;
-    }
-
-    public static class Builder {
-
-        private Data mData;
-        private Links mLinks;
-        private Meta mMeta;
-
-        public OBReadBalance.Builder withData(Data data) {
-            mData = data;
-            return this;
-        }
-
-        public OBReadBalance.Builder withLinks(Links links) {
-            mLinks = links;
-            return this;
-        }
-
-        public OBReadBalance.Builder withMeta(Meta meta) {
-            mMeta = meta;
-            return this;
-        }
-
-        public OBReadBalance build() {
-            OBReadBalance oBReadBalance = new OBReadBalance();
-            oBReadBalance.mData = mData;
-            oBReadBalance.mLinks = mLinks;
-            oBReadBalance.mMeta = mMeta;
-            return oBReadBalance;
-        }
-
-    }
-
+  /*  @Override
+    public String toString()
+    {
+        return "ClassPojo [Meta = "+Meta+", Links = "+Links+", Data = "+Data+"]";
+    }*/
 }
