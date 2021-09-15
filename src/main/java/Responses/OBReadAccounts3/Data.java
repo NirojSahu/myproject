@@ -1,14 +1,14 @@
 
 package Responses.OBReadAccounts3;
 
-import java.util.List;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.util.List;
 
 
 public class Data {
 
+   // @SerializedName("Account")
     @JsonProperty("Account")
     private List<Account> mAccount;
 
@@ -20,7 +20,7 @@ public class Data {
 
         private List<Account> mAccount;
 
-        public Data.Builder withAccount(List<Account> account) {
+        public Builder withAccount(List<Account> account) {
             mAccount = account;
             return this;
         }
