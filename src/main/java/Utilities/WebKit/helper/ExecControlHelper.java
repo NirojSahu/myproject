@@ -1,75 +1,110 @@
-/*
-package Utilities.WebKit.helper;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.WebKit.configuration.PageFactory;
+package com.test.helper;
+
+import com.test.configuration.Configuration;
+import com.test.configuration.PageFactory;
+import com.test.exceptions.StopTestException;
 import org.openqa.selenium.WebDriver;
 
 public class ExecControlHelper {
-    static final String STOP_TEST_PROP_NAME="autotest.stop.test";
-    static ThreadLocal<String> screenshotLocationTL=new ThreadLocal();
+    static final String STOP_TEST_PROP_NAME = "autotest.stop_test";
+    static ThreadLocal<String> screenshotLocationTL = new ThreadLocal();
     private static String exceptionExplanation;
-    private static Object[] windowHandle=null;
+    private static Object[] windowHandle = null;
 
-    public ExecControlHelper(){
-    }
-    public static void stopTest(String message){
-        System.setProperties("autotest.stop_test", "true");
-        exceptionExplanation=message;
+    public ExecControlHelper() {
     }
 
-    public static void resetStopTest(){s
+    public static void stopTest(String message) {
+        System.setProperty("autotest.stop_test", "true");
+        exceptionExplanation = message;
+    }
+
+    public static void resetStopTest() {
         System.clearProperty("autotest.stop_test");
-        exceptionExplanation="";
+        exceptionExplanation = "";
     }
+
     public static void checkStopTest() throws StopTestException {
-        if (System.getProperties("autotest.stop_test") !=null && System.getProperties("autotest.stop_test").equals("true")){
-            throw  new StopTestException(getMessage(), false);
+        if (System.getProperty("autotest.stop_test") != null && System.getProperty("autotest.stop_test").equals("true")) {
+            throw new StopTestException(getMessage(), false);
         }
     }
 
-    public static String getMessage(){
+    public static String getMessage() {
         return exceptionExplanation + getSystemDetails();
     }
 
-    public static void switchDriverToWindowZero(){
-        WebDriver driver= PageFactory.getCurrentDriver();
-        windowHandle=driver.getWindowHandles().toArray();
+    public static void switchDriverToWindowZero() throws StopTestException {
+        WebDriver driver = PageFactory.getCurrentDriver();
+        windowHandle = driver.getWindowHandles().toArray();
         driver.switchTo().window((String)windowHandle[0]);
     }
 
-    public static void switchDriverPopup(int handle){
-        WebDriver driver=PageFactory.getCurrentDriver();
-        windowHandle=driver.getWindowHandles().toArray();
+    public static void switchDriverToPopup(int handle) throws StopTestException {
+        WebDriver driver = PageFactory.getCurrentDriver();
+        windowHandle = driver.getWindowHandles().toArray();
         driver.switchTo().window((String)windowHandle[handle]);
     }
-    public static void switchDriverToWindowOne(){
-        WebDriver driver=PageFactory.getCurrentDriver();
-        windowHandle=driver.getWindowHandles().toArray();
 
-        for (int i=0; windowHandle.length<2; windowHandle=driver.getWindowHandles().toArray()){
+    public static void switchDriverToWindowOne() throws StopTestException {
+        WebDriver driver = PageFactory.getCurrentDriver();
+        windowHandle = driver.getWindowHandles().toArray();
+
+        for(int i = 0; windowHandle.length < 2; windowHandle = driver.getWindowHandles().toArray()) {
             try {
                 Thread.sleep(5000L);
-            }catch (InterruptedException var4){
+            } catch (InterruptedException var4) {
                 var4.printStackTrace();
             }
-            if (i>10){
+
+            if (i > 10) {
                 break;
             }
-            i++;
-        }
-        try {
-            driver.switchTo().window((String) windowHandle[1]);
-        }catch (Exception var3){
-            driver.switchTo().window((String) windowHandle[0]);
-        }
-    }
-    public static String getScreenshotLocation(){
-        return screenshotLocationTL.get();
-    }
-    public static String getScreenshotLocation(String screenshotLocation){
-        return screenshotLocationTL.set(screenshotLocation);
-    }
-    public static void closePopup
 
+            ++i;
+        }
+
+        try {
+            driver.switchTo().window((String)windowHandle[1]);
+        } catch (Exception var3) {
+            driver.switchTo().window((String)windowHandle[0]);
+        }
+
+    }
+
+    public static String getScreenshotLocation() {
+        return (String)screenshotLocationTL.get();
+    }
+
+    public static void setScreenshotLocation(String screenshotLocation) {
+        screenshotLocationTL.set(screenshotLocation);
+    }
+
+    public static void closePopUpWindow(int index) throws StopTestException {
+        WebDriver driver = PageFactory.getCurrentDriver();
+        windowHandle = driver.getWindowHandles().toArray();
+
+        try {
+            driver.switchTo().window((String)windowHandle[index]).close();
+        } catch (Exception var3) {
+        }
+
+        driver.switchTo().window((String)windowHandle[0]);
+    }
+
+    public static String getSystemDetails() {
+        String systemDetails = "";
+
+        try {
+            systemDetails = " env = " + Configuration.getConfiguration().getEnvironment() + " System host " + Configuration.getConfiguration().getGridNode();
+        } catch (Exception var2) {
+        }
+
+        return systemDetails;
+    }
 }
-*/
