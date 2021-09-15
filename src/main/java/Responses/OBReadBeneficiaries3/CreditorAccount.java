@@ -2,17 +2,18 @@
 package Responses.OBReadBeneficiaries3;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.annotation.Generated;
-
+import com.google.gson.annotations.SerializedName;
 
 
 public class CreditorAccount {
 
+    @SerializedName("Identification")
     @JsonProperty("Identification")
     private String mIdentification;
+    @SerializedName("Name")
     @JsonProperty("Name")
     private String mName;
+    @SerializedName("SchemeName")
     @JsonProperty("SchemeName")
     private String mSchemeName;
 
@@ -34,17 +35,17 @@ public class CreditorAccount {
         private String mName;
         private String mSchemeName;
 
-        public CreditorAccount.Builder withIdentification(String identification) {
+        public Builder withIdentification(String identification) {
             mIdentification = identification;
             return this;
         }
 
-        public CreditorAccount.Builder withName(String name) {
+        public Builder withName(String name) {
             mName = name;
             return this;
         }
 
-        public CreditorAccount.Builder withSchemeName(String schemeName) {
+        public Builder withSchemeName(String schemeName) {
             mSchemeName = schemeName;
             return this;
         }
