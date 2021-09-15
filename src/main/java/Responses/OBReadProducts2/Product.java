@@ -3,18 +3,19 @@ package Responses.OBReadProducts2;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.annotation.Generated;
-
-
 
 public class Product {
 
+
     @JsonProperty("AccountId")
     private String mAccountId;
+
     @JsonProperty("ProductId")
     private String mProductId;
+
     @JsonProperty("ProductName")
     private String mProductName;
+
     @JsonProperty("ProductType")
     private String mProductType;
 
@@ -41,22 +42,22 @@ public class Product {
         private String mProductName;
         private String mProductType;
 
-        public Product.Builder withAccountId(String accountId) {
+        public Builder withAccountId(String accountId) {
             mAccountId = accountId;
             return this;
         }
 
-        public Product.Builder withProductId(String productId) {
+        public Builder withProductId(String productId) {
             mProductId = productId;
             return this;
         }
 
-        public Product.Builder withProductName(String productName) {
+        public Builder withProductName(String productName) {
             mProductName = productName;
             return this;
         }
 
-        public Product.Builder withProductType(String productType) {
+        public Builder withProductType(String productType) {
             mProductType = productType;
             return this;
         }
