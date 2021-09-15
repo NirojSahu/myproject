@@ -2,14 +2,14 @@
 package Responses.OBReadBeneficiaries3;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
 
 import java.util.List;
-import javax.annotation.Generated;
-
 
 
 public class Data {
 
+    @SerializedName("Beneficiary")
     @JsonProperty("Beneficiary")
     private List<Beneficiary> mBeneficiary;
 
@@ -21,7 +21,7 @@ public class Data {
 
         private List<Beneficiary> mBeneficiary;
 
-        public Data.Builder withBeneficiary(List<Beneficiary> beneficiary) {
+        public Builder withBeneficiary(List<Beneficiary> beneficiary) {
             mBeneficiary = beneficiary;
             return this;
         }
