@@ -1,12 +1,15 @@
-package Utilities.WebKit.helper;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.WebKit.helper.PageIdHelper;
+package com.test.helper;
 
 public class NullPageIdHelper implements PageIdHelper {
-    public NullPageIdHelper(){
-
+    public NullPageIdHelper() {
     }
-    public String getPageId(){
+
+    public String getPageId() {
         throw new UnsupportedOperationException();
     }
 }
