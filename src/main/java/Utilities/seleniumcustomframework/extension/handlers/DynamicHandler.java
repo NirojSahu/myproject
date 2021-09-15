@@ -1,4 +1,9 @@
-package Utilities.seleniumcustomframework.extension.handlers;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.test.seleniumcustomframework.extension.handlers;
 
 import java.lang.reflect.Method;
 
