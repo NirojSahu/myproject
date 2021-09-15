@@ -3,11 +3,9 @@ package Responses.OBReadDirectDebits1;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.annotation.Generated;
-
-
 
 public class PreviousPaymentAmount {
+
 
     @JsonProperty("Amount")
     private String mAmount;
@@ -18,32 +16,16 @@ public class PreviousPaymentAmount {
         return mAmount;
     }
 
+    public void setAmount(String amount) {
+        mAmount = amount;
+    }
+
     public String getCurrency() {
         return mCurrency;
     }
 
-    public static class Builder {
-
-        private String mAmount;
-        private String mCurrency;
-
-        public PreviousPaymentAmount.Builder withAmount(String amount) {
-            mAmount = amount;
-            return this;
-        }
-
-        public PreviousPaymentAmount.Builder withCurrency(String currency) {
-            mCurrency = currency;
-            return this;
-        }
-
-        public PreviousPaymentAmount build() {
-            PreviousPaymentAmount previousPaymentAmount = new PreviousPaymentAmount();
-            previousPaymentAmount.mAmount = mAmount;
-            previousPaymentAmount.mCurrency = mCurrency;
-            return previousPaymentAmount;
-        }
-
+    public void setCurrency(String currency) {
+        mCurrency = currency;
     }
 
 }
