@@ -1,128 +1,78 @@
-
 package Responses.OBReadConsentResponse1;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
-import javax.annotation.Generated;
 
+public class Data
+{
+    @JsonProperty("Status")
+    private String status;
 
+    @JsonProperty("StatusUpdateDateTime")
+    private String statusUpdateDateTime;
 
-public class Data {
+    @JsonProperty("CreationDateTime")
+    private String creationDateTime;
+
+    @JsonProperty("TransactionToDateTime")
+    private String transactionToDateTime;
+
+    @JsonProperty("ExpirationDateTime")
+    private String expirationDateTime;
+
+    @JsonProperty("Permissions")
+    private List<String> permissions;
 
     @JsonProperty("ConsentId")
-    private String mConsentId;
-    @JsonProperty("CreationDateTime")
-    private String mCreationDateTime;
-    @JsonProperty("ExpirationDateTime")
-    private String mExpirationDateTime;
-    @JsonProperty("Permissions")
-    private List<String> mPermissions;
-    @JsonProperty("Status")
-    private String mStatus;
-    @JsonProperty("StatusUpdateDateTime")
-    private String mStatusUpdateDateTime;
+    private String consentId;
+
     @JsonProperty("TransactionFromDateTime")
-    private String mTransactionFromDateTime;
-    @JsonProperty("TransactionToDateTime")
-    private String mTransactionToDateTime;
+    private String transactionFromDateTime;
 
-    public String getConsentId() {
-        return mConsentId;
+    public String getStatus ()
+    {
+        return status;
     }
 
-    public String getCreationDateTime() {
-        return mCreationDateTime;
+    public String getStatusUpdateDateTime ()
+    {
+        return statusUpdateDateTime;
     }
 
-    public String getExpirationDateTime() {
-        return mExpirationDateTime;
+    public String getCreationDateTime ()
+    {
+        return creationDateTime;
     }
 
-    public List<String> getPermissions() {
-        return mPermissions;
+    public String getTransactionToDateTime ()
+    {
+        return transactionToDateTime;
     }
 
-    public String getStatus() {
-        return mStatus;
+    public String getExpirationDateTime ()
+    {
+        return expirationDateTime;
     }
 
-    public String getStatusUpdateDateTime() {
-        return mStatusUpdateDateTime;
+    public List<String> getPermissions ()
+    {
+        return permissions;
     }
 
-    public String getTransactionFromDateTime() {
-        return mTransactionFromDateTime;
+    public String getConsentId ()
+    {
+        return consentId;
     }
 
-    public String getTransactionToDateTime() {
-        return mTransactionToDateTime;
+    public String getTransactionFromDateTime ()
+    {
+        return transactionFromDateTime;
     }
 
-    public static class Builder {
-
-        private String mConsentId;
-        private String mCreationDateTime;
-        private String mExpirationDateTime;
-        private List<String> mPermissions;
-        private String mStatus;
-        private String mStatusUpdateDateTime;
-        private String mTransactionFromDateTime;
-        private String mTransactionToDateTime;
-
-        public Data.Builder withConsentId(String consentId) {
-            mConsentId = consentId;
-            return this;
-        }
-
-        public Data.Builder withCreationDateTime(String creationDateTime) {
-            mCreationDateTime = creationDateTime;
-            return this;
-        }
-
-        public Data.Builder withExpirationDateTime(String expirationDateTime) {
-            mExpirationDateTime = expirationDateTime;
-            return this;
-        }
-
-        public Data.Builder withPermissions(List<String> permissions) {
-            mPermissions = permissions;
-            return this;
-        }
-
-        public Data.Builder withStatus(String status) {
-            mStatus = status;
-            return this;
-        }
-
-        public Data.Builder withStatusUpdateDateTime(String statusUpdateDateTime) {
-            mStatusUpdateDateTime = statusUpdateDateTime;
-            return this;
-        }
-
-        public Data.Builder withTransactionFromDateTime(String transactionFromDateTime) {
-            mTransactionFromDateTime = transactionFromDateTime;
-            return this;
-        }
-
-        public Data.Builder withTransactionToDateTime(String transactionToDateTime) {
-            mTransactionToDateTime = transactionToDateTime;
-            return this;
-        }
-
-        public Data build() {
-            Data data = new Data();
-            data.mConsentId = mConsentId;
-            data.mCreationDateTime = mCreationDateTime;
-            data.mExpirationDateTime = mExpirationDateTime;
-            data.mPermissions = mPermissions;
-            data.mStatus = mStatus;
-            data.mStatusUpdateDateTime = mStatusUpdateDateTime;
-            data.mTransactionFromDateTime = mTransactionFromDateTime;
-            data.mTransactionToDateTime = mTransactionToDateTime;
-            return data;
-        }
-
-    }
-
+    /*@Override
+    public String toString()
+    {
+        return "ClassPojo [Status = "+Status+", StatusUpdateDateTime = "+StatusUpdateDateTime+", CreationDateTime = "+CreationDateTime+", TransactionToDateTime = "+TransactionToDateTime+", ExpirationDateTime = "+ExpirationDateTime+", Permissions = "+Permissions+", ConsentId = "+ConsentId+", TransactionFromDateTime = "+TransactionFromDateTime+"]";
+    }*/
 }
