@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.dependencies;
+package Utilities.seleniumcustomframework.extension.dependencies;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
@@ -13,7 +13,7 @@ import com.google.inject.Provider;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.Stage;
-import com.test.seleniumcustomframework.extension.PageFactory;
+import Utilities.seleniumcustomframework.extension.PageFactory;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
 import java.util.ArrayList;

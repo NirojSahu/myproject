@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.dependencies;
+package Utilities.seleniumcustomframework.extension.dependencies;
 
 import com.google.inject.Provider;
 

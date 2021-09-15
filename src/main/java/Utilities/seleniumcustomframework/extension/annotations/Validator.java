@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.annotations;
+package Utilities.seleniumcustomframework.extension.annotations;
 
 public interface Validator {
     boolean isValid();

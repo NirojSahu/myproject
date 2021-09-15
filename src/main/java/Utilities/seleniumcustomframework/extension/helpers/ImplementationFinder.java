@@ -3,11 +3,11 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.helpers;
+package Utilities.seleniumcustomframework.extension.helpers;
 
-import com.test.seleniumcustomframework.extension.annotations.PageFilter;
-import com.test.seleniumcustomframework.extension.annotations.Validator;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.annotations.PageFilter;
+import Utilities.seleniumcustomframework.extension.annotations.Validator;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;

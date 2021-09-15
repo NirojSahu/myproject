@@ -3,9 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.helpers;
+package Utilities.seleniumcustomframework.extension.helpers;
 
-import com.test.seleniumcustomframework.extension.fieldInitialisers.FieldInitialiser;
+import Utilities.seleniumcustomframework.extension.fieldInitialisers.FieldInitialiser;
 import java.util.Comparator;
 
 public class FieldInitialiserSort implements Comparator<Class<? extends FieldInitialiser>> {

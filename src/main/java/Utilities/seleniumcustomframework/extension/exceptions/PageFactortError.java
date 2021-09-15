@@ -3,9 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.exceptions;
+package Utilities.seleniumcustomframework.extension.exceptions;
 
-public class PageFactoryError extends Error {
+class PageFactoryError extends Error {
     public PageFactoryError(Throwable cause) {
         super(cause);
     }

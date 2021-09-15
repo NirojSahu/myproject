@@ -3,9 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.helpers;
+package Utilities.seleniumcustomframework.extension.helpers;
 
-import com.test.seleniumcustomframework.extension.annotations.Frame;
+import Utilities.seleniumcustomframework.extension.annotations.Frame;
 import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;

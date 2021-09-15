@@ -6,6 +6,7 @@
 package Utilities.WebKit.ui.selenium.pages;
 
 import Utilities.WebKit.ui.selenium.pageSelections.SearchForm;
+import Utilities.seleniumcustomframework.extension.annotations.Section;
 import com.test.seleniumcustomframework.extension.annotations.Section;
 import org.openqa.selenium.support.FindBy;
 

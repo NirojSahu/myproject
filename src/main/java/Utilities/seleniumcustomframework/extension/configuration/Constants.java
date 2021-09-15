@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.configuration;
+package Utilities.seleniumcustomframework.extension.configuration;
 
 public class Constants {
     public static final String ROOT_ELEMENT_FIELD_NAME = "rootElement";

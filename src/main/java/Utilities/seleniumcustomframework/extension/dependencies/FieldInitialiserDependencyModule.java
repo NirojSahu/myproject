@@ -3,14 +3,14 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.dependencies;
+package Utilities.seleniumcustomframework.extension.dependencies;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Singleton;
 import com.google.inject.multibindings.Multibinder;
-import com.test.seleniumcustomframework.extension.fieldInitialisers.FieldInitialiser;
-import com.test.seleniumcustomframework.extension.helpers.FieldInitialiserSort;
-import com.test.seleniumcustomframework.extension.helpers.SortingHelper;
+import Utilities.seleniumcustomframework.extension.fieldInitialisers.FieldInitialiser;
+import Utilities.seleniumcustomframework.extension.helpers.FieldInitialiserSort;
+import Utilities.seleniumcustomframework.extension.helpers.SortingHelper;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;

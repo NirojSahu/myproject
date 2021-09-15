@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension;
+package Utilities.seleniumcustomframework.extension;
 
 public interface WebElementExtensions {
     boolean isPresent();

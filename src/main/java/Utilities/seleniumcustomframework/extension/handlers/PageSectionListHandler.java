@@ -3,13 +3,13 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.handlers;
+package Utilities.seleniumcustomframework.extension.handlers;
 
 import com.google.inject.Provider;
 import com.test.seleniumcustomframework.extension.PageElementImpl;
 import com.test.seleniumcustomframework.extension.PageFactory;
 import com.test.seleniumcustomframework.extension.PageSection;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
 import com.test.seleniumcustomframework.extension.helpers.FrameWrapper;
 import com.test.seleniumcustomframework.extension.helpers.ReflectionHelper;
 import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;

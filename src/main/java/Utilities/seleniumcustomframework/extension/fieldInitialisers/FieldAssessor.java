@@ -3,11 +3,11 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.fieldInitialisers;
+package Utilities.seleniumcustomframework.extension.fieldInitialisers;
 
 import com.test.seleniumcustomframework.extension.PageElement;
 import com.test.seleniumcustomframework.extension.PageSection;
-import com.test.seleniumcustomframework.extension.annotations.Section;
+import Utilities.seleniumcustomframework.extension.annotations.Section;
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

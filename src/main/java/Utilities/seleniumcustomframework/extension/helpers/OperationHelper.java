@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.helpers;
+package Utilities.seleniumcustomframework.extension.helpers;
 
 import com.test.seleniumcustomframework.extension.exceptions.RetryException;
 import java.util.logging.Logger;

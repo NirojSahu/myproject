@@ -3,9 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension;
+package Utilities.seleniumcustomframework.extension;
 
-import com.test.seleniumcustomframework.extension.handlers.Refreshable;
+import Utilities.seleniumcustomframework.extension.handlers.Refreshable;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;

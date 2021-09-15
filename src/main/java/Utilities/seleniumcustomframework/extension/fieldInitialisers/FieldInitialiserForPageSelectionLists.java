@@ -3,16 +3,16 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.fieldInitialisers;
+package Utilities.seleniumcustomframework.extension.fieldInitialisers;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;
-import com.test.seleniumcustomframework.extension.PageFactory;
-import com.test.seleniumcustomframework.extension.annotations.Section;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyInjector;
-import com.test.seleniumcustomframework.extension.exceptions.PageFactoryError;
-import com.test.seleniumcustomframework.extension.handlers.PageSectionListHandler;
-import com.test.seleniumcustomframework.extension.helpers.FrameWrapper;
+import Utilities.seleniumcustomframework.extension.PageFactory;
+import Utilities.seleniumcustomframework.extension.annotations.Section;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.exceptions.PageFactoryError;
+import Utilities.seleniumcustomframework.extension.handlers.PageSectionListHandler;
+import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
 import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;

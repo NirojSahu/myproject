@@ -3,11 +3,11 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.dependencies;
+package Utilities.seleniumcustomframework.extension.dependencies;
 
-import com.test.seleniumcustomframework.extension.PageFactory;
+import Utilities.seleniumcustomframework.extension.PageFactory;
 
-public class InternalGuiceDependencyInjector extends GuiceDependencyInjector {
+class InternalGuiceDependencyInjector extends GuiceDependencyInjector {
     private PageFactory pageFactory;
     private final DependencyInjector dependencyInjector;
 

@@ -3,12 +3,12 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.fieldInitialisers;
+package Utilities.seleniumcustomframework.extension.fieldInitialisers;
 
 import com.google.inject.Inject;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyInjector;
-import com.test.seleniumcustomframework.extension.handlers.WebElementHandler;
-import com.test.seleniumcustomframework.extension.helpers.FrameWrapper;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.handlers.WebElementHandler;
+import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
 import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;

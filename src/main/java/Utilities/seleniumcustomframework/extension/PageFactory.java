@@ -3,25 +3,25 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension;
+package Utilities.seleniumcustomframework.extension;
 
 import com.google.inject.Inject;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
-import com.test.seleniumcustomframework.extension.annotations.Frame;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyFactory;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyInjector;
-import com.test.seleniumcustomframework.extension.dependencies.GuiceDependencyInjector;
-import com.test.seleniumcustomframework.extension.dependencies.InternalGuiceDependencyInjector;
-import com.test.seleniumcustomframework.extension.dependencies.WebDriverFactory;
-import com.test.seleniumcustomframework.extension.exceptions.PageFactoryError;
-import com.test.seleniumcustomframework.extension.fieldInitialisers.FieldAssessor;
-import com.test.seleniumcustomframework.extension.fieldInitialisers.FieldInitialiser;
-import com.test.seleniumcustomframework.extension.fromselenium.Annotations;
-import com.test.seleniumcustomframework.extension.handlers.Refreshable;
-import com.test.seleniumcustomframework.extension.helpers.ClassHelper;
-import com.test.seleniumcustomframework.extension.helpers.FrameWrapper;
-import com.test.seleniumcustomframework.extension.helpers.ImplementationFinder;
+import Utilities.seleniumcustomframework.extension.annotations.Frame;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyFactory;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.dependencies.GuiceDependencyInjector;
+import Utilities.seleniumcustomframework.extension.dependencies.InternalGuiceDependencyInjector;
+import Utilities.seleniumcustomframework.extension.dependencies.WebDriverFactory;
+import Utilities.seleniumcustomframework.extension.exceptions.PageFactoryError;
+import Utilities.seleniumcustomframework.extension.fieldInitialisers.FieldAssessor;
+import Utilities.seleniumcustomframework.extension.fieldInitialisers.FieldInitialiser;
+import Utilities.seleniumcustomframework.extension.fromselenium.Annotations;
+import Utilities.seleniumcustomframework.extension.handlers.Refreshable;
+import Utilities.seleniumcustomframework.extension.helpers.ClassHelper;
+import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
+import Utilities.seleniumcustomframework.extension.helpers.ImplementationFinder;
 import com.test.seleniumcustomframework.extension.helpers.ReflectionHelper;
 import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import java.lang.reflect.AnnotatedElement;

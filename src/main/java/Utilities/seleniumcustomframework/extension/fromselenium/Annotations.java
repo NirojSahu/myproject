@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.fromselenium;
+package Utilities.seleniumcustomframework.extension.fromselenium;
 
 import java.lang.reflect.AnnotatedElement;
 import java.util.HashSet;

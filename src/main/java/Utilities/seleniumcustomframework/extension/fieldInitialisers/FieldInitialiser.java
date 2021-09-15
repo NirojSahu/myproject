@@ -3,9 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.fieldInitialisers;
+package Utilities.seleniumcustomframework.extension.fieldInitialisers;
 
-import com.test.seleniumcustomframework.extension.helpers.FrameWrapper;
+import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
 import java.lang.reflect.Field;
 import org.openqa.selenium.SearchContext;
 

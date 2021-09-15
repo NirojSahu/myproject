@@ -3,10 +3,10 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension;
+package Utilities.seleniumcustomframework.extension;
 
-import com.test.seleniumcustomframework.extension.handlers.Refreshable;
-import com.test.seleniumcustomframework.extension.handlers.WebElementHandler;
+import Utilities.seleniumcustomframework.extension.handlers.Refreshable;
+import Utilities.seleniumcustomframework.extension.handlers.WebElementHandler;
 import com.test.seleniumcustomframework.extension.webdriverConditions.ElementLocationStaticCondition;
 import com.test.seleniumcustomframework.extension.webdriverConditions.ElementPresentCondition;
 import java.lang.reflect.InvocationHandler;
