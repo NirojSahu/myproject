@@ -1,37 +1,38 @@
-package Utilities.seleniumcustomframework.extension;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.seleniumcustomframework.extension.handlers.Refreshable;
+package com.test.seleniumcustomframework.extension;
+
+import com.test.seleniumcustomframework.extension.handlers.Refreshable;
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
 
-import java.util.List;
-
-public class PageSection implements SearchContext, Refreshable,WebElementExtensions {
-    private static final Integer DEFOULT_WAIT_TIMEOUT=20000;
+public abstract class PageSection implements SearchContext, Refreshable, WebElementExtensions {
+    private static final Integer DEFAULT_WAIT_TIMEOUT = 20000;
     protected PageElement rootElement;
     private Refreshable parent;
+
     public PageSection() {
     }
-    
-    public boolean isPresent() {
-        return this.rootElement.isPresent();
-    }
 
-    public String getValue(){
+    public String getValue() {
         return this.rootElement.getValue();
     }
-    
-    public void set(String value){
+
+    public void set(String value) {
         this.rootElement.set(value);
     }
 
     public String getHiddenText() {
-        return this.rootElement.getValue();
+        return this.rootElement.getHiddenText();
     }
 
     public void set(String format, Object... args) {
-        this.rootElement.set(format,args);
+        this.rootElement.set(format, args);
     }
 
     public void doubleClick() {
@@ -39,7 +40,7 @@ public class PageSection implements SearchContext, Refreshable,WebElementExtensi
     }
 
     public void dropOnto(PageElement pageElement) {
-        this.rootElement.doubleClick();
+        this.rootElement.dropOnto(pageElement);
     }
 
     public PageElement waitFor(Integer timeout) {
@@ -48,15 +49,6 @@ public class PageSection implements SearchContext, Refreshable,WebElementExtensi
 
     public PageElement waitFor() {
         return this.rootElement.waitFor();
-    }
-
-    public PageElement waitUntilGone(Integer timeout) {
-        this.rootElement.waitUntilGone(timeout);
-        return null;
-    }
-
-    public void waitUntilGone() {
-        this.waitUntilGone(DEFOULT_WAIT_TIMEOUT);
     }
 
     public PageElement waitUntilHidden(Integer timeout) {
@@ -75,30 +67,47 @@ public class PageSection implements SearchContext, Refreshable,WebElementExtensi
         return this.rootElement.waitUntilVisible();
     }
 
-    public PageElement waitUntilStopMoving(Integer timeout) {
-        return this.rootElement.waitUntilVisible(timeout);
+    public boolean isPresent() {
+        return this.rootElement.isPresent();
     }
 
-    public PageElement waitUntilStopMoving() {
-        return this.rootElement.waitUntilStopMoving();
+    public String getText() {
+        return this.rootElement.getText();
     }
-    public void setParent(Refreshable refreshable) {
-        this.parent=refreshable;
+
+    public void waitUntilGone() {
+        this.waitUntilGone(DEFAULT_WAIT_TIMEOUT);
+    }
+
+    public void waitUntilGone(Integer timeout) {
+        this.rootElement.waitUntilGone(timeout);
+    }
+
+    public PageElement waitUntilStopsMoving() {
+        return this.rootElement.waitUntilStopsMoving();
+    }
+
+    public PageElement waitUntilStopsMoving(Integer timeout) {
+        return this.rootElement.waitUntilStopsMoving(timeout);
     }
 
     public List<WebElement> findElements(By by) {
         return this.rootElement.findElements(by);
     }
 
+    public void setParent(Refreshable refreshable) {
+        this.parent = refreshable;
+    }
+
     public WebElement findElement(By by) {
-        return (WebElement) this.rootElement.findElements(by);
+        return this.rootElement.findElement(by);
     }
 
     public void invalidate() {
-       this.parent.invalidate();
+        this.rootElement.invalidate();
     }
 
     public void refresh() {
-        this.parent.refresh();
+        this.rootElement.refresh();
     }
 }
