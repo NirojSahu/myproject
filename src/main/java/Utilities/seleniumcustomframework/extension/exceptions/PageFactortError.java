@@ -1,6 +1,12 @@
-package Utilities.seleniumcustomframework.extension.exceptions;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-public class PageFactortError extends Exception {
-    public PageFactortError(Throwable couse){super(couse);}
+package com.test.seleniumcustomframework.extension.exceptions;
+
+public class PageFactoryError extends Error {
+    public PageFactoryError(Throwable cause) {
+        super(cause);
+    }
 }
-
