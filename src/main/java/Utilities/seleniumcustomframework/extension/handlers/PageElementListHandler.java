@@ -2,6 +2,7 @@ package Utilities.seleniumcustomframework.extension.handlers;
 
 import Utilities.seleniumcustomframework.extension.PageElementImpl;
 import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.exceptions.PageFactortError;
 import Utilities.seleniumcustomframework.extension.helpers.FrameWeapper;
 import Utilities.seleniumcustomframework.extension.helpers.ReflectionHelper;
 import Utilities.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
@@ -16,8 +17,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.logging.Logger;
 
-public class PageLElementListHandler implements InvocationHandler,Refreshable {
-    private static final Logger LOG=Logger.getLogger(PageLElementListHandler.class.getName());
+public class PageElementListHandler implements InvocationHandler,Refreshable {
+    private static final Logger LOG=Logger.getLogger(PageElementListHandler.class.getName());
     private DependencyInjector driver;
     private SearchContext searchContext;
     private By by;
@@ -26,7 +27,7 @@ public class PageLElementListHandler implements InvocationHandler,Refreshable {
     private ArrayList<WebElement> webElements;
     private boolean needsRefresh;
 
-    public PageLElementListHandler(DependencyInjector driver,SearchContext searchContext,By by, FrameWeapper frame,WebDriverFrameSwitchingOrchestrator webDriverFrameSwitchingOrchestrator) {
+    public PageElementListHandler(DependencyInjector driver, SearchContext searchContext, By by, FrameWeapper frame, WebDriverFrameSwitchingOrchestrator webDriverFrameSwitchingOrchestrator) {
         this.driver=driver;
         this.searchContext = searchContext;
         this.by= by;
@@ -63,7 +64,7 @@ public class PageLElementListHandler implements InvocationHandler,Refreshable {
         return new PageElementImpl(webElementProxy);
     }
 
-    public void invalidate() {
+    public void invalidate() throws PageFactortError {
         this.needsRefresh=true;
         if (this.webElements !=null){
             Iterator var1=this.webElements.iterator();

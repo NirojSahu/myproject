@@ -3,7 +3,7 @@ package com.test.Utils;
 
 import com.google.common.base.Function;
 import com.google.inject.Inject;
-import com.test.seleniumcustomframework.extension.PageElement;
+//import com.test.seleniumcustomframework.extension.PageElement;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;

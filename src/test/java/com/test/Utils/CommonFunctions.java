@@ -24,11 +24,11 @@ public class CommonFunctions {
     private CommonVariables cmnVrbls;
 
     public String getCurrentDate() {
-    cal = Calendar.getInstance();
-    sdf = new SimpleDateFormat("ddMMYYYY_HHmmss");
-    strDate = sdf.format(cal.getTime());
-    System.out.println("Current date in String Format: " + strDate);
-    return strDate;
+        cal = Calendar.getInstance();
+        sdf = new SimpleDateFormat("ddMMYYYY_HHmmss");
+        strDate = sdf.format(cal.getTime());
+        System.out.println("Current date in String Format: " + strDate);
+        return strDate;
     }
 
     public Date getCurrentDate_formatted(String Pattern) {
@@ -36,7 +36,7 @@ public class CommonFunctions {
         DateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date d = new Date();
         try {
-             d = sdf.parse(sdf.format(cal.getTime()));
+            d = sdf.parse(sdf.format(cal.getTime()));
         } catch (ParseException e) {
             e.printStackTrace();
         }
@@ -241,7 +241,7 @@ public class CommonFunctions {
             if(stringVrbl.charAt(i)==endCharacter)
                 break;
             if(flag)
-            subString=subString+stringVrbl.charAt(i);
+                subString=subString+stringVrbl.charAt(i);
 
         }
         return subString;

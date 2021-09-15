@@ -2,7 +2,7 @@ package Utilities.seleniumcustomframework.extension.fieldInitialisers;
 
 import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
 import Utilities.seleniumcustomframework.extension.exceptions.PageFactortError;
-import Utilities.seleniumcustomframework.extension.handlers.PageLElementListHandler;
+import Utilities.seleniumcustomframework.extension.handlers.PageElementListHandler;
 import Utilities.seleniumcustomframework.extension.helpers.FrameWeapper;
 import Utilities.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import com.google.inject.Inject;
@@ -27,7 +27,7 @@ public class FieldInitialiserForPageElementLists implements FieldInitialiser {
         return false;
         }else {
             Annotations annotations=new Annotations(field);
-            PageLElementListHandler elementListHandler= new PageLElementListHandler(this.dependencyInjector, searchContext, annotations.buildBy(),frame,this.webDriverFrameSwitchingOrchestrator);
+            PageElementListHandler elementListHandler= new PageElementListHandler(this.dependencyInjector, searchContext, annotations.buildBy(),frame,this.webDriverFrameSwitchingOrchestrator);
             List webElementListProxy= (List) Proxy.newProxyInstance(WebElement.class.getClassLoader(), new Class[]{List.class}, elementListHandler);
 
             try {

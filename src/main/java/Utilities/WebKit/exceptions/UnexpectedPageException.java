@@ -1,4 +1,4 @@
-package Utilities.WebKit;
+package Utilities.WebKit.exceptions;
 
 public class UnexpectedPageException extends RuntimeException {
     public UnexpectedPageException(String message){

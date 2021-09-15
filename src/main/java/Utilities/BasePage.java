@@ -1,9 +1,10 @@
+/*
 package Utilities;
 
 import Utilities.WebKit.annotations.Page;
 import Utilities.seleniumcustomframework.extension.PageElement;
-import Utilities.WebKit.TimeoutHelper;
-import Utilities.WebKit.UnexpectedPageException;
+import Utilities.WebKit.helper.TimeoutHelper;
+import Utilities.WebKit.exceptions.UnexpectedPageException;
 import com.google.inject.Inject;
 import com.google.inject.Injector;
 import com.google.inject.name.Named;
@@ -125,3 +126,4 @@ public class BasePage {
     }
 
 }
+*/

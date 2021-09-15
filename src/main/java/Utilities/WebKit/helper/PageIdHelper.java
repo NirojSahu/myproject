@@ -1,4 +1,4 @@
-package Utilities.WebKit;
+package Utilities.WebKit.helper;
 
 public interface PageIdHelper {
     String getPageId();

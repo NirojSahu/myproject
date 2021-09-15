@@ -1,7 +1,7 @@
 package Utilities.WebKit.annotations;
 
-import Utilities.WebKit.NullPageIdHelper;
-import Utilities.WebKit.PageIdHelper;
+import Utilities.WebKit.helper.NullPageIdHelper;
+import Utilities.WebKit.helper.PageIdHelper;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

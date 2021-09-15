@@ -845,7 +845,7 @@ public class App_genericFunction {
         String jsonString;
         String grant_type ="refresh_token";
         String Audience ="https://developer.caterallen.co.uk/token";
-        String client_assertion_type ="urn:ietf:params:oauth:client-assertion-type:jwt-bearer";
+        String client_assertion_type ="urn:ietf:params:oauth:client-assertion-type:jwt.java-bearer";
         String redirect_uri ="https://caterallen.co.uk";
 
         for(String refresh_token : refresh_tokens)
@@ -861,7 +861,7 @@ public class App_genericFunction {
                     "&client_assertion=" + jwt_token +
                     "&redirect_uri="+redirect_uri;
            // App_genericFunction.putcommentinStep(" Request as raw-text for CAT : " + jsonString);
-           // jwt.printStructure_cucumber_report(jwt_token,pubKey);
+           // jwt.java.printStructure_cucumber_report(jwt_token,pubKey);
 
                 response = APIMethods.method_post_raw("https://developer.caterallen.co.uk/",jsonString,"token");
                 //System.out.println(response.prettyPrint());
