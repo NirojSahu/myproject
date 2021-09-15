@@ -1,11 +1,14 @@
-package Utilities.seleniumcustomframework.extension.fieldInitialisers;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.seleniumcustomframework.extension.exceptions.PageFactortError;
-import Utilities.seleniumcustomframework.extension.helpers.FrameWeapper;
+package com.test.seleniumcustomframework.extension.fieldInitialisers;
+
+import com.test.seleniumcustomframework.extension.helpers.FrameWrapper;
+import java.lang.reflect.Field;
 import org.openqa.selenium.SearchContext;
 
-import java.lang.reflect.Field;
-
-public interface FieldInitialiser{
-    Boolean initialiseField(Field var1, Object var2, SearchContext var3, FrameWeapper var4) throws PageFactortError;
+public interface FieldInitialiser {
+    Boolean initialiseField(Field var1, Object var2, SearchContext var3, FrameWrapper var4);
 }
