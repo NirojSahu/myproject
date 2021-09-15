@@ -2,6 +2,9 @@
 package Responses.OBReadAccounts3;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.google.gson.annotations.SerializedName;
+
+
 public class Meta {
 
     @JsonProperty("TotalPages")
@@ -15,7 +18,7 @@ public class Meta {
 
         private Long mTotalPages;
 
-        public Meta.Builder withTotalPages(Long totalPages) {
+        public Builder withTotalPages(Long totalPages) {
             mTotalPages = totalPages;
             return this;
         }
