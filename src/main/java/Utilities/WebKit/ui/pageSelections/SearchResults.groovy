@@ -1,16 +1,22 @@
-package Utilities.WebKit.ui.pageSelections
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.seleniumcustomframework.extension.PageSection
-import Utilities.seleniumcustomframework.extension.annotations.Section
-import org.openqa.selenium.support.FindBy
+package com.test.ui.selenium.pageSections;
 
-class SearchResults  extends PageSection{
+import com.test.seleniumcustomframework.extension.PageSection;
+import com.test.seleniumcustomframework.extension.annotations.Section;
+import java.util.List;
+import org.openqa.selenium.support.FindBy;
+
+public class SearchResults extends PageSection {
     @Section
     @FindBy(
-            css="div.rc"
+        css = "div.rc"
     )
     public List<SearchResult> results;
-    public SearchResults(){
 
+    public SearchResults() {
     }
 }
