@@ -1,18 +1,24 @@
-package Utilities.seleniumcustomframework.extension.dependencies;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.seleniumcustomframework.extension.PageFactory;
+package com.test.seleniumcustomframework.extension.dependencies;
 
-public class InternalGuiceDependencyInjection extends GuiceDependencyInjector {
+import com.test.seleniumcustomframework.extension.PageFactory;
+
+public class InternalGuiceDependencyInjector extends GuiceDependencyInjector {
     private PageFactory pageFactory;
     private final DependencyInjector dependencyInjector;
 
-    public InternalGuiceDependencyInjection(PageFactory pageFactory,DependencyInjector dependencyInjector,DependencyFactory... factories) {
-        super(pageFactory,factories);
+    public InternalGuiceDependencyInjector(PageFactory pageFactory, DependencyInjector dependencyInjector, DependencyFactory... factories) {
+        super(pageFactory, factories);
         this.modules.add(new FieldInitialiserDependencyModule());
-        this.pageFactory=pageFactory;
-        this.dependencyInjector=dependencyInjector;
+        this.pageFactory = pageFactory;
+        this.dependencyInjector = dependencyInjector;
     }
-    protected void configure(){
+
+    protected void configure() {
         super.configure();
         this.bind(DependencyInjector.class).toInstance(this.dependencyInjector);
     }
