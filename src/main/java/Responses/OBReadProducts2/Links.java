@@ -3,8 +3,6 @@ package Responses.OBReadProducts2;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.annotation.Generated;
-
 
 public class Links {
 
@@ -19,7 +17,7 @@ public class Links {
 
         private String mSelf;
 
-        public Links.Builder withSelf(String self) {
+        public Builder withSelf(String self) {
             mSelf = self;
             return this;
         }
