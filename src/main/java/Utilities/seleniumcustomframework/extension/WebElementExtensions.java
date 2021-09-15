@@ -1,8 +1,15 @@
-package Utilities.seleniumcustomframework.extension;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.test.seleniumcustomframework.extension;
 
 public interface WebElementExtensions {
     boolean isPresent();
+
     String getValue();
+
     void set(String var1);
 
     String getHiddenText();
@@ -11,13 +18,13 @@ public interface WebElementExtensions {
 
     void doubleClick();
 
-    void  dropOnto(PageElement var1);
+    void dropOnto(PageElement var1);
 
     PageElement waitFor(Integer var1);
 
     PageElement waitFor();
 
-    PageElement waitUntilGone(Integer var1);
+    void waitUntilGone(Integer var1);
 
     void waitUntilGone();
 
@@ -29,7 +36,7 @@ public interface WebElementExtensions {
 
     PageElement waitUntilVisible();
 
-    PageElement waitUntilStopMoving(Integer var1);
+    PageElement waitUntilStopsMoving(Integer var1);
 
-    PageElement waitUntilStopMoving();
+    PageElement waitUntilStopsMoving();
 }
