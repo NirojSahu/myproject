@@ -4,8 +4,6 @@ package Responses.OBReadProducts2;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.util.List;
-import javax.annotation.Generated;
-
 
 
 public class Data {
@@ -21,7 +19,7 @@ public class Data {
 
         private List<Product> mProduct;
 
-        public Data.Builder withProduct(List<Product> product) {
+        public Builder withProduct(List<Product> product) {
             mProduct = product;
             return this;
         }
