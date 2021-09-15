@@ -1,24 +1,29 @@
-package Utilities.seleniumcustomframework.extension.handlers;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.seleniumcustomframework.extension.ElementListImpl;
+package com.test.seleniumcustomframework.extension.handlers;
 
+import com.test.seleniumcustomframework.extension.ElementListImpl;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.List;
 
-public class ElementListHandler  implements InvocationHandler {
+public class ElementListHandler implements InvocationHandler {
     private List elementList;
-    private ElementListImpl extensionListHandler;
+    private ElementListImpl extensionsListHandler;
 
-    public void ElementHandler(List element, ElementListImpl extensionHandler){
-        this.elementList=element;
-        this.extensionListHandler=extensionHandler;
+    public ElementListHandler(List element, ElementListImpl extensionsHandler) {
+        this.elementList = element;
+        this.extensionsListHandler = extensionsHandler;
     }
+
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         try {
-            return this.extensionListHandler.canHandle(method) ? method.invoke(this.extensionListHandler,args):method.invoke(this.elementList,args);
-        }catch (InvocationTargetException var5){
+            return this.extensionsListHandler.canHandle(method) ? method.invoke(this.extensionsListHandler, args) : method.invoke(this.elementList, args);
+        } catch (InvocationTargetException var5) {
             throw var5.getCause();
         }
     }
