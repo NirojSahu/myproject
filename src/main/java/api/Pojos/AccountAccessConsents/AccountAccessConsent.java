@@ -1,44 +1,38 @@
-
 package api.Pojos.AccountAccessConsents;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-public class AccountAccessConsent {
+
+public class AccountAccessContent {
 
     @JsonProperty("Data")
-    private Data mData;
+    public Data data;
+
     @JsonProperty("Risk")
-    private Risk mRisk;
+    public Object risk;
 
-    public Data getData() {
-        return mData;
+    public Object getRisk ()
+    {
+        return risk ;
     }
 
-    public Risk getRisk() {
-        return mRisk;
+    public void setRisk (Object risk)
+    {
+        this.risk = risk;
     }
 
-    public static class Builder {
-
-        private Data mData;
-        private Risk mRisk;
-
-        public AccountAccessConsent.Builder withData(Data data) {
-            mData = data;
-            return this;
-        }
-
-        public AccountAccessConsent.Builder withRisk(Risk risk) {
-            mRisk = risk;
-            return this;
-        }
-
-        public AccountAccessConsent build() {
-            AccountAccessConsent accountAccessConsent = new AccountAccessConsent();
-            accountAccessConsent.mData = mData;
-            accountAccessConsent.mRisk = mRisk;
-            return accountAccessConsent;
-        }
-
+    public Data getData ()
+    {
+        return data;
     }
 
+    public void setData (Data data)
+    {
+        this.data = data;
+    }
+
+    @Override
+    public String toString()
+    {
+        return "[Data = "+ data +", Risk = "+ risk +"]";
+    }
 }
