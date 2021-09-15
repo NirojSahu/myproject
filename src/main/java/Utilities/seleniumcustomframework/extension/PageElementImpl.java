@@ -7,8 +7,9 @@ package Utilities.seleniumcustomframework.extension;
 
 import Utilities.seleniumcustomframework.extension.handlers.Refreshable;
 import Utilities.seleniumcustomframework.extension.handlers.WebElementHandler;
-import com.test.seleniumcustomframework.extension.webdriverConditions.ElementLocationStaticCondition;
-import com.test.seleniumcustomframework.extension.webdriverConditions.ElementPresentCondition;
+import Utilities.seleniumcustomframework.extension.webdriverConditions.ElementPresentCondition;
+import Utilities.seleniumcustomframework.extension.webdriverConditions.ElementLocationStaticCondition;
+import Utilities.seleniumcustomframework.extension.webdriverConditions.ElementPresentCondition;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
@@ -99,7 +100,8 @@ public class PageElementImpl implements PageElement {
     }
 
     public PageElement waitFor(Integer timeout) {
-        this.getWebDriverWait((long)timeout).until(new ElementPresentCondition(this.webElement));
+//        this.getWebDriverWait((long)timeout).until(new ElementPresentCondition(this.webElement));
+//        this.getWebDriverWait((long)timeout).until(new ElementPresentCondition(this.webElement));
         return this;
     }
 
@@ -109,7 +111,7 @@ public class PageElementImpl implements PageElement {
 
     public void waitUntilGone(Integer timeout) {
         if (this.isPresent()) {
-            this.getWebDriverWait((long)timeout).until(ExpectedConditions.not(new ElementPresentCondition(this.webElement)));
+//            this.getWebDriverWait((long)timeout).until(ExpectedConditions.not(new ElementPresentCondition(this.webElement)));
         }
 
     }
@@ -119,7 +121,7 @@ public class PageElementImpl implements PageElement {
     }
 
     public PageElement waitUntilHidden(Integer timeout) {
-        this.getWebDriverWait((long)timeout).until(ExpectedConditions.not(ExpectedConditions.visibilityOf(this.webElement)));
+//        this.getWebDriverWait((long)timeout).until(ExpectedConditions.not(ExpectedConditions.visibilityOf(this.webElement)));
         return this;
     }
 
@@ -128,7 +130,7 @@ public class PageElementImpl implements PageElement {
     }
 
     public PageElement waitUntilVisible(Integer timeout) {
-        this.getWebDriverWait((long)timeout).until(ExpectedConditions.visibilityOf(this.webElement));
+//        this.getWebDriverWait((long)timeout).until(ExpectedConditions.visibilityOf(this.webElement));
         return this;
     }
 
@@ -141,7 +143,7 @@ public class PageElementImpl implements PageElement {
     }
 
     public PageElement waitUntilStopsMoving(Integer timeout) {
-        this.getWebDriverWait((long)timeout).until(new ElementLocationStaticCondition(this.webElement));
+//        this.getWebDriverWait((long)timeout).until(new ElementLocationStaticCondition(this.webElement));
         return this;
     }
 

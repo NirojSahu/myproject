@@ -5,8 +5,8 @@
 
 package Utilities.seleniumcustomframework.extension.fieldInitialisers;
 
-import com.test.seleniumcustomframework.extension.PageElement;
-import com.test.seleniumcustomframework.extension.PageSection;
+import Utilities.seleniumcustomframework.extension.PageElement;
+import Utilities.seleniumcustomframework.extension.PageSection;
 import Utilities.seleniumcustomframework.extension.annotations.Section;
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;

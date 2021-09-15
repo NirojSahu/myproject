@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.webdriverConditions;
+package Utilities.seleniumcustomframework.extension.webdriverConditions;
 
 import javax.annotation.Nullable;
 import org.openqa.selenium.Point;

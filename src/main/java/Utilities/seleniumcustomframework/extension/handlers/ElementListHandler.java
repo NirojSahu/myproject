@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.handlers;
+package Utilities.seleniumcustomframework.extension.handlers;
 
 import com.test.seleniumcustomframework.extension.ElementListImpl;
 import java.lang.reflect.InvocationHandler;

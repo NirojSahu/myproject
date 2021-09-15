@@ -7,13 +7,13 @@ package Utilities.seleniumcustomframework.extension.fieldInitialisers;
 
 import com.google.inject.Inject;
 import com.test.seleniumcustomframework.extension.ElementListImpl;
-import com.test.seleniumcustomframework.extension.PageElement;
+import Utilities.seleniumcustomframework.extension.PageElement;
 import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
 import Utilities.seleniumcustomframework.extension.exceptions.PageFactoryError;
-import com.test.seleniumcustomframework.extension.handlers.ElementListHandler;
+import Utilities.seleniumcustomframework.extension.handlers.ElementListHandler;
 import Utilities.seleniumcustomframework.extension.handlers.WebElementListHandler;
 import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
-import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
+import Utilities.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;

@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.helpers;
+package Utilities.seleniumcustomframework.extension.helpers;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.exceptions;
+package Utilities.seleniumcustomframework.extension.exceptions;
 
 public class RetryException extends RuntimeException {
     public RetryException(Exception exceptionThrown) {

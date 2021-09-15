@@ -6,8 +6,8 @@
 package Utilities.WebKit.ui.selenium.pageSelections;
 
 import com.google.inject.Inject;
-import com.test.seleniumcustomframework.extension.PageElement;
-import com.test.seleniumcustomframework.extension.PageSection;
+import Utilities.seleniumcustomframework.extension.PageElement;
+import Utilities.seleniumcustomframework.extension.PageSection;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 

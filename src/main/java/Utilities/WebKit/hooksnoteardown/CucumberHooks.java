@@ -3,12 +3,12 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.hooksnoteardown;
+package Utilities.WebKit.hooksnoteardown;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.test.configuration.Configuration;
-import com.test.context.Device;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.context.Device;
 import com.test.context.DeviceContext;
 import com.test.exceptions.StopTestException;
 import com.test.helper.PropertiesHelper;

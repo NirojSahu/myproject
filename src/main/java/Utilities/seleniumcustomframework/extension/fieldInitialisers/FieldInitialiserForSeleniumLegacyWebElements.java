@@ -9,7 +9,7 @@ import com.google.inject.Inject;
 import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
 import Utilities.seleniumcustomframework.extension.handlers.WebElementHandler;
 import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
-import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
+import Utilities.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 import org.openqa.selenium.SearchContext;

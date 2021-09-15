@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper;
+package Utilities.WebKit.helper;
 
 import com.test.configuration.Configuration;
 import com.test.exceptions.StopTestException;

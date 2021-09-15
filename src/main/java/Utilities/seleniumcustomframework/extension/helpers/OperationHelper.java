@@ -5,7 +5,7 @@
 
 package Utilities.seleniumcustomframework.extension.helpers;
 
-import com.test.seleniumcustomframework.extension.exceptions.RetryException;
+import Utilities.seleniumcustomframework.extension.exceptions.RetryException;
 import java.util.logging.Logger;
 
 class OperationHelper {

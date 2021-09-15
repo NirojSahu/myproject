@@ -3,18 +3,18 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper;
+package Utilities.WebKit.helper;
 
 import com.google.inject.Inject;
 import com.google.inject.Injector;
 import com.google.inject.name.Named;
-import com.test.annotations.Page;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
-import com.test.exceptions.TestDataError;
-import com.test.exceptions.UnexpectedPageException;
-import com.test.seleniumcustomframework.extension.PageElement;
-import com.test.seleniumcustomframework.extension.PageFactory;
+import Utilities.WebKit.annotations.Page;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
+import Utilities.WebKit.exceptions.TestDataError;
+import Utilities.WebKit.exceptions.UnexpectedPageException;
+import Utilities.seleniumcustomframework.extension.PageElement;
+import Utilities.seleniumcustomframework.extension.PageFactory;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;

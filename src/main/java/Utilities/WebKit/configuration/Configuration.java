@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
 import com.santander.api.lib.RestAssuredApi;
 import com.test.exceptions.StopTestException;

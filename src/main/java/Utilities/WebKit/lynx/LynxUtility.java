@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.lynx;
+package Utilities.WebKit.lynx;
 
 import com.test.helper.BasePage;
 import java.net.MalformedURLException;

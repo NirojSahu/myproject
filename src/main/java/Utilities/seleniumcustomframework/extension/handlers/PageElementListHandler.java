@@ -5,7 +5,7 @@
 
 package Utilities.seleniumcustomframework.extension.handlers;
 
-import com.test.seleniumcustomframework.extension.PageElementImpl;
+import Utilities.seleniumcustomframework.extension.PageElementImpl;
 import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
 import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
 import Utilities.seleniumcustomframework.extension.helpers.ReflectionHelper;

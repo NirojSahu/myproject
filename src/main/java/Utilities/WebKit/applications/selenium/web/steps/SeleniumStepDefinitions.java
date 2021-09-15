@@ -3,13 +3,12 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.applications.selenium.web.steps;
+package Utilities.WebKit.applications.selenium.web.steps;
 
 import com.google.inject.Inject;
-import com.test.helper.NavigationHelper;
-import com.test.ui.selenium.pageSections.SearchResult;
-import com.test.ui.selenium.pages.HomePage;
-import com.test.ui.selenium.pages.SearchResultsPage;
+import Utilities.WebKit.ui.selenium.pageSelections.SearchResult;
+import Utilities.WebKit.ui.selenium.pages.HomePage;
+import Utilities.WebKit.ui.selenium.pages.SearchResultsPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

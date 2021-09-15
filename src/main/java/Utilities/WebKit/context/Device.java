@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.context;
+package Utilities.WebKit.context;
 
 import cucumber.runtime.java.guice.ScenarioScoped;
 

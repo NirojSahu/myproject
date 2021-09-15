@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper;
+package Utilities.WebKit.helper;
 
 import com.google.inject.Inject;
 import java.util.concurrent.TimeUnit;

@@ -10,7 +10,7 @@ import Utilities.seleniumcustomframework.extension.dependencies.DependencyInject
 import Utilities.seleniumcustomframework.extension.exceptions.PageFactoryError;
 import Utilities.seleniumcustomframework.extension.handlers.PageElementListHandler;
 import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
-import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
+import Utilities.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 import java.util.List;

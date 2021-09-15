@@ -60,7 +60,7 @@ public class ImplementationFinder<T> {
             }
         } while(!valid);
 
-        return this.dependencyInjector.get(klass);
+        return (T) this.dependencyInjector.get(klass);
     }
 
     private Reflections getReflections(Class<T> pageClass) {

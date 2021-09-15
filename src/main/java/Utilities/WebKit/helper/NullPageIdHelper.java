@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper;
+package Utilities.WebKit.helper;
 
 public class NullPageIdHelper implements PageIdHelper {
     public NullPageIdHelper() {

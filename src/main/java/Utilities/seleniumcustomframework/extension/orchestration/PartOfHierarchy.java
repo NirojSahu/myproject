@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.extension.orchestration;
+package Utilities.seleniumcustomframework.extension.orchestration;
 
 interface PartOfHierarchy {
     PartOfHierarchy getParent();

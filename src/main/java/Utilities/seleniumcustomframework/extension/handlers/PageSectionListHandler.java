@@ -6,13 +6,13 @@
 package Utilities.seleniumcustomframework.extension.handlers;
 
 import com.google.inject.Provider;
-import com.test.seleniumcustomframework.extension.PageElementImpl;
-import com.test.seleniumcustomframework.extension.PageFactory;
-import com.test.seleniumcustomframework.extension.PageSection;
+import Utilities.seleniumcustomframework.extension.PageElementImpl;
+import Utilities.seleniumcustomframework.extension.PageFactory;
+import Utilities.seleniumcustomframework.extension.PageSection;
 import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
-import com.test.seleniumcustomframework.extension.helpers.FrameWrapper;
-import com.test.seleniumcustomframework.extension.helpers.ReflectionHelper;
-import com.test.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
+import Utilities.seleniumcustomframework.extension.helpers.FrameWrapper;
+import Utilities.seleniumcustomframework.extension.helpers.ReflectionHelper;
+import Utilities.seleniumcustomframework.extension.orchestration.WebDriverFrameSwitchingOrchestrator;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

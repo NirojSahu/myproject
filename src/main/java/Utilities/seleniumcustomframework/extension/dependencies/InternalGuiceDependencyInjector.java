@@ -7,7 +7,7 @@ package Utilities.seleniumcustomframework.extension.dependencies;
 
 import Utilities.seleniumcustomframework.extension.PageFactory;
 
-class InternalGuiceDependencyInjector extends GuiceDependencyInjector {
+public class InternalGuiceDependencyInjector extends GuiceDependencyInjector {
     private PageFactory pageFactory;
     private final DependencyInjector dependencyInjector;
 
