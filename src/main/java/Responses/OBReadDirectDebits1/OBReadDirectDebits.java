@@ -2,13 +2,12 @@
 package Responses.OBReadDirectDebits1;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.annotation.Generated;
-
+import com.google.gson.annotations.SerializedName;
 
 
-public class OBReadDirectDebits {
+public class OBReadDirectDebit {
 
+    @SerializedName("Data")
     @JsonProperty("Data")
     private Data mData;
     @JsonProperty("Links")
@@ -20,43 +19,24 @@ public class OBReadDirectDebits {
         return mData;
     }
 
+    public void setData(Data data) {
+        mData = data;
+    }
+
     public Links getLinks() {
         return mLinks;
+    }
+
+    public void setLinks(Links links) {
+        mLinks = links;
     }
 
     public Meta getMeta() {
         return mMeta;
     }
 
-    public static class Builder {
-
-        private Data mData;
-        private Links mLinks;
-        private Meta mMeta;
-
-        public OBReadDirectDebits.Builder withData(Data data) {
-            mData = data;
-            return this;
-        }
-
-        public OBReadDirectDebits.Builder withLinks(Links links) {
-            mLinks = links;
-            return this;
-        }
-
-        public OBReadDirectDebits.Builder withMeta(Meta meta) {
-            mMeta = meta;
-            return this;
-        }
-
-        public OBReadDirectDebits build() {
-            OBReadDirectDebits oBReadDirectDebits = new OBReadDirectDebits();
-            oBReadDirectDebits.mData = mData;
-            oBReadDirectDebits.mLinks = mLinks;
-            oBReadDirectDebits.mMeta = mMeta;
-            return oBReadDirectDebits;
-        }
-
+    public void setMeta(Meta meta) {
+        mMeta = meta;
     }
 
 }
