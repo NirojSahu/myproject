@@ -2,13 +2,12 @@
 package Responses.OBReadBeneficiaries3;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
-import javax.annotation.Generated;
-
+import com.google.gson.annotations.SerializedName;
 
 
 public class Meta {
 
+    @SerializedName("TotalPages")
     @JsonProperty("TotalPages")
     private Long mTotalPages;
 
@@ -20,7 +19,7 @@ public class Meta {
 
         private Long mTotalPages;
 
-        public Meta.Builder withTotalPages(Long totalPages) {
+        public Builder withTotalPages(Long totalPages) {
             mTotalPages = totalPages;
             return this;
         }
