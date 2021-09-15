@@ -1,19 +1,26 @@
-package Utilities.WebKit.helper;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.BasePage;
+package com.test.helper;
+
 import com.google.inject.Inject;
+import java.util.concurrent.TimeUnit;
 
 public class NavigationHelper {
     @Inject
     BasePage driver;
-    public NavigationHelper{
 
+    public NavigationHelper() {
     }
-    public void navigateTo(String url){
+
+    public void navigateTo(String url) {
         this.driver.currentBrowser().navigate().to(url);
-        this.driver.currentBrowser.manage().timeout().timeouts().implicityWait(60L,TimeUnit.SECONDS);
+        this.driver.currentBrowser().manage().timeouts().implicitlyWait(60L, TimeUnit.SECONDS);
     }
-    public void clearBrowserCache(){
+
+    public void clearBrowserCache() {
         this.driver.currentBrowser().manage().deleteAllCookies();
     }
 }
