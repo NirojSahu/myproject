@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.lynx;
+package Utilities.WebKit.lynx;
 
 public class PropertyReader {
     private static final String LYNX_URL = "http://lynxpreoff.unix.santanderuk.pre.corp/comunes/VAuth.php";

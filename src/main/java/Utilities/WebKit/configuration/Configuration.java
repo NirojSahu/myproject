@@ -6,7 +6,7 @@
 package Utilities.WebKit.configuration;
 
 import com.santander.api.lib.RestAssuredApi;
-import com.test.exceptions.StopTestException;
+import Utilities.WebKit.exceptions.StopTestException;
 import io.restassured.http.Headers;
 import io.restassured.response.Response;
 import java.io.File;

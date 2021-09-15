@@ -5,7 +5,7 @@
 
 package Utilities.WebKit.lynx;
 
-import com.test.helper.BasePage;
+import Utilities.WebKit.helper.BasePage;
 import java.net.MalformedURLException;
 import java.net.URL;
 import org.junit.Test;

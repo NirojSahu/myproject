@@ -3,11 +3,11 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.applications.taas_browser_health_checks;
+package Utilities.WebKit.applications.taas_browser_heath_check;
 
 import com.google.inject.Inject;
-import com.test.helper.NavigationHelper;
-import com.test.ui.taas.pages.LoginPage;
+import Utilities.WebKit.helper.NavigationHelper;
+import Utilities.WebKit.ui.tass.pages.LoginPage;
 import cucumber.api.java.en.And;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;

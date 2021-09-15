@@ -3,15 +3,15 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
 import com.google.inject.Injector;
 import com.google.inject.TypeLiteral;
 import com.google.inject.spi.TypeEncounter;
 import com.google.inject.spi.TypeListener;
-import com.test.seleniumcustomframework.extension.PageElement;
-import com.test.seleniumcustomframework.extension.annotations.Section;
-import com.test.seleniumcustomframework.extension.helpers.ClassHelper;
+import Utilities.seleniumcustomframework.extension.PageElement;
+import Utilities.seleniumcustomframework.extension.annotations.Section;
+import Utilities.seleniumcustomframework.extension.helpers.ClassHelper;
 import java.lang.reflect.Field;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;

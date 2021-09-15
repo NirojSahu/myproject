@@ -3,12 +3,12 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
 import com.google.inject.Injector;
 import com.google.inject.Provider;
 import com.google.inject.spi.InjectionListener;
-import com.test.seleniumcustomframework.extension.PageFactory;
+import Utilities.seleniumcustomframework.extension.PageFactory;
 
 public class PageObjectModelInjectionListener implements InjectionListener {
     private Provider<Injector> injector;

@@ -3,10 +3,10 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
+import Utilities.WebKit.exceptions.StopTestException;
 import com.google.inject.Provider;
-import com.test.exceptions.StopTestException;
 
 public class ConfigurationProvider implements Provider<Configuration> {
     public ConfigurationProvider() {

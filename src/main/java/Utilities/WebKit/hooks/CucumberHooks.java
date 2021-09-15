@@ -3,14 +3,14 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.hooks;
+package Utilities.WebKit.hooks;
 
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
-import com.test.configuration.Configuration;
-import com.test.context.Device;
-import com.test.context.DeviceContext;
-import com.test.exceptions.StopTestException;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.context.Device;
+import Utilities.WebKit.context.DeviceContext;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.test.helper.PropertiesHelper;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;

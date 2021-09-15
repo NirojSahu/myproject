@@ -3,10 +3,10 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
-import com.test.exceptions.StopTestException;
-import com.test.helper.LoggingHelper;
+import Utilities.WebKit.exceptions.*;
+import Utilities.WebKit.helper.LoggingHelper;
 import com.test.helper.ReportingHelper;
 import java.io.IOException;
 import java.lang.reflect.Constructor;

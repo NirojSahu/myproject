@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
 import java.io.IOException;
 import java.util.Properties;

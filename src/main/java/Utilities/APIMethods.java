@@ -1,7 +1,7 @@
 package Utilities;
 
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 import io.restassured.RestAssured;
 import io.restassured.authentication.CertificateAuthSettings;
 import io.restassured.config.EncoderConfig;

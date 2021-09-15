@@ -3,9 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.exceptions;
+package Utilities.WebKit.exceptions;
 
-import com.test.helper.ExecControlHelper;
+import Utilities.WebKit.helper.ExecControlHelper;
 
 public class StopTestException extends Exception {
     private static final long serialVersionUID = 1L;

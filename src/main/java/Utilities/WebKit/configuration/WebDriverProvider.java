@@ -3,15 +3,17 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
+import Utilities.WebKit.exceptions.StopTestException;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import com.google.inject.name.Named;
-import com.test.exceptions.StopTestException;
+import Utilities.WebKit.exceptions.StopTestException;
 import java.io.IOException;
 import java.net.URISyntaxException;
-import org.codehaus.jettison.json.JSONException;
+//import org.codehaus.jettison.json.JSONException;
+import org.json.JSONException;
 import org.openqa.selenium.WebDriver;
 
 public class WebDriverProvider implements Provider<WebDriver> {

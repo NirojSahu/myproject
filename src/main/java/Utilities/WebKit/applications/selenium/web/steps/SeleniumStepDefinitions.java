@@ -5,6 +5,7 @@
 
 package Utilities.WebKit.applications.selenium.web.steps;
 
+import Utilities.WebKit.helper.NavigationHelper;
 import com.google.inject.Inject;
 import Utilities.WebKit.ui.selenium.pageSelections.SearchResult;
 import Utilities.WebKit.ui.selenium.pages.HomePage;

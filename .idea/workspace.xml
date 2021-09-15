@@ -5,52 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/selenium/web/steps/seleniumStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/selenium/web/steps/SeleniumStepDefinitions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/taas_browser_heath_check/TaasBrowserHealthCheckStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/taas_browser_heath_check/TaaSBrowserHealthCheckStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/selenium/web/steps/SeleniumStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/selenium/web/steps/SeleniumStepDefinitions.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/taas_browser_heath_check/TaaSBrowserHealthCheckStepDefinitions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/taas_browser_heath_check/TaaSBrowserHealthCheckStepDefinitions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/Device.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/Device.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/EnvironmentConstants.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/EnvironmentConstants.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/ExecControlHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/ExecControlHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/LoggingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/LoggingHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/NavigationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/NavigationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/NullPageIdHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/NullPageIdHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/PageIdHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/PageIdHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/ConfigurationProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/ConfigurationProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/DI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/DI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageObjectModelInjectionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageObjectModelInjectionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageObjectModelTypeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageObjectModelTypeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/TestExecutionSystemProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/TestExecutionSystemProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/WebDriverProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/WebDriverProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/DeviceContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/DeviceContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/exceptions/StopTestException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/exceptions/StopTestException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/CucumberHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/CucumberHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/CucumberHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/CucumberHooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxLoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxLoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxTransactionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxTransactionPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchForm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pages/SearchResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/tass/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/tass/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageElementImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageElementImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/dependencies/InternalGuiceDependencyInjection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/dependencies/InternalGuiceDependencyInjector.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/exceptions/PageFactortError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/exceptions/PageFactoryError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/exceptions/RetryException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/exceptions/RetryException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldAssessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldAssessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElementLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElementLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageSections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageSections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageSelectionLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageSectionLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForSeleniumLegacyWebElementLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForSeleniumLegacyWebElementLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForSeleniumLegacyWebElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForSeleniumLegacyWebElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/DynamicHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/DynamicHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/ElementListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/ElementListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageElementHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageElementHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageElementListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageElementListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageSectionListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageSectionListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/WebElementListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/WebElementListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/ArrayHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/ArrayHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/FrameWeapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/FrameWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/ImplementationFinder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/ImplementationFinder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/OperationHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/OperationHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/ReflectionHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/helpers/ReflectionHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/orchestration/PartOfHierarchy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/orchestration/PartOfHierarchy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/orchestration/WebDriverFrameSwitchingOrchestrator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/orchestration/WebDriverFrameSwitchingOrchestrator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/webdriverConditions/ElementLocationStaticCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/webdriverConditions/ElementLocationStaticCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/webdriverConditions/ElementPresentCondition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/webdriverConditions/ElementPresentCondition.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/api/Pojos/AccountAccessConsents/AccountAccessConsent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/api/Pojos/AccountAccessConsents/AccountAccessContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/PropertyReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/PropertyReader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631715190772</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Starting new project">
+      <created>1631727801654</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631727801654</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -218,10 +202,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
-    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631715180992">
+    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631727793142">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631715180992" />
+    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631727793142" />
     <state x="321" y="124" key="MultipleFileMergeDialog" timestamp="1631715213988">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -234,5 +218,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="499" y="140" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1631726564499" />
+    <state x="389" y="0" width="587" height="728" key="find.popup" timestamp="1631730267417">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="0" width="587" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1631730267417" />
   </component>
 </project>

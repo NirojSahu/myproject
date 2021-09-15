@@ -17,10 +17,10 @@ public class DeviceContext {
     }
 
     public boolean isMobile() {
-        return this.device != null && this.device.type != null ? this.device.type.equalsIgnoreCase(Type.Mobile.toString()) : false;
+        return this.device != null && this.device.type != null ? this.device.type.equalsIgnoreCase(Device.Type.Mobile.toString()) : false;
     }
 
     public boolean isAPI() {
-        return this.device != null && this.device.type != null ? this.device.type.equalsIgnoreCase(Type.API.toString()) : false;
+        return this.device != null && this.device.type != null ? this.device.type.equalsIgnoreCase(Device.Type.API.toString()) : false;
     }
 }

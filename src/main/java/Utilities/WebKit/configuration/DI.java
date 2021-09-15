@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.configuration;
+package Utilities.WebKit.configuration;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
@@ -13,12 +13,12 @@ import com.google.inject.Provides;
 import com.google.inject.Stage;
 import com.google.inject.matcher.Matchers;
 import com.google.inject.name.Names;
-import com.test.annotations.StaticInjection;
-import com.test.exceptions.StopTestException;
-import com.test.seleniumcustomframework.extension.PageFactory;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyFactory;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyInjector;
-import com.test.seleniumcustomframework.extension.dependencies.InjectionError;
+import Utilities.WebKit.annotations.StaticInjection;
+import Utilities.WebKit.exceptions.*;
+import Utilities.seleniumcustomframework.extension.PageFactory;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyFactory;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.dependencies.InjectionError;
 import cucumber.api.guice.CucumberModules;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

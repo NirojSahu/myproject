@@ -3,9 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.lynx;
+package Utilities.WebKit.lynx;
 
-import com.test.helper.BasePage;
+import Utilities.WebKit.helper.BasePage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
