@@ -3,24 +3,21 @@ package Responses.OBReadProducts2;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import javax.annotation.Generated;
-
-
 
 public class Meta {
 
     @JsonProperty("TotalPages")
-    private Long mTotalPages;
+    private String mTotalPages;
 
-    public Long getTotalPages() {
+    public String getTotalPages() {
         return mTotalPages;
     }
 
     public static class Builder {
 
-        private Long mTotalPages;
+        private String mTotalPages;
 
-        public Meta.Builder withTotalPages(Long totalPages) {
+        public Builder withTotalPages(String totalPages) {
             mTotalPages = totalPages;
             return this;
         }
