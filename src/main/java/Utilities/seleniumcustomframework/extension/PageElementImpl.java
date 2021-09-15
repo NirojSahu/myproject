@@ -1,36 +1,55 @@
-package Utilities.seleniumcustomframework.extension;
-import Utilities.seleniumcustomframework.extension.handlers.Refreshable;
-import Utilities.seleniumcustomframework.extension.handlers.WebElementHandler;
-import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.interactions.Locatable;
-import org.openqa.selenium.interactions.internal.Coordinates;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
+
+package com.test.seleniumcustomframework.extension;
+
+import com.test.seleniumcustomframework.extension.handlers.Refreshable;
+import com.test.seleniumcustomframework.extension.handlers.WebElementHandler;
+import com.test.seleniumcustomframework.extension.webdriverConditions.ElementLocationStaticCondition;
+import com.test.seleniumcustomframework.extension.webdriverConditions.ElementPresentCondition;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 import java.util.List;
+import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
+import org.openqa.selenium.Rectangle;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.interactions.internal.Coordinates;
+import org.openqa.selenium.interactions.internal.Locatable;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class PageElementImpl implements PageElement{
-    private static final Integer DEFAULT_TIMEOUT=5000;
+public class PageElementImpl implements PageElement {
+    private static final Integer DEFAULT_TIMEOUT = 5000;
     private WebElement webElement;
     private Refreshable parent;
 
-
-    public PageElementImpl(WebElement webElement){
-        this.webElement=webElement;
+    public PageElementImpl(WebElement webElement) {
+        this.webElement = webElement;
     }
-    public boolean canHandle(Method methodName){
-        Method[] var2=this.getClass().getMethods();
-        int var3=var2.length;
 
-        for(int var4=0; var4<var3;++var4){
-            Method method=var2[var4];
-            if(method.getName().equals(methodName.getName())){
+    public boolean canHandle(Method methodName) {
+        Method[] var2 = this.getClass().getMethods();
+        int var3 = var2.length;
+
+        for(int var4 = 0; var4 < var3; ++var4) {
+            Method method = var2[var4];
+            if (method.getName().equals(methodName.getName())) {
                 return true;
             }
         }
+
         return false;
     }
 
@@ -38,38 +57,37 @@ public class PageElementImpl implements PageElement{
         try {
             this.webElement.getTagName();
             return true;
-        }catch(StaleElementReferenceException | NoSuchElementException var2){
+        } catch (StaleElementReferenceException | NoSuchElementException var2) {
             return false;
         }
     }
 
     public String getHiddenText() {
-        return (String)((JavascriptExecutor)this.getDriver()).executeScript("return arguments[0].innerText;",new Object[]{this.webElement});
+        return (String)((JavascriptExecutor)this.getDriver()).executeScript("return arguments[0].innerText;", new Object[]{this.webElement});
     }
-
 
     public String getValue() {
         return this.webElement.getAttribute("value");
     }
 
     public void set(String text) {
-        String tagName=this.webElement.getTagName();
-        if (tagName.equalsIgnoreCase("input")){
+        String tagName = this.webElement.getTagName();
+        if (tagName.equalsIgnoreCase("input")) {
             this.webElement.clear();
             this.webElement.sendKeys(new CharSequence[]{text});
-        }else {
-            if (!tagName.equalsIgnoreCase("select")){
-                throw new Error("Cannot set element value: "+ tagName);
+        } else {
+            if (!tagName.equalsIgnoreCase("select")) {
+                throw new Error("Cannot set elements value: " + tagName);
             }
-            Select select=new Select(this.webElement);
-            select.selectByVisibleText(text);
+
+            Select select = new Select(this.webElement);
+            select.selectByValue(text);
         }
+
     }
 
-
-
     public void set(String format, Object... args) {
-        this.set(String.format(format,args));
+        this.set(String.format(format, args));
     }
 
     public void doubleClick() {
@@ -77,73 +95,58 @@ public class PageElementImpl implements PageElement{
     }
 
     public void dropOnto(PageElement target) {
-        (new Actions(this.getDriver())).dragAndDrop(this.webElement,target).perform();
+        (new Actions(this.getDriver())).dragAndDrop(this.webElement, target).perform();
     }
 
     public PageElement waitFor(Integer timeout) {
-        //this.getWebDriverWait((long) timeout).until(new ElementPresentCondition(this.webElement));
+        this.getWebDriverWait((long)timeout).until(new ElementPresentCondition(this.webElement));
         return this;
     }
 
     public PageElement waitFor() {
-
         return this.waitFor(DEFAULT_TIMEOUT);
     }
 
-    public PageElement waitUntilGone(Integer timeout) {
-        if(this.isPresent()){
-            //this.getWebDriverWait((long) timeout).until(ExpectedConditions.not(new ElementPresentCondition(this.webElement)));
-
+    public void waitUntilGone(Integer timeout) {
+        if (this.isPresent()) {
+            this.getWebDriverWait((long)timeout).until(ExpectedConditions.not(new ElementPresentCondition(this.webElement)));
         }
-        return null;
+
     }
+
     public void waitUntilGone() {
         this.waitUntilGone(DEFAULT_TIMEOUT);
     }
 
     public PageElement waitUntilHidden(Integer timeout) {
-      //  this.getWebDriverWait((long) timeout).until(ExpectedConditions.visibilityOf(this.webElement));
+        this.getWebDriverWait((long)timeout).until(ExpectedConditions.not(ExpectedConditions.visibilityOf(this.webElement)));
         return this;
     }
 
     public PageElement waitUntilHidden() {
-        return this.waitUntilGone(DEFAULT_TIMEOUT);
+        return this.waitUntilHidden(DEFAULT_TIMEOUT);
     }
 
     public PageElement waitUntilVisible(Integer timeout) {
-//      this.getWebDriverWait((long) timeout).until(ExpectedConditions.visibilityOf(this.webElement));
+        this.getWebDriverWait((long)timeout).until(ExpectedConditions.visibilityOf(this.webElement));
         return this;
     }
 
     public PageElement waitUntilVisible() {
-        return this.waitUntilGone(DEFAULT_TIMEOUT);
+        return this.waitUntilVisible(DEFAULT_TIMEOUT);
     }
 
-    public PageElement waitUntilStopMoving(Integer timeout) {
-//        this.getWebDriverWait((long) timeout).until(new ElementLocationStaticCondition(this.webElement));
+    public PageElement waitUntilStopsMoving() {
+        return this.waitUntilStopsMoving(DEFAULT_TIMEOUT);
+    }
+
+    public PageElement waitUntilStopsMoving(Integer timeout) {
+        this.getWebDriverWait((long)timeout).until(new ElementLocationStaticCondition(this.webElement));
         return this;
     }
 
-    public PageElement waitUntilStopMoving() {
-        return this.waitUntilGone(DEFAULT_TIMEOUT);
-    }
-
-
-    public void invalidate() {
-        InvocationHandler invocationHandler=Proxy.getInvocationHandler(this.webElement);
-        if (invocationHandler!=null && invocationHandler instanceof Refreshable){
-            ((Refreshable)invocationHandler).invalidate();
-        }
-    }
-
-    public void refresh() {
-        if (this.parent!=null){
-            this.parent.refresh();
-        }
-    }
-
-    public void setParent(Refreshable refreshable) {
-        this.parent=refreshable;
+    public WebElement getWrappedElement() {
+        return this.webElement;
     }
 
     public void click() {
@@ -167,7 +170,7 @@ public class PageElementImpl implements PageElement{
     }
 
     public String getAttribute(String s) {
-         return this.webElement.getAttribute(s);
+        return this.webElement.getAttribute(s);
     }
 
     public boolean isSelected() {
@@ -175,7 +178,7 @@ public class PageElementImpl implements PageElement{
     }
 
     public boolean isEnabled() {
-         return this.webElement.isEnabled();
+        return this.webElement.isEnabled();
     }
 
     public String getText() {
@@ -206,39 +209,53 @@ public class PageElementImpl implements PageElement{
         return this.webElement.getRect();
     }
 
-    public String getCssValue(String propertyName) {
-        return null;
-    }
-
-    public <X> X getScreenshotAs(OutputType<X> target) throws WebDriverException {
-        return this.webElement.getScreenshotAs(target);
-    }
-
-    public WebElement getWrappedElement() {
-        return null;
+    public String getCssValue(String s) {
+        return this.webElement.getCssValue(s);
     }
 
     public Coordinates getCoordinates() {
         return (Coordinates)((Locatable)this.webElement).getCoordinates();
     }
 
+    private WebDriverWait getWebDriverWait(long timeout) {
+        return this.getWebDriverWait(timeout, 100L);
+    }
 
-    private WebDriver getDriver(){
-        if(this.webElement instanceof Proxy){
-            InvocationHandler invocationHandler=Proxy.getInvocationHandler(this.webElement);
-            if (invocationHandler instanceof WebElementHandler){
+    private WebDriverWait getWebDriverWait(long timeout, long interval) {
+        return new WebDriverWait(this.getDriver(), (long)Math.round((float)timeout / 1000.0F), interval);
+    }
+
+    public void invalidate() {
+        InvocationHandler invocationHandler = Proxy.getInvocationHandler(this.webElement);
+        if (invocationHandler != null && invocationHandler instanceof Refreshable) {
+            ((Refreshable)invocationHandler).invalidate();
+        }
+
+    }
+
+    public void refresh() {
+        if (this.parent != null) {
+            this.parent.refresh();
+        }
+
+    }
+
+    public void setParent(Refreshable refreshable) {
+        this.parent = refreshable;
+    }
+
+    private WebDriver getDriver() {
+        if (this.webElement instanceof Proxy) {
+            InvocationHandler invocationHandler = Proxy.getInvocationHandler(this.webElement);
+            if (invocationHandler instanceof WebElementHandler) {
                 return ((WebElementHandler)invocationHandler).getDriver();
             }
         }
+
         return null;
     }
-    private WebDriverWait getWebDriverWait(long timeout) {
-        return this.getWebDriverWait(timeout,100L);
+
+    public <X> X getScreenshotAs(OutputType<X> target) {
+        return this.webElement.getScreenshotAs(target);
     }
-
-    private WebDriverWait getWebDriverWait(long timeout,long interval) {
-        return new WebDriverWait(this.getDriver(),(long)Math.round((float) timeout/1000.0F),interval);
-    }
-
-
 }
