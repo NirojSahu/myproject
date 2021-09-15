@@ -1,10 +1,14 @@
-package Utilities.seleniumcustomframework.extension.handlers;
+//
+// Source code recreated from a .class file by IntelliJ IDEA
+// (powered by Fernflower decompiler)
+//
 
-import Utilities.seleniumcustomframework.extension.exceptions.PageFactortError;
+package com.test.seleniumcustomframework.extension.handlers;
 
 public interface Refreshable {
-    void invalidate() throws PageFactortError;
+    void invalidate();
 
-    void refresh() throws PageFactortError;
+    void refresh();
+
     void setParent(Refreshable var1);
 }
