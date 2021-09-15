@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/Device.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/health_check/Taas_browser_health_check.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/selenium/selenium.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/BrowserHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/BrowserHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxHooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/screenshothook/ScreenshotHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/Device.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/DeviceContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/DeviceContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/tass/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/pageSelections/SearchForm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchForm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/pageSelections/SearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/pageSelections/SearchResults.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchResults.groovy" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/pages/SearchResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pages/SearchResultsPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,7 +127,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631695600426</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Starting new project">
+      <created>1631701115453</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631701115453</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Starting new project">
+      <created>1631701241861</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631701241861</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -140,17 +150,21 @@
     <option name="LAST_COMMIT_MESSAGE" value="Starting new project" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="316" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1631702297500">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="316" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1631702297500" />
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631701062487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
-    <state x="257" y="0" key="CommitChangelistDialog2" timestamp="1631695595233">
+    <state x="257" y="0" key="CommitChangelistDialog2" timestamp="1631701240098">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="257" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631695595233" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631701079634">
+    <state x="257" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631701240098" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631701250767">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631701079634" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631701250767" />
   </component>
 </project>

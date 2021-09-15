@@ -3,11 +3,11 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.ui.selenium.pages;
+package Utilities.WebKit.ui.selenium.pages;
 
 import com.test.seleniumcustomframework.extension.PageElement;
 import com.test.seleniumcustomframework.extension.annotations.Section;
-import com.test.ui.selenium.pageSections.SearchResults;
+import Utilities.WebKit.ui.selenium.pageSelections.SearchResults;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchResultsPage {

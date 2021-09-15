@@ -3,10 +3,10 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.ui.selenium.pages;
+package Utilities.WebKit.ui.selenium.pages;
 
+import Utilities.WebKit.ui.selenium.pageSelections.SearchForm;
 import com.test.seleniumcustomframework.extension.annotations.Section;
-import com.test.ui.selenium.pageSections.SearchForm;
 import org.openqa.selenium.support.FindBy;
 
 public class HomePage {

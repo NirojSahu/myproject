@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.ui.selenium.pageSections;
+package Utilities.WebKit.ui.selenium.pageSelections;
 
 import com.google.inject.Inject;
 import com.test.seleniumcustomframework.extension.PageElement;
