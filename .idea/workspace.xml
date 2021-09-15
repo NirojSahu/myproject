@@ -5,36 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/applications/taas_browser_heath_check/TaasBrowserHealthCheckStepDefinitions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/ExecControlHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/StopTestException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/WebElementListHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/orchestration/PartOfHierarchy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/CommonFunctions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/Device.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/health_check/Taas_browser_health_check.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/selenium/selenium.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/BrowserHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/BrowserHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxHooks.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/screenshothook/ScreenshotHooks.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/NullPageIdHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/NullPageIdHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/PageIdHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/PageIdHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/TimeoutHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/TimeoutHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/UnexpectedPageException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/exceptions/UnexpectedPageException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/annotations/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/annotations/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElementLists.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElementLists.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageLElementListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageElementListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/Refreshable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/Refreshable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/TransactionsService" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/TransactionsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/App_genericFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/App_genericFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/CaptureScreenshotUtils" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/CaptureScreenshotUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/CommonFunctions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/CommonVariables" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/CommonVariables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/JWT_Generic_4A" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/JWT_Generic_4A.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/JWT_Generic_Prod" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/JWT_Generic_Prod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/Jwt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/Report_Jenkin" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/Report_Jenkin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/SeleniumHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/SeleniumHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/jwt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/jwt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/Device.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/DeviceContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/context/DeviceContext.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +58,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java/com/test/Utils" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/selenium" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -92,6 +72,8 @@
       <recent name="C:\my DATA\workspace\mybackupproject\src\test" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit\features\selenium" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit\features\health_check" />
       <recent name="C:\my DATA\workspace\mybackupproject\src\test\java\com\test\Utils" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
@@ -142,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598536742550</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Starting new project">
+      <created>1631695600426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631695600426</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -151,13 +140,17 @@
     <option name="LAST_COMMIT_MESSAGE" value="Starting new project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631693729218">
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631701062487">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631693729218" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631689920419">
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
+    <state x="257" y="0" key="CommitChangelistDialog2" timestamp="1631695595233">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631689920419" />
+    <state x="257" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631695595233" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631701079634">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631701079634" />
   </component>
 </project>

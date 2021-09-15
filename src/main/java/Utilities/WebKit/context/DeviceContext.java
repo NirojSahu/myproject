@@ -3,10 +3,9 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.context;
+package Utilities.WebKit.context;
 
 import com.google.inject.Inject;
-import com.test.context.Device.Type;
 import cucumber.runtime.java.guice.ScenarioScoped;
 
 @ScenarioScoped
