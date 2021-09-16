@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.seleniumcustomframework.guice;
+package Utilities.seleniumcustomframeworkguice;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Guice;
@@ -13,10 +13,10 @@ import com.google.inject.Provides;
 import com.google.inject.Singleton;
 import com.google.inject.Stage;
 import com.google.inject.matcher.Matchers;
-import com.test.seleniumcustomframework.extension.PageFactory;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyFactory;
-import com.test.seleniumcustomframework.extension.dependencies.DependencyInjector;
-import com.test.seleniumcustomframework.extension.dependencies.InjectionError;
+import Utilities.seleniumcustomframework.extension.PageFactory;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyFactory;
+import Utilities.seleniumcustomframework.extension.dependencies.DependencyInjector;
+import Utilities.seleniumcustomframework.extension.dependencies.InjectionError;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;

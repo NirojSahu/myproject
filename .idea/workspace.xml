@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/PageObjectModelInjectionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/PageObjectModelInjectionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/PageObjectModelInjectionListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/PageObjectModelTypeListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/PageObjectModelTypeListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/SeleniumPomGuiceModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/SeleniumPomGuiceModule.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631777409321</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Starting new project">
+      <created>1631777744327</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631777744327</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -208,10 +218,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
-    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631777398384">
+    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631777742344">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631777398384" />
+    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631777742344" />
     <state x="213" y="17" key="Maven.ArtifactSearchDialog" timestamp="1631733999993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -220,10 +230,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="321" y="124" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1631731270876" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631733377579">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631777752682">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631733377579" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631777752682" />
     <state x="499" y="140" key="chooseDestDirectoryDialog" timestamp="1631726564499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
