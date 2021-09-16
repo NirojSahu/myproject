@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/RestAssuredApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/RestAssuredApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/RestTemplateAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/RestTemplateAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/SchemaValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/SchemaValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/utils/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/annotations/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/annotations/Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/exceptions/TestDataError.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/exceptions/TestDataError.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/TimeoutHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/TimeoutHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/utils/ExcelReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/utils/ExcelReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframeworkguice/PageObjectModelInjectionListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631733366745</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Starting new project">
+      <created>1631777409321</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631777409321</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -210,10 +208,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
-    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631733364779">
+    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631777398384">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631733364779" />
+    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631777398384" />
     <state x="213" y="17" key="Maven.ArtifactSearchDialog" timestamp="1631733999993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
