@@ -215,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631784541038</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Starting new project">
+      <created>1631785687799</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631785687799</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -224,6 +231,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Starting new project" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="458" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631785653892">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="458" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1631785653892" />
     <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1631724089914">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -236,10 +247,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
-    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631784538907">
+    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631785686026">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631784538907" />
+    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631785686026" />
     <state x="213" y="17" key="Maven.ArtifactSearchDialog" timestamp="1631733999993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -248,10 +259,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="321" y="124" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1631731270876" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631781581731">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631785698095">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631781581731" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631785698095" />
     <state x="499" y="140" key="chooseDestDirectoryDialog" timestamp="1631726564499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
