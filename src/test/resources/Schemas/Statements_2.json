@@ -1,0 +1,109 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Meta": {
+      "type": "object",
+      "properties": {
+        "TotalPages": {
+          "type": "integer"
+        }
+      },
+      "required": [
+        "TotalPages"
+      ]
+    },
+    "Links": {
+      "type": "object",
+      "properties": {
+        "Self": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "Self"
+      ]
+    },
+    "Data": {
+      "type": "object",
+      "properties": {
+        "Statement": {
+          "type": "object",
+          "properties": {
+            "Type": {
+              "type": "string"
+            },
+            "AccountId": {
+              "type": "string"
+            },
+            "StartDateTime": {
+              "type": "string"
+            },
+            "CreationDateTime": {
+              "type": "string"
+            },
+            "EndDateTime": {
+              "type": "string"
+            },
+            "StatementId": {
+              "type": "string"
+            },
+            "StatementAmount": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "Type": {
+                      "type": "string"
+                    },
+                    "Amount": {
+                      "type": "object",
+                      "properties": {
+                        "Amount": {
+                          "type": "string"
+                        },
+                        "Currency": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "Amount",
+                        "Currency"
+                      ]
+                    },
+                    "CreditDebitIndicator": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "Type",
+                    "Amount",
+                    "CreditDebitIndicator"
+                  ]
+                }
+              ]
+            }
+          },
+          "required": [
+            "Type",
+            "AccountId",
+            "StartDateTime",
+            "CreationDateTime",
+            "EndDateTime",
+            "StatementId",
+            "StatementAmount"
+          ]
+        }
+      },
+      "required": [
+        "Statement"
+      ]
+    }
+  },
+  "required": [
+    "Meta",
+    "Links",
+    "Data"
+  ]
+}

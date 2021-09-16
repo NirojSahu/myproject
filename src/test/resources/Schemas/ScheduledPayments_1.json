@@ -1,0 +1,305 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "Data",
+    "Links",
+    "Meta"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "ScheduledPayment": [
+            {
+              "ScheduledType": "Execution",
+              "ScheduledPaymentDateTime": "2017-05-05T00:00:00+00:00",
+              "ScheduledPaymentId": "SP03",
+              "AccountId": "22289",
+              "CreditorAccount": {
+                "Name": "Mr Tee",
+                "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                "Identification": "23605490179017"
+              },
+              "InstructedAmount": {
+                "Amount": "10.00",
+                "Currency": "GBP"
+              }
+            }
+          ]
+        }
+      ],
+      "required": [
+        "ScheduledPayment"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "ScheduledPayment": {
+          "$id": "#/properties/Data/properties/ScheduledPayment",
+          "type": "array",
+          "title": "The ScheduledPayment schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "ScheduledPaymentId": "SP03",
+                "AccountId": "22289",
+                "CreditorAccount": {
+                  "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                  "Identification": "23605490179017",
+                  "Name": "Mr Tee"
+                },
+                "InstructedAmount": {
+                  "Amount": "10.00",
+                  "Currency": "GBP"
+                },
+                "ScheduledType": "Execution",
+                "ScheduledPaymentDateTime": "2017-05-05T00:00:00+00:00"
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Data/properties/ScheduledPayment/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "AccountId": "22289",
+                    "InstructedAmount": {
+                      "Amount": "10.00",
+                      "Currency": "GBP"
+                    },
+                    "CreditorAccount": {
+                      "Name": "Mr Tee",
+                      "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                      "Identification": "23605490179017"
+                    },
+                    "ScheduledType": "Execution",
+                    "ScheduledPaymentDateTime": "2017-05-05T00:00:00+00:00",
+                    "ScheduledPaymentId": "SP03"
+                  }
+                ],
+                "required": [
+                  "AccountId",
+                  "ScheduledPaymentId",
+                  "ScheduledPaymentDateTime",
+                  "ScheduledType",
+                  "InstructedAmount",
+                  "CreditorAccount"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "AccountId": {
+                    "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/AccountId",
+                    "type": "string",
+                    "title": "The AccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "22289"
+                    ]
+                  },
+                  "ScheduledPaymentId": {
+                    "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/ScheduledPaymentId",
+                    "type": "string",
+                    "title": "The ScheduledPaymentId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "SP03"
+                    ]
+                  },
+                  "ScheduledPaymentDateTime": {
+                    "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/ScheduledPaymentDateTime",
+                    "type": "string",
+                    "title": "The ScheduledPaymentDateTime schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2017-05-05T00:00:00+00:00"
+                    ]
+                  },
+                  "ScheduledType": {
+                    "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/ScheduledType",
+                    "type": "string",
+                    "title": "The ScheduledType schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Execution"
+                    ]
+                  },
+                  "InstructedAmount": {
+                    "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/InstructedAmount",
+                    "type": "object",
+                    "title": "The InstructedAmount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "Amount": "10.00",
+                        "Currency": "GBP"
+                      }
+                    ],
+                    "required": [
+                      "Amount",
+                      "Currency"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                      "Amount": {
+                        "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/InstructedAmount/properties/Amount",
+                        "type": "string",
+                        "title": "The Amount schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "10.00"
+                        ]
+                      },
+                      "Currency": {
+                        "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/InstructedAmount/properties/Currency",
+                        "type": "string",
+                        "title": "The Currency schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "GBP"
+                        ]
+                      }
+                    }
+                  },
+                  "CreditorAccount": {
+                    "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/CreditorAccount",
+                    "type": "object",
+                    "title": "The CreditorAccount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                        "Identification": "23605490179017",
+                        "Name": "Mr Tee"
+                      }
+                    ],
+                    "required": [
+                      "SchemeName",
+                      "Identification",
+                      "Name"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                      "SchemeName": {
+                        "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/CreditorAccount/properties/SchemeName",
+                        "type": "string",
+                        "title": "The SchemeName schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "UK.OBIE.SortCodeAccountNumber"
+                        ]
+                      },
+                      "Identification": {
+                        "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/CreditorAccount/properties/Identification",
+                        "type": "string",
+                        "title": "The Identification schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "23605490179017"
+                        ]
+                      },
+                      "Name": {
+                        "$id": "#/properties/Data/properties/ScheduledPayment/items/anyOf/0/properties/CreditorAccount/properties/Name",
+                        "type": "string",
+                        "title": "The Name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "Mr Tee"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://api.alphabank.com/open-banking/v3.1/aisp/accounts/22289/scheduled-payments/"
+        }
+      ],
+      "required": [
+        "Self"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://api.alphabank.com/open-banking/v3.1/aisp/accounts/22289/scheduled-payments/"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": 1.0
+        }
+      ],
+      "required": [
+        "TotalPages"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "integer",
+          "title": "The TotalPages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1.0
+          ]
+        }
+      }
+    }
+  }
+}
