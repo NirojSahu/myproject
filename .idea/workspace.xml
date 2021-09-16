@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="" />
+    <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,31 +50,33 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/Utilities" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/selenium" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/Transactions" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit" />
-      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\health_check" />
-      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features" />
-      <recent name="C:\my DATA\workspace\mybackupproject\src\test\java\com\test\stepDefs" />
-      <recent name="C:\my DATA\workspace\mybackupproject\src\test" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit\features\selenium" />
-      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit\features\health_check" />
-      <recent name="C:\my DATA\workspace\mybackupproject\src\test\java\com\test\Utils" />
-    </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="Utilities.WebKit.helper" />
       <recent name="Utilities.seleniumcustomframework.extension.handlers" />
       <recent name="Utilities.seleniumcustomframework.extension.fieldInitialisers" />
       <recent name="Utilities.seleniumcustomframework.extension.helpers" />
       <recent name="Utilities.seleniumcustomframework.extension.fromselenium" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\Transactions" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\Statement" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\StandingOrder" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\ScheduledPayment" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\DirectDebits" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\health_check" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\java\com\test\stepDefs" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -199,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1631780967926</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Starting new project">
+      <created>1631781502428</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631781502428</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -220,10 +231,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
-    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631780966122">
+    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631781500637">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631780966122" />
+    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631781500637" />
     <state x="213" y="17" key="Maven.ArtifactSearchDialog" timestamp="1631733999993">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -232,10 +243,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="321" y="124" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1631731270876" />
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631777752682">
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631781581731">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631777752682" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631781581731" />
     <state x="499" y="140" key="chooseDestDirectoryDialog" timestamp="1631726564499">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
