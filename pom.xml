@@ -113,30 +113,6 @@ plugin -->
                     <target>1.8</target>
                 </configuration>
             </plugin>
-<!--                        <plugin>-->
-<!--                            <groupId>maven.plugins</groupId>-->
-<!--                            <artifactId>cucumber-parallel-run-maven-plugin</artifactId>-->
-<!--                            <version>1.9</version>-->
-<!--                            <configuration>-->
-<!--                                <features>-->
-<!--                                    <feature>classpath:${cucumber.features}</feature>-->
-<!--                                </features>-->
-<!--                                <dryRun>false</dryRun>-->
-<!--                                <combineReports>true</combineReports>-->
-<!--                                <plugins>-->
-<!--                                    <plugin>junit:</plugin>-->
-<!--                                    <plugin>html:</plugin>-->
-<!--                                    <plugin>json:</plugin>-->
-<!--                                    <plugin>rerun:</plugin>-->
-<!--                                    <plugin>progress</plugin>-->
-<!--                                </plugins>-->
-<!--                                <threadCount>${thread.count}</threadCount>-->
-<!--                                <gluePaths>-->
-<!--                                    <gluePath>com.test.hooks</gluePath>-->
-<!--                                    <gluePath>com.test.applications. ${test.platform}</gluePath>-->
-<!--                                </gluePaths>-->
-<!--                            </configuration>-->
-<!--                        </plugin>-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -178,7 +154,7 @@ plugin -->
             </plugin>
         </plugins>
     </build>
-    <dependencies>>
+    <dependencies>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-chrome-driver</artifactId>
@@ -189,7 +165,6 @@ plugin -->
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
-    </dependencies>
 <!--        &lt;!&ndash; https://mvnrepository.com/artifact/com.github.temyers/cucumber-jvm-parallel-plugin &ndash;&gt;-->
 <!--        <dependency>-->
 <!--            <groupId>com.github.temyers</groupId>-->
@@ -348,9 +323,6 @@ plugin -->
                 </exclusion>
             </exclusions>
         </dependency>
-
-    <dependencyManagement>
-        <dependencies>
             <dependency>
                 <groupId>com.amazonaws</groupId>
                 <artifactId>aws-java-sdk-bom</artifactId>
@@ -358,12 +330,8 @@ plugin -->
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-        </dependencies>
-    </dependencyManagement>
-
     <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-
 assured -->
-    <dependencies>
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -609,20 +577,6 @@ https://mvnrepository.com/artifact/com.google.inject/guice -->
             <artifactId>guice</artifactId>
             <version>4.2.2</version>
         </dependency>
-
-        <!--        <dependency>-->
-        <!--            <groupId>com.test.seleniumcustomframework</groupId>-->
-        <!--            <artifactId>selenium-customframework</artifactId>-->
-        <!--            <version>${selenium.customframework.version}
-        </version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.test.seleniumcustomframework</groupId>-->
-        <!--            <artifactId>selenium-customframework-
-        guice</artifactId>-->
-        <!--            <version>${selenium.customframework.guice.version}
-        </version>-->
-        <!--        </dependency>-->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
@@ -643,11 +597,22 @@ https://mvnrepository.com/artifact/com.google.inject/guice -->
             <artifactId>httpcore</artifactId>
             <version>${httpcore.version}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.google.guava</groupId>-->
+<!--            <artifactId>guava</artifactId>-->
+<!--            <version>${guava.version}</version>-->
+<!--        </dependency>-->
+
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava-parent -->
         <dependency>
             <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>${guava.version}</version>
+            <artifactId>guava-parent</artifactId>
+            <version>22.0</version>
+            <type>pom</type>
         </dependency>
+
+
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
@@ -693,22 +658,6 @@ https://mvnrepository.com/artifact/com.google.inject/guice -->
             <artifactId>commons-dbutils</artifactId>
             <version>${commons-dbutils}</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>com.ibm.db2.jcc</groupId>-->
-        <!--            <artifactId>db2jcc</artifactId>-->
-        <!--            <version>${db2jcc}</version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.ibm.db2.jcc</groupId>-->
-        <!--            <artifactId>db2jcc4</artifactId>-->
-        <!--            <version>${db2jcc4}</version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.ibm.db2.jcc</groupId>-->
-        <!--            <artifactId>db2jcc4_license_cisuz</artifactId>-->
-        <!--            <version>${db2jcc4_license_cisuz}</version>-->
-        <!--        </dependency>-->
-        <!-- Api Level Testing -->
         <dependency>
             <groupId>com.jayway.restassured</groupId>
             <artifactId>rest-assured</artifactId>
@@ -726,8 +675,6 @@ https://mvnrepository.com/artifact/com.google.inject/guice -->
             <artifactId>jackson-databind</artifactId>
             <version>${jackson-core}</version>
         </dependency>
-        <!--
-https://mvnrepository.com/artifact/com.google.code.gson/gson -->
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -738,8 +685,6 @@ https://mvnrepository.com/artifact/com.google.code.gson/gson -->
             <artifactId>json-simple</artifactId>
             <version>${json}</version>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/commons-lang/commons-
-lang -->
         <dependency>
             <groupId>commons-lang</groupId>
             <artifactId>commons-lang</artifactId>
@@ -755,108 +700,31 @@ lang -->
             <artifactId>kafka_2.10</artifactId>
             <version>${kafka.version}</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>com.amazonaws</groupId>-->
-        <!--            <artifactId>aws-java-sdk-s3</artifactId>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.vimalselvam</groupId>-->
-        <!--            <artifactId>cucumber-
-extentsreport</artifactId>-->
-        <!--            <version>${cucumber-extentsreport.version}
-</version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>com.aventstack</groupId>-->
-        <!--            <artifactId>extentreports</artifactId>-->
-        <!--            <version>${aventstack-extentreports.version}
-</version>-->
-        <!--        </dependency>-->
-
         <dependency>
             <groupId>com.sikulix</groupId>
             <artifactId>sikulixapi</artifactId>
             <version>${sikuli}</version>
         </dependency>
-
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>${postgrejdbc}</version>
         </dependency>
-
         <dependency>
             <groupId>org.json</groupId>
             <artifactId>json</artifactId>
             <version>${orgjson}</version>
         </dependency>
-
-        <!-- Hadoop HIVE Connector -->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.hadoop</groupId>-->
-        <!--            <artifactId>hadoop-common</artifactId>-->
-        <!--            <version>2.6.0-cdh5.5.4</version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.hadoop</groupId>-->
-        <!--            <artifactId>hadoop-mapreduce-client-
-        core</artifactId>-->
-        <!--            <version>2.6.0-cdh5.5.4</version>-->
-        <!--        </dependency>-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.apache.hive</groupId>-->
-        <!--            <artifactId>hive-jdbc</artifactId>-->
-        <!--            <version>1.1.0-cdh5.5.4</version>-->
-        <!--        </dependency>-->
-        <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-
-exec -->
         <dependency>
             <groupId>org.apache.hive</groupId>
             <artifactId>hive-exec</artifactId>
             <version>1.2.0</version>
         </dependency>
-        <!--        <dependency>-->
-        <!--            <groupId>com.santander.api</groupId>-->
-        <!--            <artifactId>NitroApiKit</artifactId>-->
-        <!--            <version>2.1.0</version>-->
-        <!--        </dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>com.googlecode.json-simple</groupId>-->
-        <!--<artifactId>json-simple</artifactId>-->
-        <!--<version>1.1.1</version>-->
-        <!--</dependency>-->
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <version>3.1.0</version>
         </dependency>
-
-
-        <!-- Hadoop HIVE Connector -->
-
-        <!--<dependency>-->
-        <!--<groupId>org.seleniumhq.selenium</groupId>-->
-        <!--<artifactId>selenium-api</artifactId>-->
-        <!--<version>3.8.1</version>-->
-        <!--</dependency>-->
-
-
-        <!--<dependency>-->
-        <!--<groupId>org.seleniumhq.selenium</groupId>-->
-        <!--<artifactId>selenium-remote-driver</artifactId>-->
-        <!--<version>3.12.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.seleniumhq.selenium</groupId>-->
-        <!--<artifactId>selenium-support</artifactId>-->
-        <!--<version>3.12.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.seleniumhq.selenium</groupId>-->
-        <!--<artifactId>selenium-api</artifactId>-->
-        <!--<version>3.12.0</version>-->
-        <!--</dependency>-->
-
         <dependency>
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-core</artifactId>
@@ -877,6 +745,33 @@ exec -->
             <groupId>io.cucumber</groupId>
             <artifactId>cucumber-guice</artifactId>
             <version>${cucumber.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <!--<version>3.2.9.RELEASE</version>-->
+            <version>5.0.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.6.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.codehaus.jettison/jettison -->
+        <dependency>
+            <groupId>org.codehaus.jettison</groupId>
+            <artifactId>jettison</artifactId>
+            <version>1.4.1</version>
         </dependency>
 
     </dependencies>

@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.santander.api.utils;
+package Utilities.APIKit.api.utils;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.fge.jackson.JsonLoader;

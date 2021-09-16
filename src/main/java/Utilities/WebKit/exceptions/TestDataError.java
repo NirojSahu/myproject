@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.exceptions;
+package Utilities.WebKit.exceptions;
 
 public class TestDataError extends RuntimeException {
     public TestDataError(String message) {

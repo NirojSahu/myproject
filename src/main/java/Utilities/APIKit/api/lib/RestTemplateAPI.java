@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.santander.api.lib;
+package Utilities.APIKit.api.lib;
 
 import java.io.IOException;
 import java.security.KeyManagementException;
@@ -84,7 +84,7 @@ public class RestTemplateAPI {
         TrustStrategy acceptingTrustStrategy = (chain, authType) -> {
             return true;
         };
-        int port = true;
+        boolean port = true;
         System.setProperty("http.proxyHost", proxyHost);
         System.setProperty("http.proxyPort", proxyPort);
         SSLContext sslContext = SSLContextBuilder.create().loadKeyMaterial(ResourceUtils.getFile(fileAbsPath), password.toCharArray(), password.toCharArray()).loadTrustMaterial((KeyStore)null, acceptingTrustStrategy).build();

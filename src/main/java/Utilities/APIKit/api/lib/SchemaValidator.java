@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.santander.api.lib;
+package Utilities.APIKit.api.lib;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;

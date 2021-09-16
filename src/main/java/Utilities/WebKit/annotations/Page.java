@@ -13,5 +13,5 @@ public @interface Page {
     String path() default "";
     String title() default "";
 
-    Class<? extends PageIdHelper> pageIdDeligate() default NullPageIdHelper.class;
+    Class<? extends PageIdHelper> pageIdDelegate() default NullPageIdHelper.class;
 }

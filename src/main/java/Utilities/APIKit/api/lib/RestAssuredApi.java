@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.santander.api.lib;
+package Utilities.APIKit.api.lib;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;

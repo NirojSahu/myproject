@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper;
+package Utilities.WebKit.helper;
 
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;

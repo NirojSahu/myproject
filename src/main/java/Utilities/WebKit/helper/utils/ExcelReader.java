@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper.utils;
+package Utilities.WebKit.helper.utils;
 
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Connection;
