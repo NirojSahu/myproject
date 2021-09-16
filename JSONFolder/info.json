@@ -1,0 +1,18 @@
+{
+  "fields": {
+    "project": {
+      "key": "QACATERALL"
+    },
+    "summary": "CAOB_Healthcheck" ,
+    "issuetype": {
+      "id": "10611"
+    },
+    "customfield_10533" : [
+      "QACATERALL-3946"
+    ],
+    "customfield_10531" : [
+      "PRE"
+    ],
+    "environment" : "PRE"
+  }
+}
