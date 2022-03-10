@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/JsonUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybackupproject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/santender.profile/test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +19,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -40,31 +36,50 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
-  </component>
   <component name="ProjectId" id="1fiXEdRe0UFdKMPRfE0GFtnPQ4w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Program Files/Git/bin/git.exe" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/Utilities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/resources/features/Transactions" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Utilities.WebKit.helper" />
+      <recent name="Utilities.seleniumcustomframework.extension.handlers" />
+      <recent name="Utilities.seleniumcustomframework.extension.fieldInitialisers" />
+      <recent name="Utilities.seleniumcustomframework.extension.helpers" />
+      <recent name="Utilities.seleniumcustomframework.extension.fromselenium" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\Transactions" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\Statement" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\StandingOrder" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\ScheduledPayment" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\DirectDebits" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\health_check" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\java\com\test\stepDefs" />
       <recent name="C:\my DATA\workspace\mybackupproject\src\test" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,17 +98,191 @@
       <option name="project" value="LOCAL" />
       <updated>1596632683952</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Starting new project">
+      <created>1596717787014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596717787014</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Starting new project">
+      <created>1597387818485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597387818485</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Starting new project">
+      <created>1598536742550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598536742550</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Starting new project">
+      <created>1631695600426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631695600426</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Starting new project">
+      <created>1631701115453</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631701115453</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Starting new project">
+      <created>1631701241861</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631701241861</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Starting new project">
+      <created>1631702587952</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631702587952</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Starting new project">
+      <created>1631715190772</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631715190772</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Starting new project">
+      <created>1631727801654</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631727801654</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Starting new project">
+      <created>1631731238486</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631731238486</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Starting new project">
+      <created>1631733140958</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631733140958</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Starting new project">
+      <created>1631733366745</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631733366745</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Starting new project">
+      <created>1631777409321</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631777409321</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Starting new project">
+      <created>1631777744327</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631777744327</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Starting new project">
+      <created>1631780967926</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631780967926</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Starting new project">
+      <created>1631781502428</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631781502428</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Starting new project">
+      <created>1631784541038</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1631784541038</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Starting new project">
+      <created>1631785687799</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631785687799</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Starting new project">
+      <created>1631785982434</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1631785982434</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Starting new project" />
     <option name="LAST_COMMIT_MESSAGE" value="Starting new project" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="163" y="0" key="SettingsEditor" timestamp="1596702562670">
+    <state x="458" y="164" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1631785653892">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596702562670" />
+    <state x="458" y="164" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1631785653892" />
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser" timestamp="1631724089914">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="488" y="69" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1631724089914" />
+    <state x="316" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1631702297500">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="316" y="287" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1366.728@0.0.1366.728" timestamp="1631702297500" />
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1631701062487">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1631701062487" />
+    <state x="136" y="0" key="CommitChangelistDialog2" timestamp="1631785980783">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="136" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1631785980783" />
+    <state x="213" y="17" key="Maven.ArtifactSearchDialog" timestamp="1631733999993">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="213" y="17" key="Maven.ArtifactSearchDialog/0.0.1366.728@0.0.1366.728" timestamp="1631733999993" />
+    <state x="321" y="124" key="MultipleFileMergeDialog" timestamp="1631731270876">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="321" y="124" key="MultipleFileMergeDialog/0.0.1366.728@0.0.1366.728" timestamp="1631731270876" />
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2" timestamp="1631785994207">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="95" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1631785994207" />
+    <state x="499" y="140" key="chooseDestDirectoryDialog" timestamp="1631726564499">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="499" y="140" key="chooseDestDirectoryDialog/0.0.1366.728@0.0.1366.728" timestamp="1631726564499" />
+    <state x="389" y="0" width="587" height="728" key="find.popup" timestamp="1631735711080">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="389" y="0" width="587" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1631735711080" />
+    <state x="339" y="157" key="run.anything.popup" timestamp="1631734276187">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="339" y="157" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1631734276187" />
   </component>
 </project>

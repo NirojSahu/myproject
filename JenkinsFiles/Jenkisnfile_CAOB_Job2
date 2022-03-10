@@ -1,0 +1,232 @@
+#!groovy
+
+def createEmailSendingList() {
+    BUILD_DATE = sh(script: "echo `date +%d/%m/%Y`", returnStdout: true).trim()
+    if ("true" == "${send_emailtoAll}") {
+        emailfinalList = emailmultipleList
+    } else {
+        emailfinalList = emailsingleList
+    }
+    echo "$emailfinalList"
+}
+
+def printTargetFolder() {
+    sh 'ls -la target'
+}
+
+pipeline {
+    agent { label 'maven' }
+
+    parameters{
+        string(name: 'Host', defaultValue:'https://jenkins-automationqatesting-dev.appls-ukdev01a.paas.santanderuk.dev.corp/job/CAOpenBanking/job/CAOB_Autoscript_3.1_Job2/', description: 'Server & Job Details')
+        string(name: 'name', defaultValue: 'API tests', description: 'Test name to find similar tests')
+        string(name: 'EnvironmentToExecute', defaultValue: 'https://webapiuk-taassel-pre.appls-ukpre03a.paas.santanderuk.pre.corp', description: 'Selenium Hub where to execute')
+        //string(name: 'testplan_id', defaultValue: 'BISON-241', description: 'enter latest sprint test plan ID')
+        string(name: 'cucumber_tags', defaultValue: '--tags @dummmy', description: 'Tag through which execution need to be done')
+        choice(name: 'environment', choices: ['UAT','Pre', 'Dev', 'Prod'], description: 'Dev-3A UAT-4A Pre-5A Prod-6A')
+        choice(name: 'Browser', choices: ['chrome', 'internet explorer', 'firefox'], description: 'Select Browser')
+        choice(name: 'Browserversion', choices: ['76.0.3809.87', '11','78.0.3904.87','83.0.4103.116'], description: 'Select BrowserVersion')
+        //booleanParam(name: 'notify_rocket_chat', defaultValue: false, description: 'To send notification to Rocket Chat')
+        //string(name: 'rocket_chat_group', defaultValue: 'project-bison', description: 'Rocket chat group name')
+        booleanParam(name: 'notify_taas', defaultValue: false, description: 'To send test reports to TaaS/Kibana')
+        //booleanParam(name: 'update_jira_results', defaultValue: true, description: 'Update JIRA results using X-Ray')
+        booleanParam(name: 'Mail_trigger',defaultValue: false, description: 'if unticked- Mail willnot be sent to recepients')
+        booleanParam(name: 'send_emailtoAll',defaultValue: false, description: 'if unticked- it will send email/s to one pre-configured member only. Emails will not be sent to all recipients')
+
+    }
+    options { buildDiscarder(logRotator(numToKeepStr: '3')) }
+
+    environment {
+        check_rerun = false
+        emailsingleList = 'prateek.gupta@santander.co.uk;sahu.nirojkumar@santander.co.uk;guru.sivakumar@intellectft.com'
+        //emailmultipleList = 'Ascension.tercerogarcia@santander.co.uk;;Alessandro.Greco@santander.co.uk;juan.barcaiztegui@santander.co.uk;prateek.gupta@santander.co.uk;sahu.nirojkumar@santander.co.uk'
+        emailmultipleList = 'Ascension.tercerogarcia@santander.co.uk;;Alessandro.Greco@santander.co.uk;juan.barcaiztegui@santander.co.uk;prateek.gupta@santander.co.uk;sahu.nirojkumar@santander.co.uk;guru.sivakumar@intellectft.com;deepak.subramaniam@intellectft.com;karthik.ravi@intellectft.com'
+        emailfinalList = 'prateek.gupta@santander.co.uk'
+        BUILD_DATE = ''
+        /*  emailfinalList = 'prateek.gupta@santander.co.uk;sahu.nirojkumar@santander.co.uk;shailesh.rajjoshi@santander.co.uk;' +
+                 'Ascension.tercerogarcia@santander.co.uk;dhandapani.srinivasan@santander.co.uk;Karthika.KP@santander.co.uk'*/
+    }
+
+    stages{
+        /*stage('Clean & Build '){
+            steps{
+                createEmailSendingList()
+                echo "${Host}"
+                echo "${BUILD_NUMBER}"
+                echo "${EnvironmentToExecute}"
+                echo "${cucumber_tags}"
+                echo "${environment}"
+                echo "${Browser}"
+                echo "${send_emailtoAll}"
+                echo "${notify_taas}"
+
+                sh "ls -ltr"
+                sh 'mvn clean compile -DskipTests -Djavax.net.ssl.trustStore=${WORKSPACE}/nexus.jks -Djavax.net.ssl.trustStorePassword=changeit'
+            }
+        }*/
+
+        stage('Test Execution and Report Generation') {
+            steps {
+                script {
+                    try {
+                        //static_tags = "--tags @3D "
+                        static_tags = ""
+                        tags = static_tags + "${params.cucumber_tags}"
+//                        example = "--tags @aa,@ss --tags @welcome --tags ~@androidOnly --tags ~@stub"
+                        mvn_options = ""
+                        mvn_options = mvn_options + " -Denvironment=" + "${params.environment}" + " -Dgrid.webservice="+ "${EnvironmentToExecute}" + " -Dtoken=taasToken-vaylfrhfup"+ " -Dbrowser=" + "${Browser}" +" -Dapplicationtype=internet -Dbrowserversion="+ "${Browserversion}"
+
+                        echo mvn_options
+                       // zip zipFile: 'features.zip', dir: "${WORKSPACE}/src/test/resources/features/Bison"
+                       // sh 'curl -k -H "Content-Type: multipart/form-data" -u c0262464:Bangalore@35 -F "file=@features.zip" https://uk-jira.almuk.santanderuk.corp/rest/raven/1.0/import/feature?projectKey=BISON'
+
+//                        sh "jq \".fields.customfield_10533[0]=${testplan_id}\" src/test/resources/xray/bison/bison_testPlan_info.json"
+
+                        //sh 'mvn clean test -f pom.xml -DargLine="-Xmx2G" -Djavax.net.ssl.trustStore=nexus.jks -Djavax.net.ssl.trustStorePassword=changeit  -Dcucumber.options="' + tags + '" ' + mvn_options + ' -Dgrid.run=true -Dbrowserversion="76.0.3809.87"'
+                        sh 'mvn clean test -f pom.xml -DargLine="-Xmx2G" -Djavax.net.ssl.trustStore=${WORKSPACE}/nexus.jks -Djavax.net.ssl.trustStorePassword=changeit -Dcucumber.options="' + tags + '" ' + mvn_options + ' -Dgrid.run=true'
+                       // sh 'mvn clean test -DargLine="-Xmx2G" -Dcucumber.options="' + tags + '" ' + mvn_options + ' -Dgrid.run=true -Dbrowserversion="76.0.3809.87"'
+                        sh 'sleep 5'
+
+                        JobStatus = "Passed"
+                    }
+                    catch (e) {
+                        echo 'Exception captured: ' + e.toString()
+                        JobStatus = "Failed"
+                    }
+                    finally {
+
+                        if ("${params.update_jira_results}" == 'true') {
+                            try {
+                                sh 'zip -r ${name}.zip target/cucumber-report.json'
+                                sh 'curl -k -H "Content-Type: multipart/form-data" -u ${jiraUsername}:${jiraPassword} -F "file=@${name}.zip" https://uk-jira.almuk.santanderuk.corp/rest/raven/1.0/import/execution/bundle'
+                                //sh 'curl -k -u ${jiraUsername}:${jiraPassword} -F "info=@JSONFolder/info.json" -F "result=@target/cucumber-report.json" https://uk-jira.almuk.santanderuk.corp/rest/raven/1.0/import/execution/cucumber/multipart'
+                            }
+                            catch (e) {
+                                echo 'Exception captured: ' + e.toString()
+                            }
+                        }
+
+                        cucumber classifications: [
+                                [key: 'Project', value: 'CA-OpenBanking'],
+                                [key: 'Name', value: '${name}'],
+                                [key: 'Cucumber tags', value: '${cucumber_tags}'],
+                                [key: 'Environment', value: '${environment}']
+                        ],
+                                fileIncludePattern: '**/cucumber-report.json',
+                                jsonReportDirectory: 'target',
+                                sortingMethod: 'ALPHABETICAL',
+                                trendsLimit: 10
+                    }
+                }
+            }
+        }
+
+        stage('Updating Job Status') {
+            steps {
+                script {
+                    if ("${JobStatus}".equalsIgnoreCase("Failed")) {
+                        currentBuild.result = 'FAILURE'
+                    }
+                    if ("${JobStatus}".equalsIgnoreCase("Passed")) {
+                        currentBuild.result = 'SUCCESS'
+                    }
+                }
+            }
+        }
+
+        stage('Send Email to intended recipients') {
+            when {
+                expression {
+                    //echo "${check_rerun}"
+                    return (params.Mail_trigger)
+                }
+            }
+            steps {
+
+                script {
+                    try {
+                        mvn_options = ""
+                        mvn_options = mvn_options + " -Denvironment=" + "${params.environment}" + " -Dgrid.webservice="+ "${EnvironmentToExecute}" + " -Dtoken=taasToken-vaylfrhfup"+ " -Dbrowser=" + "${Browser}" +" -Dapplicationtype=internet -Dbrowserversion="+ "${Browserversion}" + " -DBuildNo=" +"${BUILD_NUMBER}" + " -DHost="+"${Host}"
+                        sh 'mvn clean test -f pom.xml -DargLine="-Xmx2G" -Djavax.net.ssl.trustStore=${WORKSPACE}/nexus.jks -Djavax.net.ssl.trustStorePassword=changeit -Dcucumber.options=" --tags @customised_screenshot " ' + mvn_options + ' -Dgrid.run=true'
+                        sh("mv '${WORKSPACE}/target/Screenshots/FeatureReport.png' '${WORKSPACE}'")
+                        sh("mv '${WORKSPACE}/target/Screenshots/TagsReport.png' '${WORKSPACE}'")
+                        createEmailSendingList()
+                        echo 'normal execution in second stage written like script'
+                        String ReportLink = "/cucumber-html-reports/overview-features.html"
+                        String jenkinsLink = "${Host}${BUILD_NUMBER}${ReportLink}"
+                        echo "$jenkinsLink"
+                        echo "${environment}"
+                        echo "${BUILD_DATE}"
+
+                        String emailBody = "Job Name - ${JOB_NAME}         <br>\n\n" +
+                                "Build Number - ${BUILD_NUMBER} <br>\n\n" +
+                                "Test Executed on - ${environment} <br>\n\n " +
+                                "Tag Used - ${params.cucumber_tags} <br>\n\n " +
+                                "To watch the detailed report, click on Jenkins Url - <br>\n\n" + "$jenkinsLink" + "<br> \n\n"+
+                                "<img src= \"FeatureReport.png\" />"
+
+                        emailext(
+                                attachmentsPattern: 'FeatureReport.png',
+                                // attachmentsPattern: '**/target/report.html',
+                                body: emailBody,
+                                //subject: 'JOBNAME- ${JOB_NAME} : BUILDDATE- '+ "${BUILD_DATE}",
+                                subject: 'CAOB : Automation Status - ' +"${JobStatus}"+" - "+" ${name}"+" - "+"${BUILD_DATE}",
+                                to: "$emailfinalList"
+//                                from: "jenkins@code-maven.com"
+                        )
+                    } catch (e) {
+                        e.printStackTrace()
+                        echo 'some issue in Send Email but Invoke Rerun successfull. Rerun will be executed unless stopped intentionally'
+
+                    }
+                }
+            }
+        }
+
+    }
+    post
+            {
+                always {
+                   script {
+                        if ("${params.notify_taas}" == 'true') {
+                            try {
+                                echo 'Sending report to Kafka'
+                                def KAFKASERVER = "kafka.loganalytics.santanderuk.corp:6667"
+                                def KAFKATOPIC = "PRO_TAAS_FUNC_LOG"
+                                def PROJECTNAME = "CaterAllen_OpenBanking"
+                                def ENVIRONMENT = "PRE"
+                                //def ENVIRONMENT = "${environment}"
+                                def PLATFORM = "Retail"
+                                def RELEASE = "Release"
+                                def SPRINTNAME = "Sprint"
+                                def WORKAREA = "Portal"
+                                def PROGRAM = "Program"
+                                def JENKINSBUILDURL ="${env.JENKINS_URL}"+"job/"+"${env.JOB_NAME}"+"/job/"+"${env.BUILD_ID}"
+                                //def JENKINSBUILDURL ="${Host}"+"job/"+"${JOB_NAME}"+"/"+"${BUILD_NUMBER}"
+                                //def JENKINSBUILDURL = "${Host}"+"${BUILD_NUMBER}"
+                                def ORIGIN = "Remote"
+                                def UTILPATH = "target/kafkautil.jar"
+                                def REPORTPATH = "/target/cucumber-report.json"
+                                def GITURL = "https://uk-gitlab.almuk.santanderuk.corp/C0261484/caobweb"
+
+                              //  sh "java -jar target/kafkautil.jar ${KAFKASERVER} ${KAFKATOPIC} ${PROJECTNAME} ${ENVIRONMENT} ${PLATFORM} ${RELEASE} ${SPRINTNAME} ${WORKAREA} ${PROGRAM} ${JENKINSBUILDURL} ${ORIGIN} ${REPORTPATH}"
+                                sh "java -jar ${UTILPATH} ${KAFKASERVER} ${KAFKATOPIC} ${PROJECTNAME} ${ENVIRONMENT} ${PLATFORM} ${RELEASE} ${SPRINTNAME} ${WORKAREA} ${PROGRAM} ${JENKINSBUILDURL} ${ORIGIN} ${REPORTPATH} ${GITURL}"
+                            }
+                            catch (e) {
+                                echo 'Exception captured: ' + e.toString()
+                            }
+                        }
+                        /*if ("${params.update_jira_results}" == 'true') {
+                            try {
+                                sh 'zip -r cucumber-report.zip target/cucumber'
+                                sh 'curl -k -H "Content-Type: multipart/form-data" -u S7267436:Azf0yiA9uteG -F "file=@cucumber-report.zip" https://uk-jira.almuk.santanderuk.corp/rest/raven/1.0/import/execution/bundle'
+                            }
+                            catch (e) {
+                                echo 'Exception captured: ' + e.toString()
+                            }
+                        }*/
+
+                    }
+                }
+            }
+}

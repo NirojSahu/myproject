@@ -1,0 +1,264 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "Data",
+    "Links",
+    "Meta"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "DirectDebit": [
+            {
+              "AccountId": "22289",
+              "DirectDebitId": "DD03",
+              "PreviousPaymentDateTime": "2017-04-05T10:43:07+00:00",
+              "Name": "Towbar Club 3 - We Love Towbars",
+              "PreviousPaymentAmount": {
+                "Currency": "GBP",
+                "Amount": "0.57"
+              },
+              "MandateIdentification": "Caravanners",
+              "DirectDebitStatusCode": "Active"
+            }
+          ]
+        }
+      ],
+      "required": [
+        "DirectDebit"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "DirectDebit": {
+          "$id": "#/properties/Data/properties/DirectDebit",
+          "type": "array",
+          "title": "The DirectDebit schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "AccountId": "22289",
+                "PreviousPaymentDateTime": "2017-04-05T10:43:07+00:00",
+                "DirectDebitId": "DD03",
+                "Name": "Towbar Club 3 - We Love Towbars",
+                "PreviousPaymentAmount": {
+                  "Amount": "0.57",
+                  "Currency": "GBP"
+                },
+                "MandateIdentification": "Caravanners",
+                "DirectDebitStatusCode": "Active"
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Data/properties/DirectDebit/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "PreviousPaymentAmount": {
+                      "Amount": "0.57",
+                      "Currency": "GBP"
+                    },
+                    "MandateIdentification": "Caravanners",
+                    "DirectDebitStatusCode": "Active",
+                    "AccountId": "22289",
+                    "PreviousPaymentDateTime": "2017-04-05T10:43:07+00:00",
+                    "DirectDebitId": "DD03",
+                    "Name": "Towbar Club 3 - We Love Towbars"
+                  }
+                ],
+                "required": [
+                  "AccountId",
+                  "DirectDebitId",
+                  "MandateIdentification",
+                  "DirectDebitStatusCode",
+                  "Name",
+                  "PreviousPaymentAmount"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "AccountId": {
+                    "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/AccountId",
+                    "type": "string",
+                    "title": "The AccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "22289"
+                    ]
+                  },
+                  "DirectDebitId": {
+                    "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/DirectDebitId",
+                    "type": "string",
+                    "title": "The DirectDebitId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "DD03"
+                    ]
+                  },
+                  "MandateIdentification": {
+                    "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/MandateIdentification",
+                    "type": "string",
+                    "title": "The MandateIdentification schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Caravanners"
+                    ]
+                  },
+                  "DirectDebitStatusCode": {
+                    "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/DirectDebitStatusCode",
+                    "type": "string",
+                    "title": "The DirectDebitStatusCode schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Active"
+                    ]
+                  },
+                  "Name": {
+                    "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/Name",
+                    "type": "string",
+                    "title": "The Name schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Towbar Club 3 - We Love Towbars"
+                    ]
+                  },
+                  "PreviousPaymentDateTime": {
+                    "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/PreviousPaymentDateTime",
+                    "type": "string",
+                    "title": "The PreviousPaymentDateTime schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "2017-04-05T10:43:07+00:00"
+                    ]
+                  },
+                  "PreviousPaymentAmount": {
+                    "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/PreviousPaymentAmount",
+                    "type": "object",
+                    "title": "The PreviousPaymentAmount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "Amount": "0.57",
+                        "Currency": "GBP"
+                      }
+                    ],
+                    "required": [
+                      "Amount",
+                      "Currency"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                      "Amount": {
+                        "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/PreviousPaymentAmount/properties/Amount",
+                        "type": "string",
+                        "title": "The Amount schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "0.57"
+                        ]
+                      },
+                      "Currency": {
+                        "$id": "#/properties/Data/properties/DirectDebit/items/anyOf/0/properties/PreviousPaymentAmount/properties/Currency",
+                        "type": "string",
+                        "title": "The Currency schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "GBP"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://api.alphabank.com/open-banking/v3.1/aisp/accounts/22289/direct-debits/"
+        }
+      ],
+      "required": [
+        "Self"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://api.alphabank.com/open-banking/v3.1/aisp/accounts/22289/direct-debits/"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": 1.0
+        }
+      ],
+      "required": [
+        "TotalPages"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "integer",
+          "title": "The TotalPages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1.0
+          ]
+        }
+      }
+    }
+  }
+}

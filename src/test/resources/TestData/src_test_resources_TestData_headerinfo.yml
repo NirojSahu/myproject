@@ -1,0 +1,33 @@
+Resources:
+  account-access-consents_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  account-access-consents_2:
+    headers:
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+      - resource: "token"
+  account-access-consents_3:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  token_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  token_2:
+    headers:
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  accounts:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"

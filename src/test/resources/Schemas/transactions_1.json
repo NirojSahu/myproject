@@ -1,0 +1,933 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+    "Data",
+    "Links",
+    "Meta"
+  ],
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Transaction": [
+            {
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "208541.65",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit",
+              "BookingDateTime": "2019-05-23T00:00:00+00:00",
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              },
+              "ValueDateTime": "2019-05-23T00:00:00+00:00",
+              "AccountId": "48894458",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked"
+            },
+            {
+              "Amount": {
+                "Amount": "136.98",
+                "Currency": "GBP"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-05-31T00:00:00+00:00",
+              "Status": "Booked",
+              "TransactionInformation": "transaction transaction transaction",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "208678.63"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2019-05-31T00:00:00+00:00"
+            },
+            {
+              "BookingDateTime": "2019-06-25T00:00:00+00:00",
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "9166.66"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-06-25T00:00:00+00:00",
+              "Status": "Booked",
+              "TransactionInformation": "transaction transaction transaction",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "199511.97",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit"
+            },
+            {
+              "BookingDateTime": "2019-06-30T00:00:00+00:00",
+              "Amount": {
+                "Amount": "127.51",
+                "Currency": "GBP"
+              },
+              "ValueDateTime": "2019-06-30T00:00:00+00:00",
+              "AccountId": "48894458",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "199639.48",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Credit"
+            },
+            {
+              "BookingDateTime": "2019-07-23T00:00:00+00:00",
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              },
+              "ValueDateTime": "2019-07-23T00:00:00+00:00",
+              "AccountId": "48894458",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "Amount": {
+                  "Amount": "190472.82",
+                  "Currency": "GBP"
+                },
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable"
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit"
+            },
+            {
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2019-07-31T00:00:00+00:00",
+              "Amount": {
+                "Amount": "125.45",
+                "Currency": "GBP"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-07-31T00:00:00+00:00",
+              "Status": "Booked",
+              "TransactionInformation": "transaction transaction transaction",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "190598.27"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction"
+            },
+            {
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-08-23T00:00:00+00:00",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "181431.61",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit",
+              "BookingDateTime": "2019-08-23T00:00:00+00:00",
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              }
+            },
+            {
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "181551.42",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2019-08-31T00:00:00+00:00",
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "119.81"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-08-31T00:00:00+00:00"
+            },
+            {
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              },
+              "ValueDateTime": "2019-09-23T00:00:00+00:00",
+              "AccountId": "48894458",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "172384.76"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit",
+              "BookingDateTime": "2019-09-23T00:00:00+00:00"
+            },
+            {
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "110.38"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-09-30T00:00:00+00:00",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "172495.14"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2019-09-30T00:00:00+00:00"
+            },
+            {
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-10-23T00:00:00+00:00",
+              "Status": "Booked",
+              "TransactionInformation": "transaction transaction transaction",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "163328.48"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit",
+              "BookingDateTime": "2019-10-23T00:00:00+00:00"
+            },
+            {
+              "Amount": {
+                "Amount": "108.12",
+                "Currency": "GBP"
+              },
+              "ValueDateTime": "2019-10-31T00:00:00+00:00",
+              "AccountId": "48894458",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "163436.60"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2019-10-31T00:00:00+00:00"
+            },
+            {
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              },
+              "ValueDateTime": "2019-11-25T00:00:00+00:00",
+              "AccountId": "48894458",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "154269.94"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit",
+              "BookingDateTime": "2019-11-25T00:00:00+00:00"
+            },
+            {
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "154369.60",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2019-11-30T00:00:00+00:00",
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "99.66"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-11-30T00:00:00+00:00",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked"
+            },
+            {
+              "CreditDebitIndicator": "Debit",
+              "BookingDateTime": "2019-12-23T00:00:00+00:00",
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-12-23T00:00:00+00:00",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "145202.94",
+                  "Currency": "GBP"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "transaction transaction transaction"
+            },
+            {
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2019-12-31T00:00:00+00:00",
+              "Amount": {
+                "Amount": "96.56",
+                "Currency": "GBP"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2019-12-31T00:00:00+00:00",
+              "Status": "Booked",
+              "TransactionInformation": "transaction transaction transaction",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "145299.50",
+                  "Currency": "GBP"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "transaction transaction transaction"
+            },
+            {
+              "AccountId": "48894458",
+              "ValueDateTime": "2020-01-23T00:00:00+00:00",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "136132.84",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit",
+              "BookingDateTime": "2020-01-23T00:00:00+00:00",
+              "Amount": {
+                "Amount": "9166.66",
+                "Currency": "GBP"
+              }
+            },
+            {
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2020-01-31T00:00:00+00:00",
+              "Amount": {
+                "Amount": "90.98",
+                "Currency": "GBP"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2020-01-31T00:00:00+00:00",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "136223.82"
+                },
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable"
+              }
+            },
+            {
+              "BookingDateTime": "2020-02-24T00:00:00+00:00",
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "9166.66"
+              },
+              "ValueDateTime": "2020-02-24T00:00:00+00:00",
+              "AccountId": "48894458",
+              "TransactionInformation": "transaction transaction transaction",
+              "Status": "Booked",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "127057.16",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "transaction transaction transaction",
+              "CreditDebitIndicator": "Debit"
+            },
+            {
+              "Status": "Booked",
+              "TransactionInformation": "Interest Credit",
+              "Balance": {
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "127137.22"
+                },
+                "CreditDebitIndicator": "Credit"
+              },
+              "TransactionReference": "Interest Credit",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2020-02-29T00:00:00+00:00",
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "80.06"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2020-02-29T00:00:00+00:00"
+            },
+            {
+              "TransactionReference": "Interest Credit",
+              "CreditDebitIndicator": "Credit",
+              "BookingDateTime": "2020-03-31T00:00:00+00:00",
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "80.95"
+              },
+              "AccountId": "48894458",
+              "ValueDateTime": "2020-03-31T00:00:00+00:00",
+              "TransactionInformation": "Interest Credit",
+              "Status": "Booked",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "127218.17"
+                }
+              }
+            },
+            {
+              "BookingDateTime": "2020-04-30T00:00:00+00:00",
+              "Amount": {
+                "Currency": "GBP",
+                "Amount": "78.3"
+              },
+              "ValueDateTime": "2020-04-30T00:00:00+00:00",
+              "AccountId": "48894458",
+              "Status": "Booked",
+              "TransactionInformation": "Interest Credit",
+              "Balance": {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "127296.47",
+                  "Currency": "GBP"
+                }
+              },
+              "TransactionReference": "Interest Credit",
+              "CreditDebitIndicator": "Credit"
+            }
+          ]
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Transaction"
+      ],
+      "properties": {
+        "Transaction": {
+          "$id": "#/properties/Data/properties/Transaction",
+          "type": "array",
+          "title": "The Transaction Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "Balance": {
+                  "Amount": {
+                    "Currency": "GBP",
+                    "Amount": "208541.65"
+                  },
+                  "CreditDebitIndicator": "Credit",
+                  "Type": "InterimAvailable"
+                },
+                "TransactionReference": "transaction transaction transaction",
+                "CreditDebitIndicator": "Debit",
+                "BookingDateTime": "2019-05-23T00:00:00+00:00",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "9166.66"
+                },
+                "ValueDateTime": "2019-05-23T00:00:00+00:00",
+                "AccountId": "48894458",
+                "TransactionInformation": "transaction transaction transaction",
+                "Status": "Booked"
+              },
+              {
+                "TransactionReference": "transaction transaction transaction",
+                "CreditDebitIndicator": "Credit",
+                "BookingDateTime": "2019-05-31T00:00:00+00:00",
+                "Amount": {
+                  "Amount": "136.98",
+                  "Currency": "GBP"
+                },
+                "AccountId": "48894458",
+                "ValueDateTime": "2019-05-31T00:00:00+00:00",
+                "Status": "Booked",
+                "TransactionInformation": "transaction transaction transaction",
+                "Balance": {
+                  "Type": "InterimAvailable",
+                  "Amount": {
+                    "Amount": "208678.63",
+                    "Currency": "GBP"
+                  },
+                  "CreditDebitIndicator": "Credit"
+                }
+              },
+              {
+                "Balance": {
+                  "CreditDebitIndicator": "Credit",
+                  "Type": "InterimAvailable",
+                  "Amount": {
+                    "Amount": "199511.97",
+                    "Currency": "GBP"
+                  }
+                },
+                "TransactionReference": "transaction transaction transaction",
+                "CreditDebitIndicator": "Debit",
+                "BookingDateTime": "2019-06-25T00:00:00+00:00",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "9166.66"
+                },
+                "AccountId": "48894458",
+                "ValueDateTime": "2019-06-25T00:00:00+00:00",
+                "TransactionInformation": "transaction transaction transaction",
+                "Status": "Booked"
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Data/properties/Transaction/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "9166.66"
+                },
+                "ValueDateTime": "2019-05-23T00:00:00+00:00",
+                "AccountId": "48894458",
+                "Status": "Booked",
+                "TransactionInformation": "transaction transaction transaction",
+                "Balance": {
+                  "CreditDebitIndicator": "Credit",
+                  "Type": "InterimAvailable",
+                  "Amount": {
+                    "Currency": "GBP",
+                    "Amount": "208541.65"
+                  }
+                },
+                "TransactionReference": "transaction transaction transaction",
+                "CreditDebitIndicator": "Debit",
+                "BookingDateTime": "2019-05-23T00:00:00+00:00"
+              },
+              {
+                "TransactionInformation": "transaction transaction transaction",
+                "Status": "Booked",
+                "Balance": {
+                  "CreditDebitIndicator": "Credit",
+                  "Type": "InterimAvailable",
+                  "Amount": {
+                    "Amount": "208678.63",
+                    "Currency": "GBP"
+                  }
+                },
+                "TransactionReference": "transaction transaction transaction",
+                "CreditDebitIndicator": "Credit",
+                "BookingDateTime": "2019-05-31T00:00:00+00:00",
+                "Amount": {
+                  "Currency": "GBP",
+                  "Amount": "136.98"
+                },
+                "AccountId": "48894458",
+                "ValueDateTime": "2019-05-31T00:00:00+00:00"
+              },
+              {
+                "BookingDateTime": "2019-06-25T00:00:00+00:00",
+                "Amount": {
+                  "Amount": "9166.66",
+                  "Currency": "GBP"
+                },
+                "ValueDateTime": "2019-06-25T00:00:00+00:00",
+                "AccountId": "48894458",
+                "Status": "Booked",
+                "TransactionInformation": "transaction transaction transaction",
+                "Balance": {
+                  "CreditDebitIndicator": "Credit",
+                  "Type": "InterimAvailable",
+                  "Amount": {
+                    "Amount": "199511.97",
+                    "Currency": "GBP"
+                  }
+                },
+                "TransactionReference": "transaction transaction transaction",
+                "CreditDebitIndicator": "Debit"
+              }
+            ],
+            "additionalProperties": true,
+            "required": [
+              "AccountId",
+              "TransactionReference",
+              "Amount",
+              "CreditDebitIndicator",
+              "Status",
+              "BookingDateTime",
+              "ValueDateTime",
+              "TransactionInformation",
+              "Balance"
+            ],
+            "properties": {
+              "AccountId": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/AccountId",
+                "type": "string",
+                "title": "The Accountid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "48894458"
+                ]
+              },
+              "TransactionReference": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/TransactionReference",
+                "type": "string",
+                "title": "The Transactionreference Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "transaction transaction transaction"
+                ]
+              },
+              "Amount": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/Amount",
+                "type": "object",
+                "title": "The Amount Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "Amount": "9166.66",
+                    "Currency": "GBP"
+                  }
+                ],
+                "additionalProperties": true,
+                "required": [
+                  "Amount",
+                  "Currency"
+                ],
+                "properties": {
+                  "Amount": {
+                    "$id": "#/properties/Data/properties/Transaction/items/properties/Amount/properties/Amount",
+                    "type": "string",
+                    "title": "The Amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "9166.66"
+                    ]
+                  },
+                  "Currency": {
+                    "$id": "#/properties/Data/properties/Transaction/items/properties/Amount/properties/Currency",
+                    "type": "string",
+                    "title": "The Currency Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "GBP"
+                    ]
+                  }
+                }
+              },
+              "CreditDebitIndicator": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/CreditDebitIndicator",
+                "type": "string",
+                "title": "The Creditdebitindicator Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Debit"
+                ]
+              },
+              "Status": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/Status",
+                "type": "string",
+                "title": "The Status Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Booked"
+                ]
+              },
+              "BookingDateTime": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/BookingDateTime",
+                "type": "string",
+                "title": "The Bookingdatetime Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2019-05-23T00:00:00+00:00"
+                ]
+              },
+              "ValueDateTime": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/ValueDateTime",
+                "type": "string",
+                "title": "The Valuedatetime Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2019-05-23T00:00:00+00:00"
+                ]
+              },
+              "TransactionInformation": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/TransactionInformation",
+                "type": "string",
+                "title": "The Transactioninformation Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "transaction transaction transaction"
+                ]
+              },
+              "Balance": {
+                "$id": "#/properties/Data/properties/Transaction/items/properties/Balance",
+                "type": "object",
+                "title": "The Balance Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "CreditDebitIndicator": "Credit",
+                    "Type": "InterimAvailable",
+                    "Amount": {
+                      "Amount": "208541.65",
+                      "Currency": "GBP"
+                    }
+                  }
+                ],
+                "additionalProperties": true,
+                "required": [
+                  "Amount",
+                  "CreditDebitIndicator",
+                  "Type"
+                ],
+                "properties": {
+                  "Amount": {
+                    "$id": "#/properties/Data/properties/Transaction/items/properties/Balance/properties/Amount",
+                    "type": "object",
+                    "title": "The Amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "Currency": "GBP",
+                        "Amount": "208541.65"
+                      }
+                    ],
+                    "additionalProperties": true,
+                    "required": [
+                      "Amount",
+                      "Currency"
+                    ],
+                    "properties": {
+                      "Amount": {
+                        "$id": "#/properties/Data/properties/Transaction/items/properties/Balance/properties/Amount/properties/Amount",
+                        "type": "string",
+                        "title": "The Amount Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "208541.65"
+                        ]
+                      },
+                      "Currency": {
+                        "$id": "#/properties/Data/properties/Transaction/items/properties/Balance/properties/Amount/properties/Currency",
+                        "type": "string",
+                        "title": "The Currency Schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "GBP"
+                        ]
+                      }
+                    }
+                  },
+                  "CreditDebitIndicator": {
+                    "$id": "#/properties/Data/properties/Transaction/items/properties/Balance/properties/CreditDebitIndicator",
+                    "type": "string",
+                    "title": "The Creditdebitindicator Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "Credit"
+                    ]
+                  },
+                  "Type": {
+                    "$id": "#/properties/Data/properties/Transaction/items/properties/Balance/properties/Type",
+                    "type": "string",
+                    "title": "The Type Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "InterimAvailable"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts/48894458/transactions/"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Self"
+      ],
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts/48894458/transactions/"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": 1.0,
+          "FirstAvailableDateTime": "2019-05-03T12:20:39+00:00",
+          "LastAvailableDateTime": "2020-05-02T12:20:39+00:00"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "TotalPages",
+        "FirstAvailableDateTime",
+        "LastAvailableDateTime"
+      ],
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "integer",
+          "title": "The Totalpages Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1.0
+          ]
+        },
+        "FirstAvailableDateTime": {
+          "$id": "#/properties/Meta/properties/FirstAvailableDateTime",
+          "type": "string",
+          "title": "The Firstavailabledatetime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2019-05-03T12:20:39+00:00"
+          ]
+        },
+        "LastAvailableDateTime": {
+          "$id": "#/properties/Meta/properties/LastAvailableDateTime",
+          "type": "string",
+          "title": "The Lastavailabledatetime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-05-02T12:20:39+00:00"
+          ]
+        }
+      }
+    }
+  }
+}

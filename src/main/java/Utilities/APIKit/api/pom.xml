@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.santander.api</groupId>
+    <artifactId>NitroApiKit</artifactId>
+    <version>2.1.0</version>
+    
+
+     <distributionManagement>
+         <repository>
+             <id>isban</id>
+             <name>Releases</name>
+             <url>https://nexus.almuk.santanderuk.corp/repository/TaaS/</url>
+         </repository>
+         <snapshotRepository>
+             <id>isban</id>
+             <name>Snapshots</name>
+             <url>https://nexus.almuk.santanderuk.corp/repository/TaaS</url>
+         </snapshotRepository>
+    </distributionManagement>
+    <dependencies>
+
+    <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>slf4j-api</artifactId>
+        <version>${slf4j.api}</version>
+    </dependency>
+    <!--<dependency>-->
+        <!--<groupId>com.jayway.restassured</groupId>-->
+        <!--<artifactId>rest-assured</artifactId>-->
+        <!--<version>${rest-assured}</version>-->
+    <!--</dependency>-->
+
+        <dependency>
+            <groupId>io.rest-assured</groupId>
+            <artifactId>rest-assured</artifactId>
+            <version>${rest-assured}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${orgjson}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>${json}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+        </dependency>
+        <!--<dependency>-->
+        <!--    <groupId>org.springframework.boot</groupId>-->
+        <!--    <artifactId>spring-boot-starters</artifactId>-->
+        <!--    <version>2.0.2.RELEASE</version>-->
+        <!--</dependency>-->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <!--<version>3.2.9.RELEASE</version>-->
+             <version>5.0.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>5.0.6.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.java-json-tools</groupId>
+            <artifactId>json-schema-validator</artifactId>
+            <version>2.2.10</version>
+        </dependency>
+    </dependencies>
+    <properties>
+        <java.version>1.8</java.version>
+
+        <junit.version>4.12</junit.version>
+
+        <slf4j.version>1.6.1</slf4j.version>
+
+        <rest-assured>3.1.0</rest-assured>
+        <jackson-core>2.6.3</jackson-core>
+
+        <gson>2.8.1</gson>
+        <json>1.1.1</json>
+        <orgjson>20160810</orgjson>
+        <cucumber.extents.version>3.0.2</cucumber.extents.version>
+        <extent>3.1.1</extent>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <!--<restassured.version>3.0.3</restassured.version>-->
+        <org.springframework>3.1.2.RELEASE</org.springframework>
+        <sonar.version>3.3.0.603</sonar.version>
+        <slf4j.api>1.8.0-alpha2</slf4j.api>
+
+    </properties>
+</project>

@@ -1,0 +1,179 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+    "Data",
+    "Links",
+    "Meta"
+  ],
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Product": [
+            {
+              "ProductName": "Personal Banking - GBP",
+              "ProductId": "300-30001",
+              "AccountId": "48894458",
+              "ProductType": "PersonalCurrentAccount"
+            }
+          ]
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Product"
+      ],
+      "properties": {
+        "Product": {
+          "$id": "#/properties/Data/properties/Product",
+          "type": "array",
+          "title": "The Product Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "ProductName": "Personal Banking - GBP",
+                "ProductId": "300-30001",
+                "AccountId": "48894458",
+                "ProductType": "PersonalCurrentAccount"
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Data/properties/Product/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "ProductType": "PersonalCurrentAccount",
+                "ProductName": "Personal Banking - GBP",
+                "ProductId": "300-30001",
+                "AccountId": "48894458"
+              }
+            ],
+            "additionalProperties": true,
+            "required": [
+              "AccountId",
+              "ProductId",
+              "ProductType",
+              "ProductName"
+            ],
+            "properties": {
+              "AccountId": {
+                "$id": "#/properties/Data/properties/Product/items/properties/AccountId",
+                "type": "string",
+                "title": "The Accountid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "48894458"
+                ]
+              },
+              "ProductId": {
+                "$id": "#/properties/Data/properties/Product/items/properties/ProductId",
+                "type": "string",
+                "title": "The Productid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "300-30001"
+                ]
+              },
+              "ProductType": {
+                "$id": "#/properties/Data/properties/Product/items/properties/ProductType",
+                "type": "string",
+                "title": "The Producttype Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "PersonalCurrentAccount"
+                ]
+              },
+              "ProductName": {
+                "$id": "#/properties/Data/properties/Product/items/properties/ProductName",
+                "type": "string",
+                "title": "The Productname Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Personal Banking - GBP"
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts/48894458/product"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Self"
+      ],
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts/48894458/product"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": "1"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "TotalPages"
+      ],
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "string",
+          "title": "The Totalpages Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "1"
+          ]
+        }
+      }
+    }
+  }
+}
