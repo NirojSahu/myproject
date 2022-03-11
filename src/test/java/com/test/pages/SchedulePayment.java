@@ -2,7 +2,7 @@ package com.test.pages;
 
 import com.google.inject.Inject;
 import com.test.Utils.SeleniumHelper;
-import com.test.seleniumcustomframework.extension.PageElement;
+//import com.test.seleniumcustomframework.extension.PageElement;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;

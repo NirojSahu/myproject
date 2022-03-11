@@ -5,5 +5,5 @@ Feature: Navigate to Confluence website
 
     Given I open a browser
     When I navigate to confluence website
-    And I click on confluence link
+    And I click on Confluence link
     Then I should be at confluence Home Page

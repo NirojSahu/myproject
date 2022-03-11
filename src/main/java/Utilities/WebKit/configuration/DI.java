@@ -36,6 +36,8 @@ import java.util.Iterator;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.reflections.Reflections;
+import org.reflections.util.ConfigurationBuilder;
+import org.reflections.Reflections;
 import org.reflections.scanners.MethodAnnotationsScanner;
 import org.reflections.scanners.Scanner;
 import org.reflections.scanners.SubTypesScanner;
@@ -45,13 +47,13 @@ import org.reflections.util.ConfigurationBuilder;
 public class DI extends AbstractModule implements InjectorSource, DependencyInjector {
     private Injector injector;
 
-    public DI() {
-    }
+//    public DI() {
+//    }
 
     protected void configure() {
         this.bind(WebDriver.class).toProvider(WebDriverProvider.class).in(ScenarioScoped.class);
         this.bind(Configuration.class).toProvider(ConfigurationProvider.class).in(ScenarioScoped.class);
-        ConfigurationBuilder reflectionsConfiguration = (new ConfigurationBuilder()).forPackages(new String[]{"com.test"}).setScanners(new Scanner[]{new MethodAnnotationsScanner(), new SubTypesScanner(), new TypeAnnotationsScanner()});
+        ConfigurationBuilder reflectionsConfiguration = (new ConfigurationBuilder()).forPackages(new String[]{"C:/Users/Niroj.sahu/Documents/GitHub/myproject/src/main/java/Utilities/WebKit/configuration/DI.java"}).setScanners(new Scanner[]{new MethodAnnotationsScanner(), new SubTypesScanner(), new TypeAnnotationsScanner()});
         Reflections reflections = new Reflections(reflectionsConfiguration);
         this.setAllTestClassesInScenarioScope(reflections);
         this.setupStaticInjection(reflections);

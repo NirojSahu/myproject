@@ -7,7 +7,8 @@ package Utilities.WebKit.configuration;
 
 import Utilities.WebKit.exceptions.*;
 import Utilities.WebKit.helper.LoggingHelper;
-import com.test.helper.ReportingHelper;
+import Utilities.WebKit.helper.ReportingHelper;
+//import com.test.helper.ReportingHelper;
 import java.io.IOException;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
@@ -21,9 +22,12 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-import org.codehaus.jettison.json.JSONArray;
-import org.codehaus.jettison.json.JSONException;
-import org.codehaus.jettison.json.JSONObject;
+//import org.codehaus.jettison.json.JSONArray;
+//import org.codehaus.jettison.json.JSONException;
+//import org.codehaus.jettison.json.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 import org.openqa.selenium.Capabilities;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Dimension;
@@ -317,8 +321,8 @@ public class PageFactory {
                 System.out.printf("Connecting to selenium grid: %s%n", hubUrl);
                 var11.printStackTrace();
             } finally {
-                sessionId = ((RemoteWebDriver)remoteWebDriver).getSessionId().toString();
-                jobID = Configuration.getConfiguration().recordSession(sessionId);
+//                sessionId = ((RemoteWebDriver)remoteWebDriver).getSessionId().toString();
+//                jobID = Configuration.getConfiguration().recordSession(sessionId);
             }
 
             return remoteWebDriver;
@@ -592,11 +596,12 @@ public class PageFactory {
             options.addArguments(new String[]{"--disable-infobars"});
             options.addArguments(new String[]{"--disable-popup-blocking"});
             options.setAcceptInsecureCerts(true);
-            options.setExperimentalOption("useAutomationExtension", false);
-            DesiredCapabilities capabilities = DesiredCapabilities.chrome();
-            capabilities.setCapability("acceptSslCerts", true);
-            capabilities.setCapability("goog:chromeOptions", options);
-            driver = new ChromeDriver(capabilities);
+//            options.setExperimentalOption("useAutomationExtension", false);
+//            DesiredCapabilities capabilities = DesiredCapabilities.htmlUnit();
+//            capabilities.setCapability("acceptSslCerts", true);
+//            capabilities.setCapability("goog:chromeOptions", options);
+//            driver = new ChromeDriver(capabilities);
+            driver=new ChromeDriver();
             driver.manage().timeouts().implicitlyWait(10L, TimeUnit.SECONDS);
             driver.manage().deleteAllCookies();
             return driver;
@@ -676,7 +681,7 @@ public class PageFactory {
             return driver;
         } catch (Exception var3) {
             System.setProperty("webdriver.gecko.driver", Configuration.getConfiguration().getWebDriverForFirefox());
-            DesiredCapabilities dc = DesiredCapabilities.firefox();
+            DesiredCapabilities dc = DesiredCapabilities.htmlUnit();
             dc.setCapability("acceptSslCerts", true);
             FirefoxProfile profile = new FirefoxProfile();
             profile.setAcceptUntrustedCertificates(true);

@@ -55,7 +55,7 @@ public class WebDriverFactory implements DependencyFactory<WebDriver>, Provider<
             return new ChromeDriver();
         } else if (!webdriverProperty.equalsIgnoreCase("ie") && !webdriverProperty.equalsIgnoreCase("iexplore") && !webdriverProperty.equalsIgnoreCase("internet explorer")) {
             FirefoxProfile firefoxProfile = new FirefoxProfile();
-            DesiredCapabilities firefoxCapabilities = DesiredCapabilities.firefox();
+            DesiredCapabilities firefoxCapabilities = DesiredCapabilities.htmlUnit();
             firefoxCapabilities.setCapability("marionette", true);
             firefoxCapabilities.setCapability("firefox_profile", firefoxProfile);
             System.setProperty("webdriver.gecko.driver", "geckodriver");

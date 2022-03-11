@@ -16,7 +16,8 @@ import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import org.codehaus.jettison.json.JSONException;
 import org.codehaus.jettison.json.JSONObject;
-import org.ho.yaml.Yaml;
+//import org.ho.yaml.Yaml;
+import org.yaml.snakeyaml.Yaml;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -128,7 +129,8 @@ public class JsonUtilities {
         Yaml yaml = new Yaml();
         Map<String, Object> res = new HashMap<String, Object>();
         File file = new File(YML_Path);
-        Map<String, Object> map = (Map<String, Object>) Yaml.load(new File(YML_Path));
+        Map<String, Object> map = (Map<String, Object>) file.getAbsoluteFile();
+//                (Map<String, Object>) Yaml.load(new File(YML_Path));
         String jsonStr = getJsonStringfromPojo(map);
         JSONObject json = new JSONObject(jsonStr);
         String jsonone=json.toString();

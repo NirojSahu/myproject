@@ -5,8 +5,10 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.jayway.jsonpath.JsonPath;
 import io.restassured.path.json.config.JsonPathConfig;
 import io.restassured.response.Response;
-import org.ho.yaml.Yaml;
+//import org.ho.yaml.Yaml;
 import org.json.JSONObject;
+import org.yaml.snakeyaml.Yaml;
+
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
@@ -28,7 +30,8 @@ public class YamlReader {
             Yaml yaml = new Yaml();
             Map<String, Object> res = new HashMap<String, Object>();
             File file = new File(YML_Path);
-            Map<String, Object> map =(Map<String, Object>) Yaml.load(new File(YML_Path));
+            Map<String, Object> map =yaml.load(String.valueOf(file));
+//                    (Map<String, Object>) Yaml.load(new File(YML_Path));
             for(Map.Entry<String,Object> m:map.entrySet()){
                 System.out.println(m.getKey() +" values "+
                         m.getValue());

@@ -1,16 +1,18 @@
 package com.test.pages;
 
+import Utilities.WebKit.helper.BasePage;
+import Utilities.seleniumcustomframework.extension.PageElement;
 import com.google.inject.Inject;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.CommonFunctions;
 import com.test.Utils.SeleniumHelper;
-import com.test.helper.BasePage;
-import com.test.seleniumcustomframework.extension.PageElement;
+//import com.test.helper.BasePage;
+//import com.test.seleniumcustomframework.extension.PageElement;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.FindBy;
-import scala.App;
+//import scala.App;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

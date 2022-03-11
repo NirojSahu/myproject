@@ -1,11 +1,14 @@
 package com.test.stepDefs;
 
+import Utilities.BasePage;
+import Utilities.WebKit.configuration.PageFactory;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.google.inject.Inject;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
-import com.test.configuration.PageFactory;
-import com.test.exceptions.StopTestException;
-import com.test.helper.BasePage;
+//import com.test.configuration.PageFactory;
+//import com.test.exceptions.StopTestException;
+//import com.test.helper.BasePage;
 import com.test.pages.HomePage;
 import com.test.pages.MyAccounts;
 import com.test.pages.Navigate;

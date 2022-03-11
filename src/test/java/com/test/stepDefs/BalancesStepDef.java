@@ -1,33 +1,29 @@
 package com.test.stepDefs;
 
-import Responses.OBReadBalance1.Balance;
-import Responses.OBReadBalance1.CreditLine;
 import Responses.OBReadBalance1.OBReadBalance;
-import Utilities.APIMethods;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
+import Utilities.WebKit.helper.BasePage;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.google.inject.Inject;
-import com.test.APIFunctions.AccountAccessConsentService;
-import com.test.APIFunctions.BalancesService;
+import com.test.APIFunctions.BalanceService;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.SeleniumHelper;
-import com.test.Utils.jwt;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
-import com.test.helper.NavigationHelper;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
+//import com.test.helper.NavigationHelper;
 import com.test.pages.MyAccounts;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import io.restassured.path.json.JsonPath;
-import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 import org.codehaus.jettison.json.JSONException;
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
@@ -36,13 +32,13 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
-import com.test.helper.BasePage;
+//import com.test.helper.BasePage;
 
 
 public class BalancesStepDef extends BasePage {
 
     @Inject
-    BalancesService Obj;
+    BalanceService Obj;
     @Inject
     SeleniumHelper seleniumHelper;
     @Inject

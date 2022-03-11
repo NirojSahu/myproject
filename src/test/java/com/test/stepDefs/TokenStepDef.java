@@ -1,13 +1,14 @@
 package com.test.stepDefs;
 
+import Utilities.WebKit.exceptions.StopTestException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.google.inject.Inject;
 import com.test.APIFunctions.TokenService;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.SeleniumHelper;
-import com.test.exceptions.StopTestException;
-import com.test.helper.NavigationHelper;
+//import com.test.exceptions.StopTestException;
+//import com.test.helper.NavigationHelper;
 import com.test.pages.*;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -18,6 +19,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONException;
 import org.junit.Assert;
+import org.junit.jupiter.api.BeforeAll;
 
 import java.io.IOException;
 import java.security.KeyManagementException;
@@ -60,7 +62,7 @@ public class TokenStepDef {
     }
 
     @When("I want to make a call to applicationaccesstoken_service to create token")
-    public void i_want_to_make_a_call_to_applicationaccesstoken_service_to_create_token() throws UnrecoverableKeyException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException, StopTestException {
+    public void i_want_to_make_a_call_to_applicationaccesstoken_service_to_create_token() throws UnrecoverableKeyException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException, StopTestException, StopTestException {
         response = ts.hitService_post();
     }
 
@@ -113,8 +115,9 @@ public class TokenStepDef {
         }
     }
 
+
     @Given("I have the data available to create {string} request for application access consent token with JWT")
-    public void iHaveTheDataAvailableToCreateRequestForApplicationAccessConsentTokenWithJWT(String arg0) throws IOException, JSONException, StopTestException {
+    public void iHaveTheDataAvailableToCreateRequestForApplicationAccessConsentTokenWithJWT(String arg0) throws Exception {
         App_genericFunction.createPropertyfile(Featureid);
         ts.setRequestbody_post_withdynamic_JWT();
     }

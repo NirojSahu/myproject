@@ -7,11 +7,12 @@ package Utilities.WebKit.hooksnoteardown;
 
 import Utilities.WebKit.context.DeviceContext;
 import Utilities.WebKit.exceptions.StopTestException;
+import Utilities.WebKit.helper.PropertiesHelper;
 import com.google.inject.Inject;
 import com.google.inject.name.Named;
 import Utilities.WebKit.configuration.Configuration;
 import Utilities.WebKit.context.Device;
-import com.test.helper.PropertiesHelper;
+//import com.test.helper.PropertiesHelper;
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;

@@ -2,18 +2,21 @@ package com.test.APIFunctions;
 
 import Utilities.APIMethods;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.exceptions.StopTestException;
 import api.Pojos.AccountAccessConsents.AccountAccessContent;
 import api.Pojos.AccountAccessConsents.Data;
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.google.inject.Inject;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.jwt;
-import com.test.exceptions.StopTestException;
+//import com.test.exceptions.StopTestException;
+import cucumber.api.Scenario;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import org.json.JSONException;
 import org.json.JSONObject;
-import scala.App;
+//import scala.App;
 
 import java.security.KeyManagementException;
 import java.security.KeyStoreException;
@@ -25,10 +28,13 @@ import java.util.List;
 import java.util.Map;
 
 public class TokenService {
+    @Inject
+      GlobalHooks globalHooks;
     String ResourceURI = GlobalHooks.ResourceURI;
     LinkedHashMap<String, String> headervalues = new LinkedHashMap<String, String>();
     ArrayList<Map<String, String>> API_values = GlobalHooks.values;
-    String jsonString ;
+    String jsonString;
+    public Scenario scenario;
 
     public void setHeaders_post(){
 
@@ -81,8 +87,9 @@ public class TokenService {
         App_genericFunction.putcommentinStep(" AuthURL : " + jsonString);
          return jsonString;
     }
-    public void setRequestbody_post_withdynamic_JWT() throws JsonProcessingException, JSONException, StopTestException {
+    public void setRequestbody_post_withdynamic_JWT() throws Exception {
 
+//        globalHooks.BeforeScenario();
         String jwt_token =jwt.generateJwtToken_AAT(GlobalHooks.privatekey,GlobalHooks.publickey,API_values.get(0).get("audience"),API_values.get(0).get("client_id"));
         App_genericFunction.putcommentinStep("JWT TOken : "+jwt_token);
         jsonString = "client_id="+API_values.get(0).get("client_id") +
@@ -93,6 +100,9 @@ public class TokenService {
                 "&redirect_uri="+API_values.get(0).get("redirect_uri");
         App_genericFunction.putcommentinStep(" Request as raw-text : " + jsonString);
         jwt.printStructure_cucumber_report(jwt_token,GlobalHooks.publickey);
+        App_genericFunction.WritePropertiesFile_common("jsonString",jsonString);
+
+        System.out.println("Testing Continue ");
     }
     public void setRequestbody_post_withdynamic_cat_JWT() throws JsonProcessingException, JSONException, StopTestException {
         String auth_code ;
@@ -135,6 +145,7 @@ public class TokenService {
         jwt.printStructure_cucumber_report(jwt_token,GlobalHooks.publickey);
     }
     public Response hitService_post() throws UnrecoverableKeyException, NoSuchAlgorithmException, KeyStoreException, KeyManagementException, StopTestException {
+        jsonString=App_genericFunction.ReadPropertiesFile_common("jsonString");
         Response response = APIMethods.method_post_raw(GlobalHooks.BaseURI,jsonString,ResourceURI);
         App_genericFunction.putcommentinStep("POST AS RAW TEXT : " + ResourceURI);
         return response;

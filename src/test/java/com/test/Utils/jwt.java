@@ -1,10 +1,12 @@
 package com.test.Utils;
 
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.google.gson.JsonObject;
 import com.google.inject.Inject;
 import com.google.inject.internal.asm.$ByteVector;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
 import cucumber.api.java.eo.Do;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jws;

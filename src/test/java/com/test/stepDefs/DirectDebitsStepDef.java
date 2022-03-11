@@ -1,15 +1,18 @@
 package com.test.stepDefs;
 
-import Responses.OBReadDirectDebits1.OBReadDirectDebit;
+//import Responses.OBReadDirectDebits1.OBReadDirectDebit;
+import Responses.OBReadDirectDebits1.OBReadDirectDebits;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.google.inject.Inject;
 import com.test.APIFunctions.DirectDebitsService;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
 import com.test.pages.Directdebit;
 import com.test.pages.MyAccounts;
 import com.test.pages.PaymentServices;
@@ -76,7 +79,7 @@ public class DirectDebitsStepDef {
         if(Status_Code.contentEquals("200"))
         {
             Assert.assertEquals("Test Failed",Integer.parseInt(Status_Code),response.getStatusCode());
-            OBReadDirectDebit Obj1 = response.as(OBReadDirectDebit.class);
+            OBReadDirectDebits Obj1 = response.as(OBReadDirectDebits.class);
             try
             {
             for(int i =0 ;i<Obj1.getData().getDirectDebit().size();i++)
@@ -134,11 +137,11 @@ public class DirectDebitsStepDef {
     }
 
     @Then("I verify the cases against Banking portal for DirectDebit with response status code {string}")
-    public void iVerifyTheCasesAgainstBankingPortalForDirectDebitWithResponseStatusCode(String Status_Code) throws InterruptedException, StopTestException {
+    public void iVerifyTheCasesAgainstBankingPortalForDirectDebitWithResponseStatusCode(String Status_Code) throws InterruptedException, StopTestException, StopTestException {
         if( Configuration.getConfiguration().getProperty("digibank").startsWith("enabled")) {
             if (Status_Code.contentEquals("200")) {
                 Assert.assertEquals("Test Failed", Integer.parseInt(Status_Code), response.getStatusCode());
-                OBReadDirectDebit Obj1 = response.as(OBReadDirectDebit.class);
+                OBReadDirectDebits Obj1 = response.as(OBReadDirectDebits.class);
                 general.getintoCAInternetBanking("", GlobalHooks.values.get(0).get("customer_no"), GlobalHooks.values.get(0).get("pac_no"), GlobalHooks.values.get(0).get("password"));
                 payment_details.clickOnPaymentServiceLink("Payment Services");
                 Thread.sleep(2000);

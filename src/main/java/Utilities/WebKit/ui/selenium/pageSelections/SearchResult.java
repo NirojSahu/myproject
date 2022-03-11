@@ -5,8 +5,10 @@
 
 package Utilities.WebKit.ui.selenium.pageSelections;
 
-import com.test.seleniumcustomframework.extension.PageElement;
-import com.test.seleniumcustomframework.extension.PageSection;
+//import com.test.seleniumcustomframework.extension.PageElement;
+//import com.test.seleniumcustomframework.extension.PageSection;
+import Utilities.seleniumcustomframework.extension.PageElement;
+import Utilities.seleniumcustomframework.extension.PageSection;
 import org.openqa.selenium.support.FindBy;
 
 public class SearchResult extends PageSection {

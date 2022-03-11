@@ -1,12 +1,16 @@
 package com.test.pages;
 
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
+import Utilities.WebKit.helper.BasePage;
+import Utilities.WebKit.helper.NavigationHelper;
 import com.google.inject.Inject;
 import com.test.LoadProperties;
 import com.test.Utils.SeleniumHelper;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
-import com.test.helper.BasePage;
-import com.test.helper.NavigationHelper;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
+//import com.test.helper.BasePage;
+//import com.test.helper.NavigationHelper;
 import org.openqa.selenium.By;
 
 public class Navigate extends BasePage {

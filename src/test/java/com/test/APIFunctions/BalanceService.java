@@ -10,7 +10,7 @@ import com.test.Utils.App_genericFunction;
 import com.test.Utils.CommonVariables;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import org.apache.avro.generic.GenericData;
+//import org.apache.avro.generic.GenericData;
 import org.codehaus.jettison.json.JSONException;
 import org.json.JSONObject;
 import org.junit.Assert;
@@ -21,7 +21,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
-public class BalancesService {
+public class BalanceService {
 
     String ResourceURI = GlobalHooks.ResourceURI;
     LinkedHashMap<String, String> headervalues = new LinkedHashMap<String, String>();

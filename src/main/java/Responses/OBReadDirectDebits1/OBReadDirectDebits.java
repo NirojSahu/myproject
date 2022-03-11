@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.google.gson.annotations.SerializedName;
 
 
-public class OBReadDirectDebit {
+public class OBReadDirectDebits {
 
     @SerializedName("Data")
     @JsonProperty("Data")

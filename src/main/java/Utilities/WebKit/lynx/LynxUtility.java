@@ -8,7 +8,8 @@ package Utilities.WebKit.lynx;
 import Utilities.WebKit.helper.BasePage;
 import java.net.MalformedURLException;
 import java.net.URL;
-import org.junit.Test;
+//import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.RemoteWebDriver;
 

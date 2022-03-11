@@ -1,4 +1,3 @@
-/*
 package Utilities;
 
 import Utilities.WebKit.annotations.Page;
@@ -64,13 +63,13 @@ public class BasePage {
             System.out.printf("%s page has not been displayed%n",this);
         }
     }
-    public void assertPage(){
-        String expectedPage=this.getPageFromAnnotation();
-        String actualPage=this.getPageID();
-        if(!expectedPage.equals(actualPage)){
-            throw new UnexpectedPageException(String.format("Unexpected page displayed: \n\tExpected: %s\n\tbut got: %s",expectedPage,actualPage));
-        }
-    }
+//    public void assertPage(){
+//        String expectedPage=this.getPageFromAnnotation();
+//        String actualPage=this.getPageId();
+//        if(!expectedPage.equals(actualPage)){
+//            throw new UnexpectedPageException(String.format("Unexpected page displayed: \n\tExpected: %s\n\tbut got: %s",expectedPage,actualPage));
+//        }
+//    }
     public String getPageId(){
         return null;
     }
@@ -98,7 +97,7 @@ public class BasePage {
         }while (pageAnnotation.id().isEmpty());
         return pageAnnotation.id();
     }
-    public void waitFor(Integer timeout){
+    public void waitFor(Integer timeout) throws TimeoutException {
         TimeoutHelper.withTimeout(timeout, new Runnable() {
             public void run() {
                 while (!BasePage.this.getPageIdFromAnnotation().equals(BasePage.this.getPageId())){
@@ -111,7 +110,7 @@ public class BasePage {
             }
         });
     }
-    public void waitFor(){
+    public void waitFor() throws TimeoutException {
         this.waitFor(60000);
     }
     protected String getReativePath(){
@@ -126,4 +125,3 @@ public class BasePage {
     }
 
 }
-*/

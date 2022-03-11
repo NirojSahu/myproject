@@ -7,16 +7,16 @@
     <groupId>com.test</groupId>
     <artifactId>NitroWebCage</artifactId>
     <version>1.1.0</version>
-    <repositories>
-        <repository>
-            <id>nexus</id>
-            <url>https://nexus-proxy.almuk.santanderuk.corp/repository/maven-public/</url>
-        </repository>
-        <repository>
-            <id>Selenium_Repository</id>
-            <url>https://nexus-proxy.almuk.santanderuk.corp/repository/maven-releases/</url>
-        </repository>
-    </repositories>
+<!--    <repositories>-->
+<!--        <repository>-->
+<!--            <id>nexus</id>-->
+<!--            <url>https://nexus-proxy.almuk.santanderuk.corp/repository/maven-public/</url>-->
+<!--        </repository>-->
+<!--        <repository>-->
+<!--            <id>Selenium_Repository</id>-->
+<!--            <url>https://nexus-proxy.almuk.santanderuk.corp/repository/maven-releases/</url>-->
+<!--        </repository>-->
+<!--    </repositories>-->
     <build>
         <plugins>
             <plugin>
@@ -60,12 +60,13 @@
             </plugin>
         </plugins>
     </build>
+
     <dependencies>
-    <dependency>
-        <groupId>com.test.santander.automation.framework</groupId>
-        <artifactId>NitroWebKit</artifactId>
-        <version>4.1.7</version>
-    </dependency>
+<!--    <dependency>-->
+<!--        <groupId>com.test.santander.automation.framework</groupId>-->
+<!--        <artifactId>NitroWebKit</artifactId>-->
+<!--        <version>4.1.7</version>-->
+<!--    </dependency>-->
        <!-- <dependency>
             <groupId>com.santander.api</groupId>
             <artifactId>NitroApiKit</artifactId>
@@ -76,6 +77,25 @@
             <artifactId>rest-assured</artifactId>
             <version>3.1.0</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>4.3.30.RELEASE</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.codehaus.jettison/jettison -->
+        <dependency>
+            <groupId>org.codehaus.jettison</groupId>
+            <artifactId>jettison</artifactId>
+            <version>1.4.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.codoid.products/fillo -->
+        <dependency>
+            <groupId>com.codoid.products</groupId>
+            <artifactId>fillo</artifactId>
+            <version>1.18</version>
+        </dependency>
+
         <dependency>
             <groupId>org.codehaus.groovy</groupId>
             <artifactId>groovy-xml</artifactId>
@@ -203,6 +223,97 @@
                     <artifactId>jms</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.test</groupId>-->
+<!--            <artifactId>NitroWebCage</artifactId>-->
+<!--            <version>1.1.0</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.google.inject</groupId>
+            <artifactId>guice</artifactId>
+            <version>5.1.0</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.redfin</groupId>-->
+<!--            <artifactId>patient-selenium</artifactId>-->
+<!--            <version>3.1.4</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.1.1</version>
+        </dependency>
+
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-api</artifactId>-->
+<!--            <version>4.0.0-alpha-4</version>-->
+<!--        </dependency>-->
+
+
+
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-support</artifactId>-->
+<!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-chrome-driver</artifactId>-->
+<!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-edge-driver</artifactId>-->
+<!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.reflections</groupId>
+            <artifactId>reflections</artifactId>
+            <version>0.10.2</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-firefox-driver</artifactId>-->
+<!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-ie-driver</artifactId>-->
+<!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>2.6.4</version>
+        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.seleniumhq.selenium</groupId>-->
+<!--            <artifactId>selenium-safari-driver</artifactId>-->
+<!--            <version>4.1.2</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>yaml</groupId>-->
+<!--            <artifactId>yaml</artifactId>-->
+<!--            <version>1.0.0</version>-->
+<!--        </dependency>-->
+        <dependency>
+            <groupId>com.yaml-validator</groupId>
+            <artifactId>yaml-validator</artifactId>
+            <version>0.12</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>3.1.0</version>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>

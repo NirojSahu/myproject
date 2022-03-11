@@ -1,10 +1,11 @@
 package com.test.pages;
 
+import Utilities.WebKit.helper.BasePage;
 import com.google.inject.Inject;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.SeleniumHelper;
-import com.test.helper.BasePage;
-import com.test.seleniumcustomframework.extension.PageElement;
+//import com.test.helper.BasePage;
+//import com.test.seleniumcustomframework.extension.PageElement;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

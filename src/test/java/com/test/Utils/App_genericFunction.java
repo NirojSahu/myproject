@@ -2,6 +2,8 @@ package com.test.Utils;
 
 import Utilities.APIMethods;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.helper.NavigationHelper;
 import com.codoid.products.exception.FilloException;
 import com.codoid.products.fillo.Connection;
 import com.codoid.products.fillo.Fillo;
@@ -10,8 +12,8 @@ import com.google.inject.Inject;
 import com.test.APIFunctions.TokenService;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.LoadProperties;
-import com.test.configuration.Configuration;
-import com.test.helper.NavigationHelper;
+//import com.test.configuration.Configuration;
+//import com.test.helper.NavigationHelper;
 import cucumber.api.Scenario;
 import io.restassured.RestAssured;
 import io.restassured.config.EncoderConfig;
@@ -24,6 +26,7 @@ import org.json.JSONObject;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 import java.io.File;
@@ -36,8 +39,8 @@ import java.security.PublicKey;
 import java.util.*;
 import java.util.regex.Pattern;
 
-import static com.jayway.restassured.RestAssured.config;
-import static com.jayway.restassured.config.EncoderConfig.encoderConfig;
+//import static com.jayway.restassured.RestAssured.config;
+//import static com.jayway.restassured.config.EncoderConfig.encoderConfig;
 
 public class App_genericFunction {
 
@@ -511,7 +514,8 @@ public class App_genericFunction {
     }
 
     public String browsername_Report() {
-        Capabilities cap = ((RemoteWebDriver) selenium_helper.getdriver()).getCapabilities();
+//        Capabilities cap = ((RemoteWebDriver) selenium_helper.getdriver()).getCapabilities();
+        Capabilities cap =new DesiredCapabilities();
         String browserName = cap.getBrowserName().toLowerCase();
         System.out.println(browserName);
         return browserName;

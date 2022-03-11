@@ -47,7 +47,7 @@ class FieldInitialiserDependencyModule extends AbstractModule {
             String packageName = FieldInitialiser.class.getPackage().getName();
             ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
             configurationBuilder.setScanners(new Scanner[]{new SubTypesScanner()});
-            configurationBuilder.filterInputsBy((new FilterBuilder()).includePackage(new String[]{packageName}));
+//            configurationBuilder.filterInputsBy((new FilterBuilder()).includePackage(String.valueOf(new String[]{packageName})));
             configurationBuilder.setUrls(ClasspathHelper.forPackage(packageName, new ClassLoader[0]));
             this.reflections = new Reflections(configurationBuilder);
             return this.reflections;

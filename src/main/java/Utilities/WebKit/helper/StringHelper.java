@@ -215,7 +215,7 @@ public final class StringHelper {
         return "".equals(str) || str == null;
     }
 
-    static String toCamelCase(String string) {
+    public static String toCamelCase(String string) {
         String[] parts = string.split("[_\\.]");
         String camelCaseString = "";
         String[] var3 = parts;

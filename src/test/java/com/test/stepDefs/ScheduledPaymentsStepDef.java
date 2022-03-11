@@ -1,9 +1,13 @@
 package com.test.stepDefs;
 
-import Responses.OBReadScheduledPayments2.OBReadScheduledPayment;
-import Responses.OBReadScheduledPayments2.ScheduledPayment;
-import Responses.OBReadStandingOrders4.OBReadStandingOrders4;
+//import Responses.OBReadScheduledPayments2.OBReadScheduledPayment;
+//import Responses.OBReadScheduledPayments2.ScheduledPayment;
+//import Responses.OBReadStandingOrders4.OBReadStandingOrders4;
+import Responses.OBReadSheduledPayments2.OBReadSheduledPayments;
+import Responses.OBReadSheduledPayments2.ScheduledPayment;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.google.inject.Inject;
@@ -12,8 +16,8 @@ import com.test.APIFunctions.ScheduledPaymentsService;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.CommonFunctions;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
 import com.test.pages.MyAccounts;
 import com.test.pages.PaymentServices;
 import com.test.pages.SchedulePayment;
@@ -90,7 +94,7 @@ public class ScheduledPaymentsStepDef {
         if(Status_Code.contentEquals("200"))
         {
             Assert.assertEquals("Test Failed",Integer.parseInt(Status_Code),response.getStatusCode());
-            OBReadScheduledPayment Obj1 = response.as(OBReadScheduledPayment.class);
+            OBReadSheduledPayments Obj1 = response.as(OBReadSheduledPayments.class);
             try{
             for(int i=0;i<Obj1.getData().getScheduledPayment().size();i++)
             {
@@ -151,7 +155,7 @@ public class ScheduledPaymentsStepDef {
             if (Status_Code.contentEquals("200")) {
                 System.out.println("Statuscode returned : " + Status_Code);
                 Assert.assertEquals("Test Failed", Integer.parseInt(Status_Code), response.getStatusCode());
-                OBReadScheduledPayment Obj1 = response.as(OBReadScheduledPayment.class);
+                OBReadSheduledPayments Obj1 = response.as(OBReadSheduledPayments.class);
                 List<ScheduledPayment> SP = Obj1.getData().getScheduledPayment();
 
                 general.getintoCAInternetBanking("", GlobalHooks.values.get(0).get("customer_no"), GlobalHooks.values.get(0).get("pac_no"), GlobalHooks.values.get(0).get("password"));

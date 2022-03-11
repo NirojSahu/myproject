@@ -19,7 +19,8 @@ import java.lang.reflect.Proxy;
 import org.openqa.selenium.By;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.internal.WrapsElement;
+//import org.openqa.selenium.internal.WrapsElement;
+import org.openqa.selenium.WrapsElement;
 import org.openqa.selenium.support.pagefactory.Annotations;
 
 public class FieldInitialiserForPageSections implements FieldInitialiser {

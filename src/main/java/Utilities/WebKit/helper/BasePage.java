@@ -20,6 +20,7 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
@@ -51,7 +52,6 @@ import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.Wait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class BasePage {
@@ -267,9 +267,10 @@ public class BasePage {
     public void waitForElementToBecomeClickable(PageElement element, int timesInSeconds) {
         (new WebDriverWait(this.driver, (long)timesInSeconds)).until(ExpectedConditions.elementToBeClickable(element));
     }
-
-    private Wait<WebDriver> fluentWait() {
-        return (new FluentWait(this.driver)).withTimeout(10L, TimeUnit.SECONDS).pollingEvery(15L, TimeUnit.SECONDS).ignoring(WebDriverException.class);
+//(10L, TimeUnit.SECONDS)
+    private FluentWait fluentWait() {
+        return (new FluentWait(this.driver)).withTimeout(Duration.ofSeconds(30)).pollingEvery(Duration.ofSeconds(30));
+//                ignoring(NoSuchElementException.class));
     }
 
     public WebElement waitForElementByPolling(By by) {

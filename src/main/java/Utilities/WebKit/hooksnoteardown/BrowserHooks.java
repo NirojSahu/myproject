@@ -3,12 +3,15 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.hooksnoteardown;
+package Utilities.WebKit.hooksnoteardown;
 
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
+import Utilities.WebKit.helper.EnvironmentConstants;
 import com.google.inject.Inject;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
-import com.test.helper.EnvironmentConstants;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
+//import com.test.helper.EnvironmentConstants;
 import cucumber.api.Scenario;
 import cucumber.api.java.Before;
 import java.net.MalformedURLException;

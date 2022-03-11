@@ -3,10 +3,13 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper;
+package Utilities.WebKit.helper;
 
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -78,7 +81,7 @@ public class PropertiesHelper {
 
     private static String sanitiseKeyName(String keyName, String prefix) {
         String desiredKey = keyName.replace(prefix, "");
-        return StringHelper.toCamelCase(desiredKey);
+        return com.test.helper.StringHelper.toCamelCase(desiredKey);
     }
 
     public static void loadRunConfigProps() {

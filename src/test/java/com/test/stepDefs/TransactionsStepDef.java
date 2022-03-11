@@ -5,6 +5,8 @@ import Responses.OBReadTransaction4.OBReadTransaction;
 import Responses.OBReadTransaction4.SortbyBookingDatetime;
 import Responses.OBReadTransaction4.Transaction;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.google.inject.Inject;
@@ -12,8 +14,8 @@ import com.test.APIFunctions.TransactionsService;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.CommonFunctions;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
 import com.test.pages.MyAccounts;
 import com.test.pages.TableDataSet;
 import cucumber.api.java.en.Given;
@@ -91,8 +93,8 @@ public class TransactionsStepDef {
                 App_genericFunction.OptionalField("transactionreference",GlobalHooks.values.get(i).get("transactionreference"),obj1.getData().getTransaction().get(i).getTransactionReference());
                 if((obj1.getData().getTransaction().get(i).getAmount() != null)  && (!GlobalHooks.values.get(i).get("amount").isEmpty()))
                 {
-                    Assert.assertEquals("Test Failed ",GlobalHooks.values.get(i).get("amount"),obj1.getData().getTransaction().get(i).getAmount().getAmount());
-                    Assert.assertEquals("Test Failed ",GlobalHooks.values.get(i).get("currency"),obj1.getData().getTransaction().get(i).getAmount().getCurrency());
+                    Assert.assertEquals("Test Failed ",GlobalHooks.values.get(i).get("amount"),obj1.getData().getTransaction().get(i).getAmount());
+                    Assert.assertEquals("Test Failed ",GlobalHooks.values.get(i).get("currency"),obj1.getData().getTransaction().get(i).getAmount());
                 }else
                 {
                     App_genericFunction.putcommentinStep("Error : Optional Field Amount Skipped");
@@ -109,8 +111,8 @@ public class TransactionsStepDef {
                 App_genericFunction.OptionalField("transactioninformation",GlobalHooks.values.get(i).get("transactioninformation"),obj1.getData().getTransaction().get(i).getTransactionInformation());
 
                 if((obj1.getData().getTransaction().get(i).getBalance() != null) && (!GlobalHooks.values.get(i).get("balance_amount").isEmpty())) {
-                    Assert.assertEquals("Test Failed ", GlobalHooks.values.get(i).get("balance_amount"), obj1.getData().getTransaction().get(i).getBalance().getAmount().getAmount());
-                    Assert.assertEquals("Test Failed ",GlobalHooks.values.get(i).get("balance_currency"), obj1.getData().getTransaction().get(i).getBalance().getAmount().getCurrency() );
+                    Assert.assertEquals("Test Failed ", GlobalHooks.values.get(i).get("balance_amount"), obj1.getData().getTransaction().get(i).getBalance().getAmount());
+                    Assert.assertEquals("Test Failed ",GlobalHooks.values.get(i).get("balance_currency"), obj1.getData().getTransaction().get(i).getBalance().getCreditDebitIndicator());
                     Assert.assertEquals("Test Failed ", GlobalHooks.values.get(i).get("balance_creditdebitindicator"), obj1.getData().getTransaction().get(i).getBalance().getCreditDebitIndicator());
                     Assert.assertEquals("Test Failed ", GlobalHooks.values.get(i).get("type"), obj1.getData().getTransaction().get(i).getBalance().getType());
                     Obj.validateBalancetype(GlobalHooks.values.get(i).get("type"));
@@ -196,11 +198,11 @@ public class TransactionsStepDef {
                                 Assert.assertEquals("Test Failed ", "Debit", obj1.getData().getTransaction().get(i).getCreditDebitIndicator());
                                 String actual="";
                                 for(int k=0; k<obj1.getData().getTransaction().size();k++){
-                                    if(TransactionListData.get(k).getDebits().split(" ")[1].equals(obj1.getData().getTransaction().get(i).getAmount().getAmount()))
+                                    if(TransactionListData.get(k).getDebits().split(" ")[1].equals(obj1.getData().getTransaction().get(i).getAmount()))
                                     {
-                                        actual=obj1.getData().getTransaction().get(i).getAmount().getAmount();
+                                        actual= String.valueOf(obj1.getData().getTransaction().get(i).getAmount());
                                         Assert.assertEquals("Test Failed ", TransactionListData.get(k).getDebits().split(" ")[1], actual);
-                                        Assert.assertEquals("Test Failed ", TransactionListData.get(k).getDebits().split(" ")[0], obj1.getData().getTransaction().get(i).getAmount().getCurrency());
+                                        Assert.assertEquals("Test Failed ", TransactionListData.get(k).getDebits().split(" ")[0], obj1.getData().getTransaction().get(i).getAmount());
                                         break;
                                     }
                                 }
@@ -212,9 +214,9 @@ public class TransactionsStepDef {
                                 if(amount.contains(",")){
                                     amount=amount.replace(",","");
                                 }
-                                Assert.assertEquals("Test Failed ", amount, obj1.getData().getTransaction().get(i).getAmount().getAmount());
+                                Assert.assertEquals("Test Failed ", amount, obj1.getData().getTransaction().get(i).getAmount());
 //                                Assert.assertEquals("Test Failed ", TransactionListData.get(i).getCredit().split(" ")[1], obj1.getData().getTransaction().get(i).getAmount().getAmount());
-                                Assert.assertEquals("Test Failed ", TransactionListData.get(i).getCredit().split(" ")[0], obj1.getData().getTransaction().get(i).getAmount().getCurrency());
+                                Assert.assertEquals("Test Failed ", TransactionListData.get(i).getCredit().split(" ")[0], obj1.getData().getTransaction().get(i).getAmount());
                             }
 
                         } else {

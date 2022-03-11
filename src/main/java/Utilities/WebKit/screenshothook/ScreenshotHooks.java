@@ -3,7 +3,7 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.screenshothook;
+package Utilities.WebKit.screenshothook;
 
 import com.google.inject.Inject;
 import com.google.inject.Provider;

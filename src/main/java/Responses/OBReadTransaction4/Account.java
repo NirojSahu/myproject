@@ -2,7 +2,7 @@ package Responses.OBReadTransaction4;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class Amount
+class Amount
 {
     @JsonProperty("Amount")
     private String amount;

@@ -1,11 +1,14 @@
 package com.test.pages;
 
+import Utilities.BasePage;
+import Utilities.WebKit.helper.NavigationHelper;
+import Utilities.seleniumcustomframework.extension.PageElement;
 import com.google.inject.Inject;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.SeleniumHelper;
-import com.test.helper.BasePage;
-import com.test.helper.NavigationHelper;
-import com.test.seleniumcustomframework.extension.PageElement;
+//import com.test.helper.BasePage;
+//import com.test.helper.NavigationHelper;
+//import com.test.seleniumcustomframework.extension.PageElement;
 import cucumber.api.java.ca.Cal;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;

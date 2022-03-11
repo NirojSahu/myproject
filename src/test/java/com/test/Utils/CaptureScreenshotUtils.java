@@ -1,7 +1,8 @@
 package com.test.Utils;
 
+import Utilities.WebKit.helper.BasePage;
 import com.google.inject.Inject;
-import com.test.helper.BasePage;
+//import com.test.helper.BasePage;
 import cucumber.api.Scenario;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;

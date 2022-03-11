@@ -1,7 +1,8 @@
 package com.test.stepDefs;
 
+import Utilities.BasePage;
 import com.google.inject.Inject;
-import com.test.helper.BasePage;
+//import com.test.helper.BasePage;
 import com.test.pages.SceenshotCapturePage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;

@@ -14,7 +14,8 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.internal.WrapsElement;
+//import org.openqa.selenium.internal.WrapsElement;
+import org.openqa.selenium.WrapsElement;
 import org.openqa.selenium.support.pagefactory.Annotations;
 
 public class FieldInitialiserForSeleniumLegacyWebElements implements FieldInitialiser {

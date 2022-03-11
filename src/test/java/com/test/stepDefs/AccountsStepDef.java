@@ -3,15 +3,17 @@ package com.test.stepDefs;
 import Responses.OBReadAccounts3.OBReadAccounts;
 import Responses.OBReadAccounts3.SortbyAccount;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.google.inject.Inject;
-import com.test.APIFunctions.AccountsService;
+import com.test.APIFunctions.AccountService;
 import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.SeleniumHelper;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
 import com.test.pages.MyAccounts;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -28,7 +30,7 @@ import java.util.*;
 
 public class AccountsStepDef {
     @Inject
-    AccountsService Obj;
+    AccountService Obj;
 
     @Inject
     SeleniumHelper seleniumHelper;

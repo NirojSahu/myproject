@@ -1,9 +1,12 @@
 package com.test.stepDefs;
 
 import Responses.OBReadProducts2.OBReadProducts;
-import Responses.OBReadScheduledPayments2.OBReadScheduledPayment;
-import Responses.OBReadStandingOrders4.OBReadStandingOrders4;
+//import Responses.OBReadScheduledPayments2.OBReadScheduledPayment;
+//import Responses.OBReadStandingOrders4.OBReadStandingOrders4;
+import Responses.OBReadStandingOrder4.OBReadStandingOrder;
 import Utilities.JsonUtilities;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.fge.jsonschema.core.exceptions.ProcessingException;
 import com.google.inject.Inject;
@@ -13,8 +16,8 @@ import com.test.CustomHooks.GlobalHooks;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.CommonFunctions;
 import com.test.Utils.SeleniumHelper;
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
 import com.test.pages.MyAccounts;
 import com.test.pages.PaymentServices;
 import com.test.pages.StandingOrder;
@@ -90,7 +93,7 @@ public class StandingOrdersStepDef {
         JsonPathEvaluator= Obj.getResponse(response);
         if(Status_Code.contentEquals("200"))
         {
-            OBReadStandingOrders4 Obj1 = response.as(OBReadStandingOrders4.class);
+            OBReadStandingOrder Obj1 = response.as(OBReadStandingOrder.class);
             try
             {
             for(int i=0;i<Obj1.getData().getStandingOrder().size();i++)
@@ -183,7 +186,7 @@ public class StandingOrdersStepDef {
         if( Configuration.getConfiguration().getProperty("digibank").startsWith("enabled")) {
             if (Status_Code.contentEquals("200")) {
                 Assert.assertEquals("Test Failed", Integer.parseInt(Status_Code), response.getStatusCode());
-                OBReadStandingOrders4 Obj1 = response.as(OBReadStandingOrders4.class);
+                OBReadStandingOrder Obj1 = response.as(OBReadStandingOrder.class);
                 general.getintoCAInternetBanking("", GlobalHooks.values.get(0).get("customer_no"), GlobalHooks.values.get(0).get("pac_no"), GlobalHooks.values.get(0).get("password"));
                 Thread.sleep(2000);
                 payment_details.clickOnPaymentServiceLink("Payment Services");

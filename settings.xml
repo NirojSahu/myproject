@@ -10,19 +10,10 @@
             <username>${MAVEN_USERNAME}</username>
             <password>${MAVEN_PASSWORD}</password>
         </server>
-        <server>
-            <id>gitlab-uk-scm-server</id>
-            <username>${GIT_USER}</username>
-            <password>${GIT_PASSWORD}</password>
-        </server>
+
     </servers>
     <mirrors>
-        <mirror>
-            <id>hyperloop</id>
-            <mirrorOf>*</mirrorOf>
-            <name>UK Repository</name>
-            <url>https://nexus-proxy.almuk.santanderuk.corp/repository/maven-public/</url>
-        </mirror>
+
     </mirrors>
     <profiles>
         <profile>
@@ -31,46 +22,11 @@
                 <activeByDefault>true</activeByDefault>
             </activation>
             <repositories>
-                <repository>
-                    <id>uk-alm-repo</id>
-                    <url>https://nexus.almuk.santanderuk.corp/repository/maven-public/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                        <updatePolicy>always</updatePolicy>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                        <updatePolicy>always</updatePolicy>
-                    </snapshots>
-                </repository>
-                <repository>
-                    <id>snapshots-repo</id>
-                    <url>https://nexus.almuk.santanderuk.corp/repository/maven-snapshots/</url>
-                    <releases>
-                        <enabled>false</enabled>
-                    </releases>
-                    <snapshots>
-                        <enabled>true</enabled>
-                        <updatePolicy>always</updatePolicy>
-                    </snapshots>
-                </repository>
-                <repository>
-                    <id>releases-repo</id>
-                    <url>https://nexus.almuk.santanderuk.corp/repository/maven-releases/</url>
-                    <releases>
-                        <enabled>true</enabled>
-                        <updatePolicy>always</updatePolicy>
-                    </releases>
-                    <snapshots>
-                        <enabled>false</enabled>
-                    </snapshots>
-                </repository>
+
+
+
             </repositories>
-            <properties>
-                <uk.nexus.url>https://nexus.almuk.santanderuk.corp</uk.nexus.url>
-                <releases.url>${uk.nexus.url}/repository/maven-releases/</releases.url>
-                <snapshots.url>${uk.nexus.url}/repository/maven-snapshots/</snapshots.url>
-            </properties>
+
         </profile>
     </profiles>
 </settings>

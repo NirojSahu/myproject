@@ -5,8 +5,11 @@
 
 package Utilities.WebKit.helper;
 
-import com.test.configuration.Configuration;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.exceptions.StopTestException;
+
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.exceptions.StopTestException;
 
 public class LoggingHelper {
     public LoggingHelper() {

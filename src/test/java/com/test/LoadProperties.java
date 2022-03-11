@@ -1,7 +1,9 @@
 package com.test;
 
-import com.test.exceptions.TestDataError;
-import com.test.helper.PropertiesHelper;
+import Utilities.WebKit.exceptions.TestDataError;
+import Utilities.WebKit.helper.PropertiesHelper;
+//import com.test.exceptions.TestDataError;
+//import com.test.helper.PropertiesHelper;
 
 import java.io.File;
 

@@ -5,9 +5,12 @@
 
 package Utilities.WebKit.helper;
 
-import com.test.configuration.Configuration;
-import com.test.configuration.PageFactory;
-import com.test.exceptions.StopTestException;
+//import com.test.configuration.Configuration;
+//import com.test.configuration.PageFactory;
+//import com.test.exceptions.StopTestException;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.configuration.PageFactory;
+import Utilities.WebKit.exceptions.StopTestException;
 import org.openqa.selenium.WebDriver;
 
 public class ExecControlHelper {

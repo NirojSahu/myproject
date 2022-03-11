@@ -1,18 +1,21 @@
-package com.test.CustomHooks;
+package com.test.CustomHooks
 
+import Utilities.WebKit.configuration.Configuration
 import com.google.inject.Inject;
 import com.test.Utils.App_genericFunction;
 import com.test.Utils.SeleniumHelper;
 import com.test.Utils.jwt;
-import com.test.configuration.Configuration;
-import com.test.configuration.PageFactory;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
+
+import cucumber.api.Scenario
 import cucumber.api.java.Before;
-import org.json.simple.parser.ParseException;
-import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.remote.SessionId;
-import scala.App;
+import org.json.simple.parser.ParseException
+import org.junit.BeforeClass
+import org.junit.jupiter.api.BeforeAll;
+
+import org.openqa.selenium.remote.SessionId
+import org.springframework.test.context.event.annotation.BeforeTestClass
+import org.testng.annotations.BeforeTest;
+
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -44,7 +47,9 @@ public class GlobalHooks {
     public static PublicKey publickey;
     public static PrivateKey privatekey;
 
-   //@Before
+
+
+    //@Before
     public void setEnvironment()  throws FileNotFoundException, ParseException, IOException {
         /*if (!propsFlag) {
             endPoint.environment = System.getProperty("environment");
@@ -56,10 +61,11 @@ public class GlobalHooks {
        // System.out.println("Hooks implemeneted");
     }
 
-    @Before
+ @Before
     public void BeforeScenario(Scenario scenario) throws Exception {
+
         //System.out.println(App_genericFunction.getFeatureName(scenario))
-        SessionId sessionid = ((RemoteWebDriver) SeleniumHelper.getdriver()).getSessionId();
+        SessionId sessionid =  SeleniumHelper.getdriver().getSessionId();
         scenario_screenshot = scenario;
         App_genericFunction.putcommentinStep("SessionID : " + sessionid);
         Featureid=App_genericFunction.getFeatureName(scenario);
@@ -80,7 +86,7 @@ public class GlobalHooks {
         System.out.println("resource_API : "+resource_API);
         System.out.println("scenario_type : "+scenario_type);
         //if(App_genericFunction.ReadBootstrap_static("environment").contentEquals("Dev"))
-        if( Configuration.getConfiguration().getProperty("environment").startsWith("Dev"))
+        if( Configuration.getConfiguration().getProperty("environment").contains("Dev"))
         {
             BaseURI="https://10.6.184.149:8243/";
             excel_name = "Datasource_3A";
@@ -304,9 +310,8 @@ public class GlobalHooks {
                 System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 break;
             case "" :
-            {
                 System.out.println("Scenario without Scenario_type link to excel");
-            }
+
             break;
         }
 

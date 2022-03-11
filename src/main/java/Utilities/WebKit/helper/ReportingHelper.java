@@ -3,11 +3,15 @@
 // (powered by Fernflower decompiler)
 //
 
-package com.test.helper;
+package Utilities.WebKit.helper;
 
-import com.test.configuration.Configuration;
-import com.test.configuration.PageFactory;
-import com.test.exceptions.StopTestException;
+import Utilities.WebKit.configuration.Configuration;
+import Utilities.WebKit.configuration.PageFactory;
+import Utilities.WebKit.exceptions.StopTestException;
+import Utilities.WebKit.helper.ExecControlHelper;
+//import com.test.configuration.Configuration;
+//import com.test.configuration.PageFactory;
+//import com.test.exceptions.StopTestException;
 import java.awt.AWTException;
 import java.awt.Dimension;
 import java.awt.Rectangle;
@@ -36,7 +40,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.remote.Augmenter;
 
 public class ReportingHelper {
-    static List<Result> results = new ArrayList();
+    static List<com.test.helper.Result> results = new ArrayList();
     private static File path = null;
     private static String runnerName;
 
@@ -86,7 +90,7 @@ public class ReportingHelper {
         return env;
     }
 
-    public static List<Result> getResultsForTestCase() throws StopTestException {
+    public static List<com.test.helper.Result> getResultsForTestCase() throws StopTestException {
         Configuration config = Configuration.getConfiguration();
         String resultsLocation = config.getResultsLocation();
         File folder = new File(resultsLocation);
@@ -98,11 +102,11 @@ public class ReportingHelper {
             String fileName = file.getName();
             String environment = "";
             String sessionID = "";
-            Result testResult = new Result();
-            int endIndex = false;
-            int lastIndexFullStop = false;
-            int endIndex = fileName.lastIndexOf(".xml");
-            int lastIndexFullStop = fileName.lastIndexOf(".", endIndex - 1);
+            com.test.helper.Result testResult = new com.test.helper.Result();
+            int endIndex ;
+            int lastIndexFullStop ;
+            endIndex = fileName.lastIndexOf(".xml");
+            lastIndexFullStop = fileName.lastIndexOf(".", endIndex - 1);
             String testName = fileName.substring(lastIndexFullStop + 1, endIndex);
             if (!testName.toUpperCase().equals("REPORTINGHELPERTEST")) {
                 testResult.setTestName(testName);

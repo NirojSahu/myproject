@@ -1,12 +1,14 @@
 package com.test.Utils;
 
 
+import Utilities.seleniumcustomframework.extension.PageElement;
 import com.google.common.base.Function;
 import com.google.inject.Inject;
 //import com.test.seleniumcustomframework.extension.PageElement;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.*;
 
@@ -266,7 +268,8 @@ public class SeleniumHelper {
 //
 
     public String browsername(){
-        Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
+//        Capabilities cap = ((RemoteWebDriver) driver).getCapabilities();
+        Capabilities cap =new DesiredCapabilities();
         String browserName = cap.getBrowserName().toLowerCase();
         System.out.println(browserName);
         return browserName;
@@ -1271,8 +1274,8 @@ public class SeleniumHelper {
         waitForJSandJQueryToLoad();
         final Boolean[] isWaitSuccessfull = new Boolean[1];
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
-        wait.withTimeout(2, TimeUnit.MINUTES);
+//        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//        wait.withTimeout(2, TimeUnit.MINUTES);
 
         Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
 
@@ -1300,8 +1303,8 @@ public class SeleniumHelper {
     public void waitTillTextExist(String string, Integer timeinSeconds) {
         final Boolean[] isWaitSuccessfull = new Boolean[1];
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
-        wait.withTimeout(timeinSeconds, TimeUnit.SECONDS);
+//        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//        wait.withTimeout(timeinSeconds, TimeUnit.SECONDS);
 
 
         Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
@@ -1336,8 +1339,8 @@ public class SeleniumHelper {
     public void waitTillTextNotExist(String string, Integer timeinSeconds) {
         final Boolean[] isWaitSuccessfull = new Boolean[1];
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
-        wait.withTimeout(timeinSeconds, TimeUnit.SECONDS);
+//        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//        wait.withTimeout(timeinSeconds, TimeUnit.SECONDS);
 
 
         Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
@@ -1361,8 +1364,8 @@ public class SeleniumHelper {
     public void waitTillClickableElementExist(String string) {
         final Boolean[] isElementFound = new Boolean[1];
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
-        wait.withTimeout(2, TimeUnit.MINUTES);
+//        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//        wait.withTimeout(2, TimeUnit.MINUTES);
         wait.ignoring(NoSuchElementException.class);
 
         Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
@@ -1385,8 +1388,8 @@ public class SeleniumHelper {
     public void waitTillClickableElementExist(WebElement element) {
         final Boolean[] isElementFound = new Boolean[1];
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
-        wait.withTimeout(2, TimeUnit.MINUTES);
+//        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//        wait.withTimeout(2, TimeUnit.MINUTES);
         wait.ignoring(NoSuchElementException.class);
 
         Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
@@ -1409,8 +1412,8 @@ public class SeleniumHelper {
     public void waitTillVisibleElementExist(String string) {
         final Boolean[] isElementFound = new Boolean[1];
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
-        wait.withTimeout(2, TimeUnit.MINUTES);
+//        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//        wait.withTimeout(2, TimeUnit.MINUTES);
         wait.ignoring(NoSuchElementException.class);
 
         Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {
@@ -1433,8 +1436,8 @@ public class SeleniumHelper {
     public void waitTillVisibleElementExist(WebElement element) {
         final Boolean[] isElementFound = new Boolean[1];
         FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver);
-        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
-        wait.withTimeout(2, TimeUnit.MINUTES);
+//        wait.pollingEvery(250, TimeUnit.MILLISECONDS);
+//        wait.withTimeout(2, TimeUnit.MINUTES);
         wait.ignoring(NoSuchElementException.class);
 
         Function<WebDriver, Boolean> function = new Function<WebDriver, Boolean>() {

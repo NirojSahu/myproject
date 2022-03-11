@@ -1,8 +1,10 @@
 package com.test.pages;
 
+import Utilities.WebKit.helper.NavigationHelper;
+import Utilities.seleniumcustomframework.extension.PageElement;
 import com.google.inject.Inject;
-import com.test.helper.NavigationHelper;
-import com.test.seleniumcustomframework.extension.PageElement;
+//import com.test.helper.NavigationHelper;
+//import com.test.seleniumcustomframework.extension.PageElement;
 import com.test.Utils.CaptureScreenshotUtils;
 import com.test.Utils.SeleniumHelper;
 import org.openqa.selenium.support.FindBy;
