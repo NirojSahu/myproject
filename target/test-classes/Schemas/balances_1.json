@@ -1,0 +1,368 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+    "Data",
+    "Links",
+    "Meta"
+  ],
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Balance": [
+            {
+              "Amount": {
+                "Amount": "127218.17",
+                "Currency": "GBP"
+              },
+              "AccountId": "48894458",
+              "CreditLine": [
+                {
+                  "Amount": {
+                    "Amount": "0.00",
+                    "Currency": "GBP"
+                  },
+                  "Included": "true",
+                  "Type": "InterimAvailable"
+                }
+              ],
+              "DateTime": "2020-04-13T16:33:12.249+01:00",
+              "CreditDebitIndicator": "Credit",
+              "Type": "InterimAvailable"
+            }
+          ]
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Balance"
+      ],
+      "properties": {
+        "Balance": {
+          "$id": "#/properties/Data/properties/Balance",
+          "type": "array",
+          "title": "The Balance Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "127218.17",
+                  "Currency": "GBP"
+                },
+                "AccountId": "48894458",
+                "CreditLine": [
+                  {
+                    "Amount": {
+                      "Currency": "GBP",
+                      "Amount": "0.00"
+                    },
+                    "Included": "true",
+                    "Type": "InterimAvailable"
+                  }
+                ],
+                "DateTime": "2020-04-13T16:33:12.249+01:00"
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Data/properties/Balance/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "CreditDebitIndicator": "Credit",
+                "Type": "InterimAvailable",
+                "Amount": {
+                  "Amount": "127218.17",
+                  "Currency": "GBP"
+                },
+                "AccountId": "48894458",
+                "CreditLine": [
+                  {
+                    "Amount": {
+                      "Currency": "GBP",
+                      "Amount": "0.00"
+                    },
+                    "Included": "true",
+                    "Type": "InterimAvailable"
+                  }
+                ],
+                "DateTime": "2020-04-13T16:33:12.249+01:00"
+              }
+            ],
+            "additionalProperties": true,
+            "required": [
+              "AccountId",
+              "Amount",
+              "CreditDebitIndicator",
+              "Type",
+              "DateTime",
+              "CreditLine"
+            ],
+            "properties": {
+              "AccountId": {
+                "$id": "#/properties/Data/properties/Balance/items/properties/AccountId",
+                "type": "string",
+                "title": "The Accountid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "48894458"
+                ]
+              },
+              "Amount": {
+                "$id": "#/properties/Data/properties/Balance/items/properties/Amount",
+                "type": "object",
+                "title": "The Amount Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "Amount": "127218.17",
+                    "Currency": "GBP"
+                  }
+                ],
+                "additionalProperties": true,
+                "required": [
+                  "Amount",
+                  "Currency"
+                ],
+                "properties": {
+                  "Amount": {
+                    "$id": "#/properties/Data/properties/Balance/items/properties/Amount/properties/Amount",
+                    "type": "string",
+                    "title": "The Amount Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "127218.17"
+                    ]
+                  },
+                  "Currency": {
+                    "$id": "#/properties/Data/properties/Balance/items/properties/Amount/properties/Currency",
+                    "type": "string",
+                    "title": "The Currency Schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "GBP"
+                    ]
+                  }
+                }
+              },
+              "CreditDebitIndicator": {
+                "$id": "#/properties/Data/properties/Balance/items/properties/CreditDebitIndicator",
+                "type": "string",
+                "title": "The Creditdebitindicator Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Credit"
+                ]
+              },
+              "Type": {
+                "$id": "#/properties/Data/properties/Balance/items/properties/Type",
+                "type": "string",
+                "title": "The Type Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "InterimAvailable"
+                ]
+              },
+              "DateTime": {
+                "$id": "#/properties/Data/properties/Balance/items/properties/DateTime",
+                "type": "string",
+                "title": "The Datetime Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "2020-04-13T16:33:12.249+01:00"
+                ]
+              },
+              "CreditLine": {
+                "$id": "#/properties/Data/properties/Balance/items/properties/CreditLine",
+                "type": "array",
+                "title": "The Creditline Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "Included": "true",
+                      "Type": "InterimAvailable",
+                      "Amount": {
+                        "Amount": "0.00",
+                        "Currency": "GBP"
+                      }
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/Data/properties/Balance/items/properties/CreditLine/items",
+                  "type": "object",
+                  "title": "The Items Schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "examples": [
+                    {
+                      "Type": "InterimAvailable",
+                      "Amount": {
+                        "Currency": "GBP",
+                        "Amount": "0.00"
+                      },
+                      "Included": "true"
+                    }
+                  ],
+                  "additionalProperties": true,
+                  "required": [
+                    "Included",
+                    "Amount",
+                    "Type"
+                  ],
+                  "properties": {
+                    "Included": {
+                      "$id": "#/properties/Data/properties/Balance/items/properties/CreditLine/items/properties/Included",
+                      "type": "string",
+                      "title": "The Included Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "true"
+                      ]
+                    },
+                    "Amount": {
+                      "$id": "#/properties/Data/properties/Balance/items/properties/CreditLine/items/properties/Amount",
+                      "type": "object",
+                      "title": "The Amount Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": {},
+                      "examples": [
+                        {
+                          "Currency": "GBP",
+                          "Amount": "0.00"
+                        }
+                      ],
+                      "additionalProperties": true,
+                      "required": [
+                        "Amount",
+                        "Currency"
+                      ],
+                      "properties": {
+                        "Amount": {
+                          "$id": "#/properties/Data/properties/Balance/items/properties/CreditLine/items/properties/Amount/properties/Amount",
+                          "type": "string",
+                          "title": "The Amount Schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "0.00"
+                          ]
+                        },
+                        "Currency": {
+                          "$id": "#/properties/Data/properties/Balance/items/properties/CreditLine/items/properties/Amount/properties/Currency",
+                          "type": "string",
+                          "title": "The Currency Schema",
+                          "description": "An explanation about the purpose of this instance.",
+                          "default": "",
+                          "examples": [
+                            "GBP"
+                          ]
+                        }
+                      }
+                    },
+                    "Type": {
+                      "$id": "#/properties/Data/properties/Balance/items/properties/CreditLine/items/properties/Type",
+                      "type": "string",
+                      "title": "The Type Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "InterimAvailable"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts/48894458/balances"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Self"
+      ],
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts/48894458/balances"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": "1"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "TotalPages"
+      ],
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "string",
+          "title": "The Totalpages Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "1"
+          ]
+        }
+      }
+    }
+  }
+}

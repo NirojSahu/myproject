@@ -1,0 +1,283 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "additionalProperties": true,
+  "required": [
+    "Data",
+    "Links",
+    "Meta"
+  ],
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Account": [
+            {
+              "AccountId": "48894458",
+              "AccountType": "Personal",
+              "AccountSubType": "CurrentAccount",
+              "Account": [
+                {
+                  "Name": "Account name one",
+                  "Identification": "16571048894458",
+                  "SchemeName": "UK.OBIE.SortCodeAccountNumber"
+                }
+              ],
+              "Nickname": "Account name two",
+              "Currency": "GBP"
+            }
+          ]
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Account"
+      ],
+      "properties": {
+        "Account": {
+          "$id": "#/properties/Data/properties/Account",
+          "type": "array",
+          "title": "The Account Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "AccountId": "48894458",
+                "AccountType": "Personal",
+                "AccountSubType": "CurrentAccount",
+                "Account": [
+                  {
+                    "Identification": "16571048894458",
+                    "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                    "Name": "Account name one"
+                  }
+                ],
+                "Nickname": "Account name two",
+                "Currency": "GBP"
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Data/properties/Account/items",
+            "type": "object",
+            "title": "The Items Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": {},
+            "examples": [
+              {
+                "Nickname": "Account name two",
+                "Currency": "GBP",
+                "AccountId": "48894458",
+                "AccountType": "Personal",
+                "AccountSubType": "CurrentAccount",
+                "Account": [
+                  {
+                    "Name": "Account name one",
+                    "Identification": "16571048894458",
+                    "SchemeName": "UK.OBIE.SortCodeAccountNumber"
+                  }
+                ]
+              }
+            ],
+            "additionalProperties": true,
+            "required": [
+              "AccountId",
+              "Currency",
+              "AccountType",
+              "AccountSubType",
+              "Account"
+            ],
+            "properties": {
+              "AccountId": {
+                "$id": "#/properties/Data/properties/Account/items/properties/AccountId",
+                "type": "string",
+                "title": "The Accountid Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "48894458"
+                ]
+              },
+              "Currency": {
+                "$id": "#/properties/Data/properties/Account/items/properties/Currency",
+                "type": "string",
+                "title": "The Currency Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "GBP"
+                ]
+              },
+              "AccountType": {
+                "$id": "#/properties/Data/properties/Account/items/properties/AccountType",
+                "type": "string",
+                "title": "The Accounttype Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Personal"
+                ]
+              },
+              "AccountSubType": {
+                "$id": "#/properties/Data/properties/Account/items/properties/AccountSubType",
+                "type": "string",
+                "title": "The Accountsubtype Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "CurrentAccount"
+                ]
+              },
+              "Nickname": {
+                "$id": "#/properties/Data/properties/Account/items/properties/Nickname",
+                "type": "string",
+                "title": "The Nickname Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": "",
+                "examples": [
+                  "Account name two"
+                ]
+              },
+              "Account": {
+                "$id": "#/properties/Data/properties/Account/items/properties/Account",
+                "type": "array",
+                "title": "The Account Schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": [],
+                "examples": [
+                  [
+                    {
+                      "Name": "Account name one",
+                      "Identification": "16571048894458",
+                      "SchemeName": "UK.OBIE.SortCodeAccountNumber"
+                    }
+                  ]
+                ],
+                "additionalItems": true,
+                "items": {
+                  "$id": "#/properties/Data/properties/Account/items/properties/Account/items",
+                  "type": "object",
+                  "title": "The Items Schema",
+                  "description": "An explanation about the purpose of this instance.",
+                  "default": {},
+                  "examples": [
+                    {
+                      "Name": "Account name one",
+                      "Identification": "16571048894458",
+                      "SchemeName": "UK.OBIE.SortCodeAccountNumber"
+                    }
+                  ],
+                  "additionalProperties": true,
+                  "required": [
+                    "SchemeName",
+                    "Identification",
+                    "Name"
+                  ],
+                  "properties": {
+                    "SchemeName": {
+                      "$id": "#/properties/Data/properties/Account/items/properties/Account/items/properties/SchemeName",
+                      "type": "string",
+                      "title": "The Schemename Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "UK.OBIE.SortCodeAccountNumber"
+                      ]
+                    },
+                    "Identification": {
+                      "$id": "#/properties/Data/properties/Account/items/properties/Account/items/properties/Identification",
+                      "type": "string",
+                      "title": "The Identification Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "16571048894458"
+                      ]
+                    },
+                    "Name": {
+                      "$id": "#/properties/Data/properties/Account/items/properties/Account/items/properties/Name",
+                      "type": "string",
+                      "title": "The Name Schema",
+                      "description": "An explanation about the purpose of this instance.",
+                      "default": "",
+                      "examples": [
+                        "Account name one"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts"
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "Self"
+      ],
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://apim.sit.openbanking.ca.co.uk/openbanking/v3.1/aisp/accounts"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": 1.0
+        }
+      ],
+      "additionalProperties": true,
+      "required": [
+        "TotalPages"
+      ],
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "integer",
+          "title": "The Totalpages Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1.0
+          ]
+        }
+      }
+    }
+  }
+}

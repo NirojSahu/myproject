@@ -1,0 +1,86 @@
+Resources:
+  account-access-consents_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  account-access-consents_2:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - Authorization: "Bearer {token}"
+      - accept: "application/json; charset=utf-8"
+  account-access-consents_3:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  token_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  token_2:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json"
+  balances_1:
+    headers:
+      - Accept: "*/*"
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - Authorization: "Bearer {token}"
+      - Content-Type: "application/json; charset=utf-8"
+  transactions_1:
+    headers:
+      - accept: "application/json; charset=utf-8"
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - Authorization: "Bearer {token}"
+  accounts_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  accounts_2:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  beneficiaries_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  directdebits_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  standingorders_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  products_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  scheduledpayments_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  statements_1:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
+  statements_2:
+    headers:
+      - x-fapi-financial-id: "0015800001HQQrUAAX"
+      - accept: "application/json; charset=utf-8"
+      - Authorization: "Bearer {token}"
