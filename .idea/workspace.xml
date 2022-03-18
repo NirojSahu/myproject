@@ -4,92 +4,60 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="Starting new project">
-      <change afterPath="$PROJECT_DIR$/browserdrivers/chromedriver99.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TestData/ElementLocator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/TestData/EnvironmentConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="New Framework in Coforge">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/JavaPractice/Map2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/JavaPractice/PracticeMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap.properties" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/settings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/OBReadDirectDebits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadDirectDebits1/OBReadDirectDebits.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Responses/OBReadTransaction4/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/RestTemplateAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIKit/api/lib/RestTemplateAPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/JsonUtilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/JsonUtilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/DI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/DI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/health_check/Taas_browser_health_check.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/features/health_check/Taas_browser_health_check.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/ExecControlHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/ExecControlHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/LoggingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/LoggingHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/PropertiesHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/PropertiesHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/ReportingHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/ReportingHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/StringHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/helper/StringHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/BrowserHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/BrowserHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/CucumberHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooks/CucumberHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/BrowserHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/BrowserHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/CucumberHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/hooksnoteardown/CucumberHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/lynx/LynxUtility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/screenshothook/ScreenshotHooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/screenshothook/ScreenshotHooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchResults.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/WebKit/ui/selenium/pageSelections/SearchResults.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageElementImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/PageElementImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/dependencies/FieldInitialiserDependencyModule.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/dependencies/FieldInitialiserDependencyModule.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/dependencies/WebDriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/dependencies/WebDriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageSections.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForPageSections.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForSeleniumLegacyWebElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/fieldInitialisers/FieldInitialiserForSeleniumLegacyWebElements.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageElementListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/PageElementListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/WebElementListHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/seleniumcustomframework/extension/handlers/WebElementListHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/AccountAccessConsentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/AccountAccessConsentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/AccountService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/BalanceService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/BalanceService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/APIFunctions/TokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/CustomHooks/GlobalHooks.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/CustomHooks/GlobalHooks.groovy" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/LoadProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/LoadProperties.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/test/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/App_genericFunction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/App_genericFunction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/CaptureScreenshotUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/CaptureScreenshotUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/SeleniumHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/SeleniumHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/YamlReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/YamlReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/Utils/jwt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/Utils/jwt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/AuthURLPage4.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/Directdebit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/Directdebit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/Managepayee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/Managepayee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/MyAccounts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/MyAccounts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/Navigate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/Navigate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/PaymentServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/PaymentServices.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/ResultsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/ResultsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/SceenshotCapturePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/SceenshotCapturePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/SchedulePayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/SchedulePayment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/pages/StandingOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/pages/StandingOrder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/AccountAccessConsentStepDef.java.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/AccountsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/AccountsStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/BalancesStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/BalancesStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/BeneficiariesStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/BeneficiariesStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/DirectDebitsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/DirectDebitsStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/SampleStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/SampleStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/ScheduledPaymentsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/ScheduledPaymentsStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/ScreenshotCapture_Steps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/ScreenshotCapture_Steps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/StandingOrdersStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/StandingOrdersStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/StatementsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/StatementsStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/TestOnly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/TestOnly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/TokenStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/TokenStepDef.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/TransactionsStepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/stepDefs/TransactionsStepDef.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/CommonValues.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/CommonValues.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/cucumber.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/cucumber.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountAccessConsents.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AccountAccessConsents.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Accounts.feature" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/resources/features/Accounts/UJ1_Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Accounts/UJ1_Accounts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AuthURL.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AuthURL.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AuthURL_MA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AuthURL_MA.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AuthURL_SA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AuthURL_SA.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Balance.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Balance.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Beneficiaries.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Beneficiaries.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/DirectDebits.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/DirectDebits.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Products.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Products.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ScheduledPayments.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/ScheduledPayments.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Screenshot_Capture.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Screenshot_Capture.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/StandingOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/StandingOrder.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Statements.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Statements.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Token.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Token.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TransPagination.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/TransPagination.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Transactions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Transactions.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/APIMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/APIMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/CommonValues.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/CommonValues.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountAccessConsents.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Accounts.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Accounts/UJ1_Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Accounts/UJ1_Accounts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AuthURL.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AuthURL_MA.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AuthURL_SA.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Balance.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Beneficiaries.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DirectDebits.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Products.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ScheduledPayments.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Screenshot_Capture.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/StandingOrder.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Statements.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Token.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/TransPagination.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Transactions.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/HtmlReport/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/HtmlReport/ExtentHtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/exception.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/exception.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/tag.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,8 +78,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Develpment_Niroj" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
@@ -169,17 +142,56 @@
       <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\ScheduledPayment" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Niroj.sahu\Documents\GitHub\myproject\src\test\resources\features\AIS_APIs" />
       <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit" />
       <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\health_check" />
       <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features" />
       <recent name="C:\my DATA\workspace\mybackupproject\src\test\java\com\test\stepDefs" />
-      <recent name="C:\my DATA\workspace\mybackupproject\src\test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Utilities.WebKit.hooks" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestRunner">
+  <component name="RunManager" selected="Application.JWT_Generic">
+    <configuration name="JWT_Generic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.Utils.JWT_Generic" />
+      <module name="myproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Map2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.JavaPractice.Map2" />
+      <module name="myproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.JavaPractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.JavaPractice.PracticeMap" />
+      <module name="myproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.JavaPractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Scenario: Token_1.16 : Verify application access consent token is generated successfully" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="4" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Accounts/UJ1_Accounts.feature" />
@@ -217,7 +229,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.JWT_Generic" />
         <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Application.Map2" />
+        <item itemvalue="Application.PracticeMap" />
         <item itemvalue="Cucumber Java.Scenario: Token_1.16 : Verify application access consent token is generated successfully" />
       </list>
     </recent_temporary>
@@ -374,7 +389,21 @@
       <option name="project" value="LOCAL" />
       <updated>1631785982434</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="New Framework in Coforge">
+      <created>1647010714822</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1647010714822</updated>
+    </task>
+    <task id="LOCAL-00022" summary="New Framework in Coforge">
+      <created>1647010894383</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1647010894383</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -392,7 +421,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Starting new project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting new project" />
+    <MESSAGE value="New Framework in Coforge" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Framework in Coforge" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

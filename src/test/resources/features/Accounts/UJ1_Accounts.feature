@@ -1,4 +1,4 @@
-@QACATERALL-2215 @UJAccounts1 @UJAccounts @AISUJ
+@QACATERALL-2215 @UJAccounts1 @UJAccounts @AISUJ111
 Feature: UJ Accounts Single Account
 
   Environments : 3A(Dev), 5A(Pre), 4A(UAT)
@@ -12,7 +12,7 @@ Feature: UJ Accounts Single Account
   UserJourney:"ReadAccountsDetail Permissions"
   ApplicationAcessToken --> ConsentID Gen --> AUTH URL --> ClientAccessToken  --> Hit AIS Resources
 
-  @QACATERALL-2320 @id:QACATERALL-2215_1 @Prateek @4AAccUJ111
+  @QACATERALL-2320 @id:QACATERALL-2215_1 @Prateek @4AAccUJ
   Scenario: Token_1.16 : Verify application access consent token is generated successfully
     Given I have the data available to create "POST" request for application access consent token with JWT
     When I want to make a call to applicationaccesstoken_service to create token

@@ -25,7 +25,7 @@ import com.test.CustomHooks.GlobalHooks;
         // tags = {"@transactions,@deleteaccountconsent,@statements,@Accountconsent,@balances,@beneficiaries,@Products,@accounts,@DirectDebits,@standingOrders,@SchedulePayments"},
         //tags = {"@UJTransactions5"},
         //tags = {"@UJBeneficiaries5"},
-        tags = {"@4AAccUJ111"},
+        tags = {"@AISUJ111"},
         //tags = {"@token"},
         //tags = {"@UJAccounts4,@UJBalances4,@UJBeneficiaries4,@UJDirectdebits4,@UJSchedulePayment4,@UJStandingOrder4,@UJStatement4,@UJTransactions4"},
         //tags={"@token,@transactions,@deleteaccountconsent,@statements,@Accountconsent,@balances,@beneficiaries,@Products,@accounts,@DirectDebits,@standingOrders,@SchedulePayments"},

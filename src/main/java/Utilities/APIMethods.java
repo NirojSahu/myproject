@@ -245,7 +245,7 @@ public class APIMethods {
                   .trustStore(System.getProperty("user.dir")+"/src/test/resources/Certificates/4A/truststore.jks","foobar")
                    .contentType("application/x-www-form-urlencoded; charset=UTF-8")
                    .body(jsonString).when()
-                   .post(baseURI+ResourceURI)
+                   .post(ResourceURI)
                    .then().assertThat().log().all().extract().response();
        }
         else
