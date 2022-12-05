@@ -1,0 +1,229 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "required": [
+    "Data",
+    "Risk",
+    "Links",
+    "Meta"
+  ],
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "CreationDateTime": "2020-04-06T11:02Z",
+          "ConsentId": "31f807b6-c2b0-4976-b440-d06adfe46cc1",
+          "TransactionToDateTime": "2019-08-27T12:00+05:30",
+          "ExpirationDateTime": "2020-10-14T00:00Z",
+          "Permissions": [
+            "ReadAccountsDetail",
+            "ReadBalances",
+            "ReadBeneficiariesDetail",
+            "ReadDirectDebits",
+            "ReadDirectDebits",
+            "ReadProducts",
+            "ReadStandingOrdersDetail",
+            "ReadTransactionsCredits",
+            "ReadTransactionsDebits",
+            "ReadTransactionsDetail",
+            "ReadOffers",
+            "ReadPAN",
+            "ReadParty",
+            "ReadPartyPSU",
+            "ReadScheduledPaymentsDetail",
+            "ReadStatementsDetail"
+          ],
+          "TransactionFromDateTime": "2019-06-26T12:00+05:30",
+          "Status": "AwaitingAuthorisation",
+          "StatusUpdateDateTime": "2020-04-06T11:02Z"
+        }
+      ],
+      "required": [
+        "ConsentId",
+        "Status",
+        "CreationDateTime",
+        "Permissions",
+        "ExpirationDateTime",
+        "TransactionFromDateTime",
+        "TransactionToDateTime",
+        "StatusUpdateDateTime"
+      ],
+      "properties": {
+        "ConsentId": {
+          "$id": "#/properties/Data/properties/ConsentId",
+          "type": "string",
+          "title": "The Consentid Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "31f807b6-c2b0-4976-b440-d06adfe46cc1"
+          ]
+        },
+        "Status": {
+          "$id": "#/properties/Data/properties/Status",
+          "type": "string",
+          "title": "The Status Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "AwaitingAuthorisation"
+          ]
+        },
+        "CreationDateTime": {
+          "$id": "#/properties/Data/properties/CreationDateTime",
+          "type": "string",
+          "title": "The Creationdatetime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-04-06T11:02Z"
+          ]
+        },
+        "Permissions": {
+          "$id": "#/properties/Data/properties/Permissions",
+          "type": "array",
+          "title": "The Permissions Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "items": {
+            "$id": "#/properties/Data/properties/Permissions/items",
+            "type": "string",
+            "title": "The Items Schema",
+            "description": "An explanation about the purpose of this instance.",
+            "default": "",
+            "examples": [
+              "ReadAccountsDetail",
+              "ReadBalances",
+              "ReadBeneficiariesDetail",
+              "ReadDirectDebits",
+              "ReadDirectDebits",
+              "ReadProducts",
+              "ReadStandingOrdersDetail",
+              "ReadTransactionsCredits",
+              "ReadTransactionsDebits",
+              "ReadTransactionsDetail",
+              "ReadOffers",
+              "ReadPAN",
+              "ReadParty",
+              "ReadPartyPSU",
+              "ReadScheduledPaymentsDetail",
+              "ReadStatementsDetail"
+            ]
+          }
+        },
+        "ExpirationDateTime": {
+          "$id": "#/properties/Data/properties/ExpirationDateTime",
+          "type": "string",
+          "title": "The Expirationdatetime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-10-14T00:00Z"
+          ]
+        },
+        "TransactionFromDateTime": {
+          "$id": "#/properties/Data/properties/TransactionFromDateTime",
+          "type": "string",
+          "title": "The Transactionfromdatetime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2019-06-26T12:00+05:30"
+          ]
+        },
+        "TransactionToDateTime": {
+          "$id": "#/properties/Data/properties/TransactionToDateTime",
+          "type": "string",
+          "title": "The Transactiontodatetime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2019-08-27T12:00+05:30"
+          ]
+        },
+        "StatusUpdateDateTime": {
+          "$id": "#/properties/Data/properties/StatusUpdateDateTime",
+          "type": "string",
+          "title": "The Statusupdatedatetime Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "2020-04-06T11:02Z"
+          ]
+        }
+      }
+    },
+    "Risk": {
+      "$id": "#/properties/Risk",
+      "type": "object",
+      "title": "The Risk Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {}
+      ]
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://10.6.184.149:8243/open-banking/v3.1/aisp//account-access-consents/31f807b6-c2b0-4976-b440-d06adfe46cc1"
+        }
+      ],
+      "required": [
+        "Self"
+      ],
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://10.6.184.149:8243/open-banking/v3.1/aisp//account-access-consents/31f807b6-c2b0-4976-b440-d06adfe46cc1"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta Schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": 1.0
+        }
+      ],
+      "required": [
+        "TotalPages"
+      ],
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "integer",
+          "title": "The Totalpages Schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1
+          ]
+        }
+      }
+    }
+  }
+}

@@ -4,14 +4,60 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Utilities/JsonUtilities.java" afterDir="false" />
+    <list default="true" id="942816d0-9d37-4a23-a0ad-66de110ee29c" name="Default Changelist" comment="New Framework in Coforge">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/JavaPractice/Map2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/test/JavaPractice/PracticeMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybackupproject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/test/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/test/TestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestData/CommonValues.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestData/CommonValues.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AccountAccessConsents.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AccountAccessConsents.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Accounts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Accounts/UJ1_Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/Accounts/UJ1_Accounts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AuthURL.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AuthURL.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AuthURL_MA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AuthURL_MA.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AuthURL_SA.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/AuthURL_SA.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Balance.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Balance.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Beneficiaries.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Beneficiaries.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/DirectDebits.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/DirectDebits.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Products.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Products.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ScheduledPayments.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/ScheduledPayments.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Screenshot_Capture.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Screenshot_Capture.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/StandingOrder.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/StandingOrder.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Statements.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Statements.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Token.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Token.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/TransPagination.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/TransPagination.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/Transactions.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AIS_APIs/Transactions.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Utilities/APIMethods.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Utilities/APIMethods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber-report.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber-report.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.html/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.html/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestData/CommonValues.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestData/CommonValues.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/UserJourney/UJ1_Accounts/UJ1_Accounts.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/test/TestRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/test/TestRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AccountAccessConsents.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Accounts.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Accounts/UJ1_Accounts.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/Accounts/UJ1_Accounts.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AuthURL.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AuthURL_MA.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AuthURL_SA.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Balance.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Beneficiaries.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/DirectDebits.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Products.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/ScheduledPayments.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Screenshot_Capture.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/StandingOrder.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Statements.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Token.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/TransPagination.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/Transactions.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/HtmlReport/ExtentHtml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/HtmlReport/ExtentHtml.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/dashboard.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/exception.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/exception.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/LoggerReport/tag.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/LoggerReport/tag.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,46 +71,173 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Develpment_Niroj" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+  </component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="778e7288-6c46-4026-abe4-f466d1ca08bd" />
+        <option name="url" value="https://github.com/NirojSahu/myproject.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../../apache-maven-3.8.4-bin/apache-maven-3.8.4" />
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+  <component name="ProblemsViewState">
+    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="1fiXEdRe0UFdKMPRfE0GFtnPQ4w" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="abbreviatePackageNames" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Program Files/Git/bin/git.exe" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Properties" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/Utilities" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/browserdrivers" />
     <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Utilities.WebKit.helper" />
+      <recent name="Utilities.seleniumcustomframework.extension.handlers" />
+      <recent name="Utilities.seleniumcustomframework.extension.fieldInitialisers" />
+      <recent name="Utilities.seleniumcustomframework.extension.helpers" />
+      <recent name="Utilities.seleniumcustomframework.extension.fromselenium" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Niroj.sahu\Documents\GitHub\myproject\browserdrivers" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\Transactions" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\Statement" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\StandingOrder" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\ScheduledPayment" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\my DATA\workspace\mybackupproject\src\test" />
+      <recent name="C:\Users\Niroj.sahu\Documents\GitHub\myproject\src\test\resources\features\AIS_APIs" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\main\java\Utilities\WebKit" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features\health_check" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\resources\features" />
+      <recent name="C:\my DATA\workspace\mybackupproject\src\test\java\com\test\stepDefs" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Utilities.WebKit.hooks" />
     </key>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="false" />
+  <component name="RunManager" selected="Application.JWT_Generic">
+    <configuration name="JWT_Generic" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.Utils.JWT_Generic" />
+      <module name="myproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.Utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Map2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.JavaPractice.Map2" />
+      <module name="myproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.JavaPractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PracticeMap" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.JavaPractice.PracticeMap" />
+      <module name="myproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.JavaPractice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Token_1.16 : Verify application access consent token is generated successfully" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="4" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Accounts/UJ1_Accounts.feature" />
+      <option name="GLUE" value="com.test.stepDefs Utilities.WebKit.screenshothook Utilities.WebKit.hooksnoteardown Utilities.WebKit.hooks com.test.CustomHooks" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="myproject" />
+      <option name="NAME_FILTER" value="^Token_1\.16 \: Verify application access consent token is generated successfully$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm4SMFormatter --name &quot;^Token_1\.16 \: Verify application access consent token is generated successfully$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Token_1.16 : Verify application access consent token is generated successfully" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="myproject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.test" />
+      <option name="MAIN_CLASS_NAME" value="com.test.TestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JWT_Generic" />
+        <item itemvalue="JUnit.TestRunner" />
+        <item itemvalue="Application.Map2" />
+        <item itemvalue="Application.PracticeMap" />
+        <item itemvalue="Cucumber Java.Scenario: Token_1.16 : Verify application access consent token is generated successfully" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -83,17 +256,203 @@
       <option name="project" value="LOCAL" />
       <updated>1596632683952</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Starting new project">
+      <created>1596717787014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596717787014</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Starting new project">
+      <created>1597387818485</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1597387818485</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Starting new project">
+      <created>1598536742550</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1598536742550</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Starting new project">
+      <created>1631695600426</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1631695600426</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Starting new project">
+      <created>1631701115453</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1631701115453</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Starting new project">
+      <created>1631701241861</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1631701241861</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Starting new project">
+      <created>1631702587952</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1631702587952</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Starting new project">
+      <created>1631715190772</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1631715190772</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Starting new project">
+      <created>1631727801654</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1631727801654</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Starting new project">
+      <created>1631731238486</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1631731238486</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Starting new project">
+      <created>1631733140958</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1631733140958</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Starting new project">
+      <created>1631733366745</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1631733366745</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Starting new project">
+      <created>1631777409321</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1631777409321</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Starting new project">
+      <created>1631777744327</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1631777744327</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Starting new project">
+      <created>1631780967926</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1631780967926</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Starting new project">
+      <created>1631781502428</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1631781502428</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Starting new project">
+      <created>1631784541038</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1631784541038</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Starting new project">
+      <created>1631785687799</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1631785687799</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Starting new project">
+      <created>1631785982434</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1631785982434</updated>
+    </task>
+    <task id="LOCAL-00021" summary="New Framework in Coforge">
+      <created>1647010714822</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1647010714822</updated>
+    </task>
+    <task id="LOCAL-00022" summary="New Framework in Coforge">
+      <created>1647010894383</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1647010894383</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Starting new project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting new project" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="163" y="0" key="SettingsEditor" timestamp="1596702562670">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="163" y="0" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596702562670" />
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Starting new project" />
+    <MESSAGE value="New Framework in Coforge" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Framework in Coforge" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageFactory.java</url>
+          <line>663</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/WebDriverProvider.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/WebDriverProvider.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/WebKit/configuration/PageFactory.java</url>
+          <line>598</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/Utilities/APIMethods.java</url>
+          <line>247</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "type": "object",
+  "title": "The root schema",
+  "description": "The root schema comprises the entire JSON document.",
+  "default": {},
+  "required": [
+    "Data",
+    "Links",
+    "Meta"
+  ],
+  "additionalProperties": true,
+  "properties": {
+    "Data": {
+      "$id": "#/properties/Data",
+      "type": "object",
+      "title": "The Data schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Beneficiary": [
+            {
+              "CreditorAccount": {
+                "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                "Identification": "16571090010553",
+                "Name": "OBTest Customertwo"
+              },
+              "BeneficiaryId": "7.000177012E8",
+              "AccountId": "90010553",
+              "Reference": "700017710-90010577"
+            },
+            {
+              "AccountId": "90010553",
+              "Reference": "700017710-90010589",
+              "CreditorAccount": {
+                "Name": "OBTest Customertwo",
+                "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                "Identification": "16571090010553"
+              },
+              "BeneficiaryId": "7.000177013E8"
+            },
+            {
+              "BeneficiaryId": "7.000177014E8",
+              "AccountId": "90010553",
+              "Reference": "700017729-90010590",
+              "CreditorAccount": {
+                "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                "Identification": "16571090010553",
+                "Name": "OBTest Customerthree"
+              }
+            },
+            {
+              "AccountId": "90010553",
+              "Reference": "700017710-90010565",
+              "CreditorAccount": {
+                "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                "Identification": "16571090010553",
+                "Name": "OBTest Customertwo"
+              },
+              "BeneficiaryId": "7.000177011E8"
+            }
+          ]
+        }
+      ],
+      "required": [
+        "Beneficiary"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "Beneficiary": {
+          "$id": "#/properties/Data/properties/Beneficiary",
+          "type": "array",
+          "title": "The Beneficiary schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": [],
+          "examples": [
+            [
+              {
+                "AccountId": "90010553",
+                "Reference": "700017710-90010577",
+                "CreditorAccount": {
+                  "Name": "OBTest Customertwo",
+                  "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                  "Identification": "16571090010553"
+                },
+                "BeneficiaryId": "7.000177012E8"
+              },
+              {
+                "CreditorAccount": {
+                  "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                  "Identification": "16571090010553",
+                  "Name": "OBTest Customertwo"
+                },
+                "BeneficiaryId": "7.000177013E8",
+                "AccountId": "90010553",
+                "Reference": "700017710-90010589"
+              }
+            ]
+          ],
+          "additionalItems": true,
+          "items": {
+            "$id": "#/properties/Data/properties/Beneficiary/items",
+            "anyOf": [
+              {
+                "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0",
+                "type": "object",
+                "title": "The first anyOf schema",
+                "description": "An explanation about the purpose of this instance.",
+                "default": {},
+                "examples": [
+                  {
+                    "CreditorAccount": {
+                      "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                      "Identification": "16571090010553",
+                      "Name": "OBTest Customertwo"
+                    },
+                    "BeneficiaryId": "7.000177012E8",
+                    "AccountId": "90010553",
+                    "Reference": "700017710-90010577"
+                  }
+                ],
+                "required": [
+                  "AccountId",
+                  "BeneficiaryId",
+                  "Reference",
+                  "CreditorAccount"
+                ],
+                "additionalProperties": true,
+                "properties": {
+                  "AccountId": {
+                    "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0/properties/AccountId",
+                    "type": "string",
+                    "title": "The AccountId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "90010553"
+                    ]
+                  },
+                  "BeneficiaryId": {
+                    "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0/properties/BeneficiaryId",
+                    "type": "string",
+                    "title": "The BeneficiaryId schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "7.000177012E8"
+                    ]
+                  },
+                  "Reference": {
+                    "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0/properties/Reference",
+                    "type": "string",
+                    "title": "The Reference schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": "",
+                    "examples": [
+                      "700017710-90010577"
+                    ]
+                  },
+                  "CreditorAccount": {
+                    "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0/properties/CreditorAccount",
+                    "type": "object",
+                    "title": "The CreditorAccount schema",
+                    "description": "An explanation about the purpose of this instance.",
+                    "default": {},
+                    "examples": [
+                      {
+                        "SchemeName": "UK.OBIE.SortCodeAccountNumber",
+                        "Identification": "16571090010553",
+                        "Name": "OBTest Customertwo"
+                      }
+                    ],
+                    "required": [
+                      "SchemeName",
+                      "Identification",
+                      "Name"
+                    ],
+                    "additionalProperties": true,
+                    "properties": {
+                      "SchemeName": {
+                        "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0/properties/CreditorAccount/properties/SchemeName",
+                        "type": "string",
+                        "title": "The SchemeName schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "UK.OBIE.SortCodeAccountNumber"
+                        ]
+                      },
+                      "Identification": {
+                        "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0/properties/CreditorAccount/properties/Identification",
+                        "type": "string",
+                        "title": "The Identification schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "16571090010553"
+                        ]
+                      },
+                      "Name": {
+                        "$id": "#/properties/Data/properties/Beneficiary/items/anyOf/0/properties/CreditorAccount/properties/Name",
+                        "type": "string",
+                        "title": "The Name schema",
+                        "description": "An explanation about the purpose of this instance.",
+                        "default": "",
+                        "examples": [
+                          "OBTest Customertwo"
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "Links": {
+      "$id": "#/properties/Links",
+      "type": "object",
+      "title": "The Links schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "Self": "https://10.6.184.31/openbanking/v3.1/aisp/accounts/90010553/beneficiaries/"
+        }
+      ],
+      "required": [
+        "Self"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "Self": {
+          "$id": "#/properties/Links/properties/Self",
+          "type": "string",
+          "title": "The Self schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": "",
+          "examples": [
+            "https://10.6.184.31/openbanking/v3.1/aisp/accounts/90010553/beneficiaries/"
+          ]
+        }
+      }
+    },
+    "Meta": {
+      "$id": "#/properties/Meta",
+      "type": "object",
+      "title": "The Meta schema",
+      "description": "An explanation about the purpose of this instance.",
+      "default": {},
+      "examples": [
+        {
+          "TotalPages": 1.0
+        }
+      ],
+      "required": [
+        "TotalPages"
+      ],
+      "additionalProperties": true,
+      "properties": {
+        "TotalPages": {
+          "$id": "#/properties/Meta/properties/TotalPages",
+          "type": "integer",
+          "title": "The TotalPages schema",
+          "description": "An explanation about the purpose of this instance.",
+          "default": 0,
+          "examples": [
+            1.0
+          ]
+        }
+      }
+    }
+  }
+}
